@@ -1,0 +1,170 @@
+#PLU - plural
+#PUNC - punctative
+#RLS - realis
+
+Language: Burmese
+Language code: mya
+Lines: orth translit-seg gloss translat
+Author: Wibel, Sean and Brent Woo
+Date: January 15, 2014
+Source a: Soe, Myint. 1999. A Grammar of Burmese
+
+
+#1 Intransitive example
+
+#e.=the twei yau’ pi
+#guest PLU reach PUNC
+#‘The guests have arrived’ (244$18)
+
+#yan-koun yau’ pi
+#Rangoon reach PUNC
+#We have reached Rangoon. (244$20)
+
+#si’ hpyi’ te
+#war happen RLS
+#‘War broke out.’ (251$68)
+
+
+#Transitive
+#==========
+
+
+# 10 Transitive neutral
+Source: a:177
+Vetted: s
+Judgment: g
+Phenomena: wo
+thaa ka nwaanou thau te
+thaa ka nwaanou thau te
+son NOM milk drink RLS
+`Son drinks milk.' 
+
+# 11 Transitive neutral
+Source: a:260
+Vetted: s
+Judgment: g
+Phenomena: wo
+mye'yei'se' ka. mye' twei kou hpya' te
+mye'yei'se' ka. mye' twei kou hpya' te
+lawnmower NOM grass	PL ACC cut RLS
+`The lawnmover cuts the grass.'
+
+###############
+# BAD entries #
+###############
+
+# 12 Transitive neutral - bad SVO
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+mye'yei'se' ka. hpya' mye' twei kou te
+mye'yei'se' ka. hpya' mye' twei kou te
+lawnmower NOM cut grass PL ACC RLS
+`The lawnmover cuts the grass.'
+
+# 13 Transitive neutral - bad VOS
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+hpya' mye' twei kou mye'yei'se' ka. te
+hpya' mye' twei kou mye'yei'se' ka. te
+cut grass PL ACC lawnmower NOM RLS
+`The lawnmover cuts the grass.'
+
+# 14 Transitive neutral - bad VSO
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+hpya' mye'yei'se' ka. mye' twei kou te
+hpya' mye'yei'se' ka. mye' twei kou te
+cut lawnmower NOM grass PL ACC RLS
+`The lawnmover cuts the grass.'
+
+# 15 Transitive neutral - bad OSV
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+mye' twei kou mye'yei'se' ka. hpya' te
+mye' twei kou mye'yei'se' ka. hpya' te
+grass PL ACC lawnmower NOM cut RLS
+`The lawnmover cuts the grass.'
+
+# 16 Transitive neutral - bad OVS
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+mye' twei kou hpya' mye'yei'se' ka. te
+mye' twei kou hpya' mye'yei'se' ka. te
+grass PL ACC lawnmower NOM cut RLS
+`The lawnmover cuts the grass.'
+
+
+
+#mye’=yei’=se’	a-thi’	ka.	mye’	yain:	twei	kou	hpya’	nain	te
+#grass=cut=machine new	SUB	grass	wild	PLU	OBJ	cut	can	RLS
+#‘The new lawnmover can cut the wild grass.’ (260$18)
+
+#a-ye’	ka.	lu	kou	hpye’	te
+#liquor	SUB	man	OBJ	destroys RLS
+#‘Liquor destroys man.’ (265$42)
+
+#we’=tha:	hin: (*kou)	hce’	nei	te
+#pork		curry (OBJ)	cook	stay	RLS
+#‘I am cooking pork curry.’ (266$45) — [cannot mark ‘created objects’ with OBJ]
+
+# Progressive
+#u: touni	ein	hsau’	nei	te
+#HON Tony	house	build	stay	RLS
+#‘Mr. Tony is building a house.’ (267$50)
+
+#* ein u: touni hsau’ nei te
+#* OSV
+
+
+#Ditransitive
+#============
+
+
+#mye’ kou hle: po tin te
+#grass OBJ cart on put RLS
+#‘(I) put the grass on the cart.’ (272$67)
+#DO-IO-V
+
+
+#thuza.	kou	nga	hywei	le’=kau’	yaun:	lai’	te
+#name	to	I	gold	bangle		sell	away	RLS
+#‘I sold Thuza the gold bangle.’ (278$92)
+#IO-S-DO-V
+
+#nga.	kou	touhyi	ka.	ja-an	zaga:	thin	pei:	te
+#I	OBJ	Toshi	SUB	Japan	speech	teach	give	RLS
+#‘Toshi taught me Japanese.’ (279$99)
+#IO-S-DO-V
+
+
+
+
+
+
+#Pronouns
+#========
+
+
+#1sg	nga
+#2sg	ning / ming
+#3sg	thu
+
+#1pl	nga-do
+#2pl	nin-do
+#3pl	thu-do
+
+
+
+
+
+
