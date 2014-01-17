@@ -1,0 +1,67 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Nouns
+
+thaa := PN-HUMAN-noun-lex &
+  [ STEM < "thaa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_son_n_rel" ].
+
+thu := PN-HUMAN-noun-lex &
+  [ STEM < "thu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_he_n_rel" ].
+
+ceno := PN-HUMAN-noun-lex &
+  [ STEM < "ceno" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_I_n_rel" ].
+
+myeyeise := NON-HUMAN-noun-lex &
+  [ STEM < "myeyeise" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lawnmower_n_rel" ].
+
+mye := NON-HUMAN-noun-lex &
+  [ STEM < "mye" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_grass_n_rel" ].
+
+nwaanou := NON-HUMAN-noun-lex &
+  [ STEM < "nwaanou" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_milk_n_rel" ].
+
+sushi := NON-HUMAN-noun-lex &
+  [ STEM < "sushi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sushi_n_rel" ].
+
+si := NON-HUMAN-noun-lex &
+  [ STEM < "si" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_war_n_rel" ].
+
+;;; Case-marking adpositions
+
+nom-marker := case-marking-adp-lex &
+  [ STEM < "ka" >,
+    SYNSEM.LOCAL.CAT.HEAD.CASE sub ].
+
+acc-marker := case-marking-adp-lex &
+  [ STEM < "kou" >,
+    SYNSEM.LOCAL.CAT.HEAD.CASE obj ].
+
+;;; Verbs
+
+hpyi := INTRANS-verb-lex &
+  [ STEM < "hpyi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_happen_v_rel" ].
+
+thau := TRANS-verb-lex &
+  [ STEM < "thau" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_drink_v_rel" ].
+
+hpya := TRANS-verb-lex &
+  [ STEM < "hpya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cut_v_rel" ].
+
+;;; Determiners
+
+di := DET-determiner-lex &
+  [ STEM < "di" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+
+la := qpart-lex-item &
+  [ STEM < "la" > ].
