@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Burmese
 ;;; created at:
-;;;     Fri Jan 17 09:43:22 UTC 2014
+;;;     Fri Jan 17 21:53:03 UTC 2014
 ;;; based on Matrix customization system version of:
 ;;;     Thu Oct 10 18:49:17 UTC 2013
 ;;;
@@ -18,12 +18,11 @@ non-mod-lex-item := lex-item &
 ;;; Matrix Type Addenda
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
-head :+ [ ISHUMAN bool ].
-
 +np :+ [ CASE case ].
 
 png :+ [ PER person,
-    NUM number ].
+    NUM number,
+    GEND gender ].
 
 basic-head-comp-phrase :+ [ SYNSEM.LOCAL.CAT.MC #mc,
     HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
@@ -38,9 +37,9 @@ basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
 ;;; Case
 
 case := *top*.
-sub := case.  ; subjective
-obj := case.  ; objective
-gen := case.  ; genitive
+SUB := case.  ; SUB
+OBJ := case.  ; OBJ
+GEN := case.  ; GEN
 
 ;;; Person
 
@@ -54,6 +53,12 @@ person := *top*.
 number := *top*.
 singular := number.
 plural := number.
+
+;;; Gender
+
+gender := *top*.
+human := gender.
+non-human := gender.
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Types
@@ -69,9 +74,11 @@ noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item & non-mod-lex-ite
                            SPEC < > ],
     ARG-ST < #spr > ].
 
-PN-HUMAN-noun-lex := noun-lex.
+PN-HUMAN-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND human ].
 
-NON-HUMAN-noun-lex := noun-lex.
+NON-HUMAN-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND non-human ].
 
 ;;; Verbs
 
@@ -97,19 +104,19 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
                                  COMPS < > ],
                            HEAD +np ] ] > ].
 
-sub-intransitive-verb-lex := intransitive-verb-lex &
+SUB-intransitive-verb-lex := intransitive-verb-lex &
   [ ARG-ST.FIRST.LOCAL.CAT.HEAD +np &
-                                [ CASE sub ] ].
+                                [ CASE SUB ] ].
 
-sub-obj-transitive-verb-lex := transitive-verb-lex &
+SUB-OBJ-transitive-verb-lex := transitive-verb-lex &
   [ ARG-ST < [ LOCAL.CAT.HEAD +np &
-                              [ CASE sub ] ],
+                              [ CASE SUB ] ],
              [ LOCAL.CAT.HEAD +np &
-                              [ CASE obj ] ] > ].
+                              [ CASE OBJ ] ] > ].
 
-INTRANS-verb-lex := sub-intransitive-verb-lex.
+INTRANS-verb-lex := SUB-intransitive-verb-lex.
 
-TRANS-verb-lex := sub-obj-transitive-verb-lex.
+TRANS-verb-lex := SUB-OBJ-transitive-verb-lex.
 
 ;;; Others
 

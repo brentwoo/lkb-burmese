@@ -13,6 +13,10 @@ ceno := PN-HUMAN-noun-lex &
   [ STEM < "ceno" >,
     SYNSEM.LKEYS.KEYREL.PRED "_I_n_rel" ].
 
+kou%3Dei%3A := PN-HUMAN-noun-lex &
+  [ STEM < "kou=ei:" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_name_n_rel" ].
+
 myeyeise := NON-HUMAN-noun-lex &
   [ STEM < "myeyeise" >,
     SYNSEM.LKEYS.KEYREL.PRED "_lawnmower_n_rel" ].
@@ -36,12 +40,17 @@ si := NON-HUMAN-noun-lex &
 ;;; Case-marking adpositions
 
 nom-marker := case-marking-adp-lex &
-  [ STEM < "ka" >,
-    SYNSEM.LOCAL.CAT.HEAD.CASE sub ].
+  [ STEM < "ka%" & "ha" >,
+    SYNSEM.LOCAL.CAT.HEAD.CASE SUB ].
 
 acc-marker := case-marking-adp-lex &
-  [ STEM < "kou" >,
-    SYNSEM.LOCAL.CAT.HEAD.CASE obj ].
+  [ STEM < "kou" & "%" >,
+    SYNSEM.LOCAL [ CONT.HOOK.INDEX.PNG.GEND human,
+                   CAT.HEAD.CASE OBJ ] ].
+
+GEN-marker := case-marking-adp-lex &
+  [ STEM < "%" & "ye%" >,
+    SYNSEM.LOCAL.CAT.HEAD.CASE GEN ].
 
 ;;; Verbs
 
@@ -56,6 +65,10 @@ thau := TRANS-verb-lex &
 hpya := TRANS-verb-lex &
   [ STEM < "hpya" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cut_v_rel" ].
+
+tha- := TRANS-verb-lex &
+  [ STEM < "tha-" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_kill_v_rel" ].
 
 ;;; Determiners
 

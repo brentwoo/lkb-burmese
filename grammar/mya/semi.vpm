@@ -46,3 +46,8 @@ PNG.NUM : PNG.NUM
   singular <> singular
   plural <> plural
   * <> !
+
+PNG.GEND : PNG.GEND
+  human <> human
+  non-human <> non-human
+  * <> !
