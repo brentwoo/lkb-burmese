@@ -1,0 +1,173 @@
+
+LING 567 - Lab 2
+Sean Wibel
+Partner: Brent Woo
+===================
+
+
+1. Phenomena we have added to the testsuite AND
+2. Choices in customization system
+==================================
+
+
+Word Order
+----------
+
+Burmese is strict SOV word order. Any other word orders are ruled out. We have included examples of intransitive, transitive, and ditransitive verbs. Because of the complicating sentence-final particles described in section 5, every sentence in the test suite is in the form of a quesition, which is easily handled by the questionaire. 
+
+#3 Intransitive question
+Source: a:251
+Vetted: s
+Judgment: g
+Phenomena: wo
+si hpyi la
+si hpyi la
+war happen Q
+`War happens?'
+
+Here is an example of a question with a transitive verb.
+
+# 11 Transitive neutral
+Source: a:260
+Vetted: s
+Judgment: g
+Phenomena: wo
+myeyeise ka mye kou hpya la
+myeyeise ka mye kou hpya la
+lawnmower NOM grass ACC cut Q
+`The lawnmover cuts the grass?'
+
+The testsuite includes example of other word orders, which are all vetted and ungrammatical. 
+
+Here is an example of a question with a ditransitive verb.
+
+# 20 Ditransitive neutral - good S-DO-IO-V
+Source: author
+Vetted: t
+Judgment: g
+Phenomena: wo
+nin mye kou hlee po tin la
+nin mye kou hlee po tin la
+You grass OBJ cart on put Q
+`You put the grass on the cart?' 
+
+With subject-direct object-indirect object-verb order.
+
+We also have examples of determiner-noun word order:
+
+ceno di sushi sa la
+ceno di sushi sa la
+I this sushi eat Q
+`I eat this sushi?'
+
+The questionaire choices were straightforward: SOV, Det-Noun determiner order. 
+
+Pronouns
+--------
+
+Our main source did not include an explicit table for pronouns. Another source did, but only included the singular forms below:
+
+1sg	nga
+1sg-polite-m	ceno
+1sg-polite-f	cema
+2sg	nin
+3sg	thu
+
+These are represented in our testsuite. The first-singular pronouns have variants used in polite contexts, and a certain one is used if the speaker is male and another if the speaker is female. This last fact has not been restricted by the grammar.
+
+We did choose to answer the "matrix Y/N questions" section, as all the sentences in our testsuite are questions.
+
+Case and Gender
+---------------
+There are two main cases in Burmese, subjective and objective. Marking nouns
+for the subjective case is optional, but can be marked by the postpositions
+/ka./ or /ha/, depending on discourse context.
+
+An example of a subjective NP without a case marker is given above in the
+intransitive verb example, `War happens?'
+
+
+The objective case must be marked for 'human' NPs with a creaky tone on the NP
+and the optional post-position /kou/. 'Non-human' NPs objects, however
+are not marked for objective case.
+
+A grammatical example of a human-object with both creaky and /kou/ case markers:
+
+# 30 Human-OBJ, +_creaky +kou
+Source: a:99
+Vetted: s
+Judgement: g
+Phenomena: case
+thu ka_creaky tin_tin _creaky   kou tha_ la
+thu ka_creaky tin_tin _creaky   kou tha_ la
+3P  SUB       TinTin  OBJ        OBJ kill Q
+`He killed TinTin?`
+
+And an ungrammatical example without the creaky:
+
+# 31 Human-OBJ, +kou
+Source: a:99
+Vetted: s
+Judgement: u
+Phenomena: case
+thu ka_creaky kou_ei: kou tha_ la
+thu ka_creaky kou_ei: kou tha_ la
+3P  SUB       KoAye   OBJ kill Q
+`He killed Ko Aye?'
+
+
+There are two genders that effect case marking: human and non-human.
+
+
+3. Lang properties in test suite but NOT grammar
+=================================================
+
+Our testsuite is fairly comprehensive over the requested phenomena in lab 2. We would obviously like to account for simple declarative sentences, but further analysis of their grammatical status is required.
+
+4. Coverage of grammar over the testsuite
+==========================================
+
+Coverage profile overall coverage: 40.0%
+Overgeneration profile overall coverage: 0.0%
+
+The only sentences that parsed were those which did NOT attempt to use
+the case-marking postpositions. It gave the errors pasted below, which
+I am about to also post to GoPost. (The grammar still compiles, which is
+why we didn't notice before.)
+
+"""
+Unifications specified are invalid or do not unify
+Structure for GEN-MARKER could not be created
+
+No feature structure for GEN-MARKER
+
+Warning: LA has no semantics and no filter rule
+Unifications specified are invalid or do not unify
+Structure for ACC-MARKER could not be created
+
+No feature structure for ACC-MARKER
+
+Unifications specified are invalid or do not unify
+Structure for NOM-MARKER could not be created
+
+No feature structure for NOM-MARKER
+"""
+
+
+5. Customization system unable to cope with properties
+======================================================
+
+Sentence-final mood particles
+-----------------------------
+
+Burmese requires at the end of every clause, independent or dependent, a particle marking its force. Even simple declarative matrix sentences require this particle 'te', noted as PUNC (punctative) or RLS (realis mood) in the gloss.
+
+si hpyi te
+war happen RLS
+`War happens.' (or, `War broke out.')
+
+Instead, pending further study of the nature of these final particles, we decided to represent every sentence as a matrix yes/no question, and answered the questionaire accordingly. 
+
+si hpyi la
+war happen Q
+`War happens?'

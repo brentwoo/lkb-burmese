@@ -1,0 +1,214 @@
+#PLU - plural
+#PUNC - punctative
+#RLS - realis
+
+Language: Burmese
+Language code: mya
+Lines: orth translit-seg gloss translat
+Author: Wibel, Sean and Brent Woo
+Date: January 17, 2014
+Source a: Soe, Myint. 1999. A Grammar of Burmese
+
+#1 Intransitive example
+
+#e.=the twei yau’ pi
+#guest PLU reach PUNC
+#‘The guests have arrived’ (244$18)
+
+#yan-koun yau’ pi
+#Rangoon reach PUNC
+#We have reached Rangoon. (244$20)
+
+#3 Intransitive question
+Source: a:251
+Vetted: s
+Judgment: g
+Phenomena: wo
+si hpyi la
+si hpyi la
+war happen Q
+`War happens?.'
+#si’ hpyi’ te
+#war happen RLS
+#‘War broke out.’ (251$68)
+
+
+#Transitive
+#==========
+
+
+# 10 Transitive neutral
+Source: a:177
+Vetted: s
+Judgment: g
+Phenomena: wo
+thu nwaanou thau la 
+thu nwaanou thau la
+he milk drink Q
+`He drinks milk?'
+
+# 11 Transitive neutral
+Source: a:260
+Vetted: s
+Judgment: g
+Phenomena: wo
+myeyeise ka_creaky mye kou hpya la
+myeyeise ka_creaky mye kou hpya la
+lawnmower SUB grass OBJ cut Q
+`The lawnmover cuts the grass?'
+
+# 12 Transitive neutral
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: wo
+ceno di sushi sa la
+ceno di sushi sa la
+I this sushi eat Q
+`I eat sushi?'
+
+###############
+# BAD entries #
+###############
+
+# 13 Transitive neutral - bad SVO
+Source: author
+Vetted: t
+Judgment: u
+Phenomena: wo
+myeyeise ka_creaky hpya mye kou la
+myeyeise ka_creaky hpya mye kou la
+lawnmower SUB cut grass OBJ Q
+`The lawnmover cuts the grass?'
+
+# 14 Transitive neutral - bad VOS
+Source: author
+Vetted: t
+Judgment: u
+Phenomena: wo
+hpya mye kou myeyeise ka_creaky la
+hpya mye kou myeyeise ka_creaky la
+cut grass OBJ lawnmower SUB Q
+`The lawnmover cuts the grass?'
+
+# 15 Transitive neutral - bad VSO
+Source: author
+Vetted: t
+Judgment: u
+Phenomena: wo
+hpya myeyeise ka_creaky mye kou la
+hpya myeyeise ka_creaky mye kou la
+cut lawnmower SUB grass OBJ Q
+`The lawnmover cuts the grass?'
+
+# 16 Transitive neutral - bad OSV
+Source: author
+Vetted: t
+Judgment: u
+Phenomena: wo
+mye kou myeyeise ka_creaky hpya la
+mye kou myeyeise ka_creaky hpya la
+grass OBJ lawnmower SUB cut Q
+`The lawnmover cuts the grass?'
+
+# 16 Transitive neutral - bad OVS
+Source: author
+Vetted: t
+Judgment: u
+Phenomena: wo
+mye kou hpya myeyeise ka_creaky la
+mye kou hpya myeyeise ka_creaky la
+grass OBJ lawnmower SUB cut Q
+`The lawnmover cuts the grass?'
+
+#mye’=yei’=se’	a-thi’	ka	mye’	yain:	twei	kou	hpya’	nain	te
+#grass=cut=machine new	SUB	grass	wild	PLU	OBJ	cut	can	RLS
+#‘The new lawnmover can cut the wild grass.’ (260$18)
+
+#Ditransitive
+#============
+
+# 20 Ditransitive neutral - good S-DO-IO-V
+#Source: author
+#Vetted: t
+#Judgment: g
+#Phenomena: wo
+#nin mye kou hlee po tin la
+#nin mye kou hlee po tin la
+#I grass OBJ cart on put Q
+#`You put the grass on the cart?' 
+#(272$67)
+
+#DO-IO-V
+
+#thuza.	kou	nga	hywei	le’=nka’	yaun:	lai’	te
+#name	to	I	gold	bangle		sell	away	RLS
+#‘I sold Thuza the gold bangle.’ (278$92)
+#IO-S-DO-V
+
+#nga.	kou	touhyi	ka	ja-an	zaga:	thin	pei:	te
+#I	OBJ	Toshi	SUB	Japan	speech	teach	give	RLS
+#‘Toshi taught me Japanese.’ (279$99)
+#IO-S-DO-V
+
+
+############
+# Pronouns #
+############
+
+# 2014-01-17 BPW - I only have source for singular versions:
+#
+#1sg	nga
+#1sg-polite-m	ceno
+#1sg-polite-f	cema
+#2sg	nin
+#3sg	thu
+
+
+# Case
+#############
+
+#  noun-nom-ka_creaky intrans-verb
+
+# 30 Human-OBJ, +_creaky +kou
+Source: a:99
+Vetted: s
+Judgement: g
+Phenomena: case
+thu ka_creaky tin_tin _creaky   kou tha_ la
+thu ka_creaky tin_tin _creaky   kou tha_ la
+3P  SUB       TinTin  OBJ        OBJ kill Q
+`He killed TinTin?`
+
+# 31 Human-OBJ, +kou
+Source: a:99
+Vetted: s
+Judgement: u
+Phenomena: case
+thu ka_creaky kou_ei: kou tha_ la
+thu ka_creaky kou_ei: kou tha_ la
+3P  SUB       KoAye   OBJ kill Q
+`He killed Ko Aye?'
+
+#######
+# BAD #
+#######
+# Case
+#############
+
+# 32 Human object - bad no _creaky or kou
+Source: a:99
+Vetted: s
+Judgement: u
+Phenomena: case
+thu ka_creaky tin_tin tha_ la
+thu ka_creaky tin_tin tha_ la
+3P  SUB TinTin  kill Q
+`He killed Tin Tin?'
+
+
+#  *noun-acc intrans verb
+#  ?noun-nom noun-acc-human-kou trans-verb
+
+#  ?noun-nom noun-acc-nonhuman-_creaky trans-verb
+#  *noun-nom noun-acc-nonhuman-kou trans-verb
