@@ -1,63 +1,79 @@
-#PLU - plural
-#PUNC - punctative
-#RLS - realis
-
 Language: Burmese
 Language code: mya
 Lines: orth translit-seg gloss translat
 Author: Wibel, Sean and Brent Woo
 Date: January 17, 2014
 Source a: Soe, Myint. 1999. A Grammar of Burmese
+Source b: Okell, John. 1969. A Reference Grammar of Colloquial Burmese
 
-#1 Intransitive example
 
-#e.=the twei yau’ pi
-#guest PLU reach PUNC
-#‘The guests have arrived’ (244$18)
 
-#yan-koun yau’ pi
-#Rangoon reach PUNC
-#We have reached Rangoon. (244$20)
+##############
+# Word order #
+##############
 
-#3 Intransitive question
+#1 Intransitive declarative
 Source: a:251
 Vetted: s
 Judgment: g
 Phenomena: wo
+si hpyi te
+si hpyi te
+war happen RLS
+`War broke out.'
+
+#2 Intransitive interr
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: q
 si hpyi la
-si hpyi la
-war happen Q
-`War happens?.'
-#si’ hpyi’ te
-#war happen RLS
-#‘War broke out.’ (251$68)
+war happen RLS
+`Does war happen?'
 
+# Transitive verbs
+#=================
 
-#Transitive
-#==========
-
-
-# 10 Transitive neutral
+#3 Transitive declarative
 Source: a:177
 Vetted: s
 Judgment: g
 Phenomena: wo
+thu nwaanou thau te
+thu nwaanou thau te
+he milk drink RLS
+`He drinks milk.'
+
+#4 Transitive interr
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: q
 thu nwaanou thau la 
 thu nwaanou thau la
 he milk drink Q
 `He drinks milk?'
 
-# 11 Transitive neutral
+#5 Transitive declarative
 Source: a:260
 Vetted: s
 Judgment: g
 Phenomena: wo
+myeyeise ka_creaky mye kou hpya te
+myeyeise ka_creaky mye kou hpya te
+lawnmower SUB grass OBJ cut RLS
+
+#6 Transitive interr
+Source: elicited 
+Vetted: t
+Judgment: g
+Phenomena: q
 myeyeise ka_creaky mye kou hpya la
 myeyeise ka_creaky mye kou hpya la
 lawnmower SUB grass OBJ cut Q
 `The lawnmover cuts the grass?'
 
-# 12 Transitive neutral
+# 7 Transitive decl
 Source: elicited
 Vetted: t
 Judgment: g
@@ -67,58 +83,57 @@ ceno di sushi sa la
 I this sushi eat Q
 `I eat sushi?'
 
-###############
-# BAD entries #
-###############
+# BAD transitives
+#================
 
-# 13 Transitive neutral - bad SVO
+# 8 Transitive neutral - bad SVO
 Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-myeyeise ka_creaky hpya mye kou la
-myeyeise ka_creaky hpya mye kou la
-lawnmower SUB cut grass OBJ Q
+myeyeise ka_creaky hpya mye kou te
+myeyeise ka_creaky hpya mye kou te
+lawnmower SUB cut grass OBJ RLS
 `The lawnmover cuts the grass?'
 
-# 14 Transitive neutral - bad VOS
+# 9 Transitive neutral - bad VOS
 Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-hpya mye kou myeyeise ka_creaky la
-hpya mye kou myeyeise ka_creaky la
-cut grass OBJ lawnmower SUB Q
+hpya mye kou myeyeise ka_creaky te
+hpya mye kou myeyeise ka_creaky te
+cut grass OBJ lawnmower SUB RLS
 `The lawnmover cuts the grass?'
 
-# 15 Transitive neutral - bad VSO
+# 10 Transitive neutral - bad VSO
 Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-hpya myeyeise ka_creaky mye kou la
-hpya myeyeise ka_creaky mye kou la
-cut lawnmower SUB grass OBJ Q
+hpya myeyeise ka_creaky mye kou te
+hpya myeyeise ka_creaky mye kou te
+cut lawnmower SUB grass OBJ RLS
 `The lawnmover cuts the grass?'
 
-# 16 Transitive neutral - bad OSV
+# 11 Transitive neutral - bad OSV
 Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-mye kou myeyeise ka_creaky hpya la
-mye kou myeyeise ka_creaky hpya la
-grass OBJ lawnmower SUB cut Q
+mye kou myeyeise ka_creaky hpya te
+mye kou myeyeise ka_creaky hpya te
+grass OBJ lawnmower SUB cut RLS
 `The lawnmover cuts the grass?'
 
-# 16 Transitive neutral - bad OVS
+# 12 Transitive neutral - bad OVS
 Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-mye kou hpya myeyeise ka_creaky la
-mye kou hpya myeyeise ka_creaky la
-grass OBJ lawnmower SUB cut Q
+mye kou hpya myeyeise ka_creaky te
+mye kou hpya myeyeise ka_creaky te
+grass OBJ lawnmower SUB cut RLS
 `The lawnmover cuts the grass?'
 
 #mye’=yei’=se’	a-thi’	ka	mye’	yain:	twei	kou	hpya’	nain	te
@@ -128,7 +143,9 @@ grass OBJ lawnmower SUB cut Q
 #Ditransitive
 #============
 
-# 20 Ditransitive neutral - good S-DO-IO-V
+# 2014-01-23 BPW - (b:126) "the relative order of complements before verb head is not fixed, even when the complements are not marked" > example given is "send the parcel to Rangoon tomorrow" where "parcel" "Rangoon" "tomorrow" are presented as grammatical in all permutations, as long as "send" is final.
+
+# 13 Ditransitive neutral - good S-DO-IO-V
 #Source: author
 #Vetted: t
 #Judgment: g
@@ -151,19 +168,421 @@ grass OBJ lawnmower SUB cut Q
 #‘Toshi taught me Japanese.’ (279$99)
 #IO-S-DO-V
 
+################
+# Tense/Aspect #
+################
+
+# Tense
+#=========
+
+# 2014-01-23 BPW - (a:124) "time reference is recovered from the context of situation". There are no explicit tense markers. The meanings of the various sentence-final particles, which are considered to encode "realis" "irrealis" "punctative/change of state", etc., coincide somewhat with our notion of tense.
+# te = realis (RLS); non-future; habitual; past; generic events
+# me = irrealis (IRR); future;  
+
+# realis/past/present declarative
+Source: a:131
+Vetted: s
+Judgment: g
+Phenomena: tam
+maunmaun hseilei thau te
+maunmaun hseilei thau te
+MaungMaung cigarette drink RLS
+`MaungMaung smoked/smokes cigarettes.'
+
+# irrealis/future declarative
+Source: a:132
+Vetted: s
+Judgment: g
+Phenomena: tam
+thu di hsei thau me
+thu di hsei thau me
+he this medicine drink IRR
+`He will take this medicine.'
+
+# punctative/change-of-state declarative
+Source: a:134
+Vetted: s
+Judgment: g
+Phenomena: tam
+nga htamin hce pi
+nga htamin hce pi
+I rice cook PUNC
+`I have started to cook rice.'
+
+# Aspect
+#=========
+
+# 2014-01-23 BPW - Burmse DOES have (optional) post-verbal auxiliaries that mark aspect!! thei/oun/to occupy the same slot.  
+
+# oun = cumulative (CML); sometimes glossed as "still"; Requires: affirmative, future, declarative
+# thei = " "; sometimes "(not) yet"; Requires: non-future, declarative. (affirmative OR negative!)
+
+# affirmative
+Source: a:137
+Vetted: s
+Judgment: g
+Phenomena: tam
+nga patala ti oun me
+nga patala ti oun me
+I xylophone play CML IRR
+`Ill go on playing the xylophone.'
+
+# thei can be negative
+Source: a:137
+Vetted: s
+Judgment: g
+Phenomena: tam
+nga patala ma ti thei hpu
+nga patala ma ti thei hpu
+I xylophone NEG play CML RLS
+`I wont play the xylophone yet.'
+
+# thei can also be positive
+Source: a:139
+Vetted: s
+Judgment: g
+Phenomena: tam
+saun ti thei te
+saun ti thei te
+harp play CML RLS
+`I had been playing the harp.'
+
+# BAD - thei must not be future
+Source: a:139
+Vetted: s
+Judgment: u
+Phenomena: tam
+saun ti thei me
+saun ti thei me
+harp play CML IRR
+`I will still play the harp.???'
+
+
+# BAD oun must be in affirmative 
+Source: a:138
+Vetted: s
+Judgment: u
+Phenomena: tam
+ma sa oun me
+ma sa oun me
+NEG eat CML RLS.fut
+`(I) wont eat yet.'
+
+# BAD oun must be future
+Source: a:138
+Vetted: s
+Judgment: u
+Phenomena: tam
+sa oun te
+sa oun te
+eat CML RLS.nonfut
+`(I) still eat.'
+
+#-------------------------------------------
+
+# to = culminative (CLM); puts in opposition a non-event and event. so going from nothing to doing something, or v.v.; glossed as "now" or "anymore"
+
+# affirmative to
+Source: a:140
+Vetted: s
+Judgment: g
+Phenomena: tam
+sa to me
+sa to me
+eat CLM IRR
+`Ill eat now.'
+
+# negative to
+Source: a:140
+Vetted: s
+Judgment: g
+Phenomena: tam
+ma sa to hpu
+ma sa to hpu
+NEG eat CLM RLS
+`I wont eat anymore.'
+
+# presumably to cannot occur with nonfuture particle
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: tam
+sa to te
+sa to te
+eat CLM RLS
+`Ill eat now.'
+
+
+
+
+
+
+#############
+# Agreement #
+#############
+
+# 2014-01-23 BPW - Burmese doesn't show person, number, case, gender, determiner, adjective, etc. agreement. One possible case of agreement, shown below, is the negative sentence particles mentioned in the Negation section.
+
+# agreeing sentence particles
+Source: elicited
+Vetted: t
+Judgment: g 
+Phenomena: agr
+lwin di sushi ma sa hpu
+lwin di sushi ma sa hpu
+Lwin this sushi NEG eat RLS.NEG
+`Lwin doesnt eat this sushi.'
+
+# BAD agreeing sentence particles
+Source: elicited
+Vetted: t
+Judgment: u 
+Phenomena: agr
+lwin di sushi ma sa te
+lwin di sushi ma sa te
+Lwin this sushi NEG eat RLS
+`Lwin doesnt eat this sushi.'
+
+############
+# Negation #
+############
+
+# 2014-01-22 BPW - negation is achieved with a negative particle 'ma' prefixed to the verb. Sentences with negative polarity REQUIRE a negative verb-clause marker, one of the following. Independent clause: hpu (informative), ne (imperative). Dependent clause: hpe ("without"), hkin ("before"), mahcin ("between")
+# 2014-01-23 BPW - hpu is omitted in subordinate clauses. ma is omitted in "extremely informal speech" (a:144)
+
+# affirmative present habitual
+Source: a:145
+Vetted: s
+Judgment: g
+Phenomena: neg
+tinhpei aye thau tha la
+tinhpei aye thau tha la
+TinPei liquor drink RLS Q
+`Does TinPe drink alcohol?'
+
+# negative present habitual
+Source: a:146
+Vetted: s
+Judgment: g
+Phenomena: neg
+tinhpei aye ma thau hpu 
+tinhpei aye ma thau hpu
+TinPe liquor NEG drink RLS
+`TinPe doesnt drink alcohol.'
+
+# negative interrogative
+Source: a:149
+Vetted: s
+Judgment: g
+Phenomena: neg
+thu aye ma thau hpu la
+thu aye ma thau hpu la
+he liquor NEG drink RLS Q
+`Doesnt/wont he drink alcohol?'
+
+# 25a - negative informative
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: neg
+lwin di sushi ma sa hpu
+lwin di sushi ma sa hpu
+Lwin this sushi not eat RLS
+`Lwin does not eat this sushi.'
+
+# 25b - BAD negative informative
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: neg
+lwin di sushi ma sa
+lwin di sushi ma sa
+Lwin this sushi not eat
+`Lwin does not eat this sushi.'
+
+# 25c - BAD negative informative
+# recall, 'hpu' requires negative sentence polarity
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: neg
+lwin di sushi sa hpu
+lwin di sushi sa hpu
+Lwin this sushi eat RLS
+`Lwin does not eat this sushi.'
+
+# 25d - BAD negative informative
+# ma must go before verb
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: neg
+lwin di sushi sa ma hpu
+lwin di sushi sa ma hpu
+Lwin this sushi eat not RLS
+`Lwin does not eat this sushi.'
+
+# 25e - BAD negative informative
+# negative sentences cannot take positive sentence particles
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: neg
+lwin di sushi sa ma te
+lwin di sushi sa ma te
+Lwin this sushi not eat RLS
+`Lwin does not eat this sushi.'
+
+# 26a - negative imperative
+Source: b:170
+Vetted: s
+Judgment: g
+Phenomena: imp
+ma la ne
+ma la ne
+not come IMP
+`Dont come.'
 
 ############
 # Pronouns #
 ############
 
 # 2014-01-17 BPW - I only have source for singular versions:
+# 2014-01-23 BPW - Source B (Okell) also lists only singular versions. Will consult.
+#
+# pol = polite; 1m/1f = speaker gender; m/f = referent gender
 #
 #1sg	nga
-#1sg-polite-m	ceno
-#1sg-polite-f	cema
+#1sg.pol.1m	ceno
+#1sg.pol.1f	cema
 #2sg	nin
-#3sg	thu
+#3sg.m	thu
+#3sg.f  thuma
 
+# pronoun examples
+Source: author
+Vetted: t
+Judgment: g
+Phenomena: pn
+nga sa te
+nga sa te
+I eat RLS
+`I eat.'
+
+# pronoun examples
+Source: author
+Vetted: t
+Judgment: g
+Phenomena: pn
+nin sa te
+nin sa te
+you eat RLS
+`You eat.'
+
+# pronoun examples
+Source: author
+Vetted: t
+Judgment: g
+Phenomena: pn
+thu sa te
+thu sa te
+he eat RLS
+`He eats.'
+
+########################
+# Argument Optionality #
+########################
+
+# 2014-01-23 BPW - subjects are frequently dropped. Burmese has no verb morphology to hint at the dropped subject either.
+
+# full sentence.
+Source: b:131
+Vetted: s
+Judgment: g
+Phenomena: pro-d
+nga se yaun te
+nga se yaun te
+I machine sell RLS
+`I sold the machine.'
+
+# S-drop
+Source: b:131
+Vetted: s
+Judgment: g
+Phenomena: pro-d
+se yaun te
+se yaun te
+machine sell RLS
+`(?) sold the machine.'
+
+# O-drop?
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pro-d
+nga yaun te
+nga yaun te
+I sell RLS
+`I sold (?).' 
+
+##################
+# Demonstratives #
+##################
+
+# 2014-01-23 BPW - (b:101) called "selectives"
+# di = `here, this' proximal
+# hou = `there, that' distal
+# be = `where? which?'
+
+# demonstratives 
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cogst
+di sitha cou hse te
+di sitha cou hse te
+this soldier rope pull RLS
+`This soldier pulls the rope.'
+
+# demonstratives 
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cogst
+hou sitha cou hse te
+hou sitha cou hse te
+that soldier rope pull RLS
+`That soldier pulls the rope.'
+
+# bad demonstratives 
+Source: elicited
+Vetted: t
+Judgment: u 
+Phenomena: cogst
+sitha di cou hse te
+sitha di cou hse te
+soldier this rope pull RLS
+`This soldier pulls the rope.'
+
+# bad demonstratives 
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: cogst
+sitha hou cou hse te
+sitha hou cou hse te
+that soldier rope pull RLS
+`That soldier pulls the rope.'
+
+# complex np with number and classifier
+Source: a:44
+Vetted: s
+Judgment: g
+Phenomena: cogst
+hou hkalei thoun yau yankoun yau thwa te
+hou hkalei thoun yau yankoun yau thwa te
+that child three CLF Rangoon reach go RLS
+`Those three children have gone to Rangoon.'
 
 # Case
 #############
