@@ -69,7 +69,7 @@ i_keys = [ 'i-id', 'i-origin', 'i-register', 'i-format', 'i-diff',
 encodings = ('utf-8-sig', 'latin1', 'windows-1251', 'macgreek')
 
 # regexes for testsuite headers and fields
-meta_re = re.compile(r'\s*(Lines|Language|Language code|Author|Date|' +\
+meta_re = re.compile(r'\s*(Lines|Tiers|Language|Language code|Author|Date|' +\
                      r'Source [^:]+)\s*:', flags=re.IGNORECASE|re.UNICODE)
 sources_re = re.compile(r'Source [^:]+\s*:', flags=re.IGNORECASE|re.UNICODE)
 igt_meta_re = re.compile(r'\s*(Source|Judge?ment|Vetted|Phenomen(a|on))\s*:',
@@ -159,32 +159,34 @@ def read_headers(tslines):
     remove_blank_lines(tslines)
 
   err = "Error: testsuite headers should give %s."
-  if not headers['language']:
+  if not headers.get('language'):
     print(err % 'language name',file=sys.stderr)
     sys.exit(1)
   
-  if not headers['language code']:
+  if not headers.get('language code'):
     print(err % 'iso code',file=sys.stderr)
     sys.exit(1)
 
-  if not headers['author']:
+  if not headers.get('author'):
     print(err % 'author name',file=sys.stderr)
     sys.exit(1)
 
-  if not headers['date']:
+  if not headers.get('date'):
     print(err % 'a date',file=sys.stderr)
     sys.exit(1)
 
-  if not headers['lines']:
+  if not (headers.get('lines') or headers.get('tiers')):
     print(err % 'a list of line names',file=sys.stderr)
     sys.exit(1)
 
-  for l in headers['lines'].split():
+  if headers.get('lines'):
+    headers['tiers'] = headers['lines']
+  for l in headers['tiers'].split():
     if not l in blessed_line_names:
       print('The list of line names should be drawn from these '\
              +'predetermined ones: '+str(blessed_line_names))
       print('Found: '+l,file=sys.stderr)
-      print(str(headers['lines']),file=sys.stderr)
+      print(str(headers['tiers']),file=sys.stderr)
       sys.exit(1)
     elif l.endswith('-seg'):
       check_lines.append(l)
@@ -222,7 +224,7 @@ def parse_items(tslines, headers):
 
     # if we get here, we've found the meta, now read the lines
     # print(str(headers['lines'].split()))
-    for l in headers['lines'].split():
+    for l in headers['tiers'].split():
       lines[l] = tslines[0].replace(r'@',r'\s')
       tslines.pop(0)
 
@@ -393,14 +395,19 @@ if __name__ == '__main__':
     print_meta(headers)
 
   items = parse_items(tslines, headers)
+  n_grammatical = 0
   if items == None:
     print("Errors found in testsuite, no output file created.")
   else: 
     try:
       with open(itf, 'w') as out:
         for i in items:
+          if i['i-wf'] == '1': n_grammatical +=1
           out.write(r'@'.join([ i[k] for k in i_keys]))  
           out.write('\n')
     except IOError as e:
       print(str(e))
 
+  if verb:
+    print("created item file with "+str(len(items))+" examples,")
+    print("                       "+str(n_grammatical)+" grammatical.")
