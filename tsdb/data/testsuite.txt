@@ -93,8 +93,8 @@ Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-myeyeise ka_creaky hpya mye kou te
-myeyeise ka_creaky hpya mye kou te
+myeyeise ka hpya mye kou te
+myeyeise ka hpya mye kou te
 lawnmower SUB cut grass OBJ RLS
 `The lawnmover cuts the grass?'
 
@@ -103,8 +103,8 @@ Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-hpya mye kou myeyeise ka_creaky te
-hpya mye kou myeyeise ka_creaky te
+hpya mye kou myeyeise ka te
+hpya mye kou myeyeise ka te
 cut grass OBJ lawnmower SUB RLS
 `The lawnmover cuts the grass?'
 
@@ -113,8 +113,8 @@ Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-hpya myeyeise ka_creaky mye kou te
-hpya myeyeise ka_creaky mye kou te
+hpya myeyeise ka mye kou te
+hpya myeyeise ka mye kou te
 cut lawnmower SUB grass OBJ RLS
 `The lawnmover cuts the grass?'
 
@@ -123,8 +123,8 @@ Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-mye kou myeyeise ka_creaky hpya te
-mye kou myeyeise ka_creaky hpya te
+mye kou myeyeise ka hpya te
+mye kou myeyeise ka hpya te
 grass OBJ lawnmower SUB cut RLS
 `The lawnmover cuts the grass?'
 
@@ -133,8 +133,8 @@ Source: author
 Vetted: t
 Judgment: u
 Phenomena: wo
-mye kou hpya myeyeise ka_creaky te
-mye kou hpya myeyeise ka_creaky te
+mye kou hpya myeyeise ka te
+mye kou hpya myeyeise ka te
 grass OBJ lawnmower SUB cut RLS
 `The lawnmover cuts the grass?'
 
@@ -586,50 +586,759 @@ hou hkalei thoun yau yankoun yau thwa te
 that child three CLF Rangoon reach go RLS
 `Those three children have gone to Rangoon.'
 
-# Case
-#############
 
-#  noun-nom-ka_creaky intrans-verb
 
-# 30 Human-OBJ, +_creaky +kou
-Source: a:99
+
+########################
+# Matrix Y-N questions #
+########################
+
+Source: b:330
 Vetted: s
-Judgement: g
-Phenomena: case
-thu ka_creaky tin_tin _creaky   kou tha_ la
-thu ka_creaky tin_tin _creaky   kou tha_ la
-3P  SUB       TinTin  OBJ        OBJ kill Q
-`He killed TinTin?`
+Judgment: g
+Phenomena: q
+thu caun hci te la
+thu caun hci te la
+he cat like RLS Q
+`Does he like cats?'
 
-# 31 Human-OBJ, +kou
-Source: a:99
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: q
+thu caun hci la te
+thu caun hci la te
+he cat like Q RLS
+`Does he like cats?'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: q
+thu caun la hci te
+thu caun la hci te
+he cat Q like RLS
+`Does he like cats?'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: q
+thu la caun hci te
+thu la caun hci te
+he Q cat like  RLS
+`Does he like cats?'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: q
+la thu caun hci te
+la thu caun hci te
+Q he cat like  RLS
+`Does he like cats?'
+
+# negative question
+# this verb phrase is complex, with two "auxiliaries" and the question particle, negation, etc.
+Source: b:328
 Vetted: s
-Judgement: u
-Phenomena: case
-thu ka_creaky kou_ei: kou tha_ la
-thu ka_creaky kou_ei: kou tha_ la
-3P  SUB       KoAye   OBJ kill Q
-`He killed Ko Aye?'
+Judgment: g
+Phenomena: q
+miyahta hsai ma la thei hpu la
+miyahta hsai ma la thei hpu la
+train arrive not come CML RLS Q
+`Hasn't the train come in yet?'
 
-#######
-# BAD #
-#######
-# Case
-#############
-
-# 32 Human object - bad no _creaky or kou
-Source: a:99
+Source: b:329
 Vetted: s
-Judgement: u
-Phenomena: case
-thu ka_creaky tin_tin tha_ la
-thu ka_creaky tin_tin tha_ la
-3P  SUB TinTin  kill Q
-`He killed Tin Tin?'
+Judgment: g
+Phenomena: q
+thu-meinma hko ma la hpu la
+thu-meinma hko ma la hpu la
+he-wife bring not come RLS Q
+`Won't (he) bring his wife?'
+
+################
+# Coordination #
+################
+
+# appears to be only nouns and adjectives?
+#
+# lots of patterns here!
+# markers are (allomorph in parens)
+#
+# ne = and, both
+# yo (ko) = and, both
+# ye (ke) = and, for one
+# pa = and, too
+#
+# fairly free patterning.
+# all (1a, 2a, 3a)
+# all but last different (1b, 2b, 3b)
+# all but last zero (1c); only with NE
+# only last but one (1d); only with NE
+#
+# patterns in b:190
+#
+# #X = index for my ref // ABZ = placeholders
+# #1a:	A 	ne 	B 	ne 	...		Z 	ne
+# #1b:	A 	ne 	B 	ne 	...		Z 	pa
+# #1c:	A 	ne 	B 	ne 	...		Z
+# #1d:	A 		B 		Y 	ne 	Z
+# 
+# #2a:	A 	yo 	B 	yo 	...		Z yo
+# #2b:	A 	yo 	B 	yo 	...		Z pa
+# 
+# #3a:	A 	ye 	B 	ye 	...		Z ye
+# #3b: 	A 	ye 	B 	ye 	...		Z yene
+#
+# #4 :	A 		B 		...		z 		(no marking)
+#
+#
+# there are separate coordinative particles when royalty or clergy are concerned.
+# separate particles for written speech too. 'hni'
 
 
-#  *noun-acc intrans verb
-#  ?noun-nom noun-acc-human-kou trans-verb
 
-#  ?noun-nom noun-acc-nonhuman-_creaky trans-verb
-#  *noun-nom noun-acc-nonhuman-kou trans-verb
+# pattern 1a
+# Source: b:368
+# I made sentences out of the coordinated phrases given in the text
+Source: author
+Vetted: t
+Judgment: g
+Phenomena: crd
+nyunt ne lwin ne maunmaun ne htamin sa me
+nyunt ne lwin ne maunmaun ne htamin sa me
+name and name and name and rice eat RLS
+`Nyunt, Lwin, and Maunmaun will eat rice.'
+
+# pattern 1b
+# pa is "too"
+Source: b:190
+Vetted: s
+Judgment: g
+Phenomena: crd
+lwin ne nyunt ne aung pa htamin sa me
+lwin ne nyunt ne aung pa htamin sa me
+name and name and name and rice eat RLS
+`Lwin, Nyunt, and Aung will eat rice.'
+
+
+# pattern 1c / 1d
+# ne is separate word
+# marginal without prosodic break
+# ngayou; jin ne hsa
+Source: b:368
+Vetted: s
+Judgment: g
+Phenomena: crd
+ngayou jin ne hsa
+ngayou jin ne hsa
+chili ginger and salt
+`chili, ginger, and salt'
+
+# pattern 1d
+# marginal without prosodic break
+Source: b:190
+Vetted: s
+Judgment: g
+Phenomena: crd
+thithatoun ama apya ne ahyei
+thithatoun ama apya ne ahyei
+woodplank hard flat and long
+`hard, flat, and long plank of wood'
+
+# pattern 2a
+# yo is with nominalized verbs
+# 
+# awin ne ahtwe
+# **** awin ne ahtwe ne
+#
+Source: b:471
+Vetted: s
+Judgment: g
+Phenomena: crd
+awin yo ahtwe yo
+awin yo ahtwe yo
+entry and exit and
+`entry and exit'
+
+# BAD pattern 1a - 'yo' is the only one with nominalized verbs, those that start with 'a'
+Source: eliticed
+Vetted: t
+Judgment: g
+Phenomena: crd
+awin ne ahtwe ne
+awin ne ahtwe ne
+entry and exit and
+`entry and exit'
+
+# pattern 2b
+# out
+Source: b:471
+Vetted: s
+Judgment: g
+Phenomena: crd
+bamapyei-ka yo youdaya-ka yo eindiya-ka pa
+bamapyei-ka yo youdaya-ka yo eindiya-ka pa
+Burma-from and Siam-from and India-from and
+`from Burma, Siam, and India (too)'
+
+# pattern 2b
+# good
+Source: b:376
+Vetted: s
+Judgment: g
+Phenomena: crd
+lethama-tei yo kounthe-tei pa te ca te
+lethama-tei yo kounthe-tei pa te ca te
+farmer-PL and trader-PL and attend all RLS
+`Both farmers and traders attended.'
+
+# pattern 3a
+# diglossic 
+# ye/yo/ne good too
+# X hni Y KOU hpei hcin pa te
+# 
+Source: b:459
+Vetted: s
+Judgment: g
+Phenomena: crd
+hsaya ye jun ye hpei hcin pa te
+hsaya ye jun ye hpei hcin pa te
+teacher and name and invite want POL RLS
+`I want to invite John and teacher.'
+
+# pattern 3b
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: crd
+swedi ye lwin ye maunmaun ye ne htamin sa me
+swedi ye lwin ye maunmaun ye ne htamin sa me
+name and name and name and and rice eat RLS
+`Swedi, Lwin, and MaunMaun will eat rice.'
+
+# pattern 4
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: crd
+hmo ngapyothi htamin sa me
+hmo ngapyothi htamin sa me
+mushroom banana rice eat RLS
+`(I) will eat mushroom, banana, and rice.'
+
+
+# several interesting patterns showing the interaction between tense and coordination markers
+# examples with case/"subordination" before/after the coordination
+# etc etc
+
+
+
+
+
+
+# Verbal coordination
+#---------------------
+
+# 2014-01-30 BPW - no such thing, per se? are they "parallel sentences" (b:180) linked by "le"
+
+## lwin thau le thau sa le sa te.
+#
+## thau thau sa sa 
+
+
+# VP/S? coordination
+Source: b:180
+Vetted: s
+Judgment: g
+Phenomena: crd
+dihma le htou te dihma le thwin te
+dihma le htou te dihma le thwin te
+here and withdraw RLS here and deposit RLS
+`Here one can withdraw and deposit.'
+
+# I asked Lwin how to say "Lwin drinks and eats"
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: crd
+lwin thau le thau sa le sa te
+lwin thau le thau sa le sa te
+lwin drink and drink eat and eat RLS
+`Lwin drinks and eats.'
+
+
+
+##########################
+# Attributive adjectives #
+##########################
+
+# =te. prenominal
+#
+# adjectives derived from verbs with the attributive particle te. are prenominal
+#
+# [V    ADJ]
+# [kaun-te.] einci
+# * apya einci
+# [ADJ]
+#
+# 
+# [kaun te.] banana apya
+# banana apya kaun kaun
+#
+# all others after
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: adj
+einci ahaun apya can te
+einci ahaun apya can te
+shirt old blue remain RLS
+`A blue old shirt remains.'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: adj
+einci apya ahaun can te
+einci apya ahaun can te
+shirt blue old remain RLS
+`An old blue shirt remains.'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: adj
+kaun-te. einci apya can te
+kaun-te. einci apya can te
+be.good-ATTRIB shirt blue remain RLS
+`A good blue shirt remains.' 
+
+# BAD
+#------
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: adj
+einci kaun-te. can te 
+einci kaun-te. can te 
+shirt be.good-ATTRIB remain RLS
+`A good shirt remains.'
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: adj
+apya einci can te 
+apya einci can te 
+blue shirt remain RLS
+`A blue shirt remains.'
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: adj
+einci can apya te 
+einci can apya te 
+shirt remain blue RLS
+`A blue shirt remains.'
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: adj
+einci can te apya 
+einci can te apya
+shirt remain RLS blue
+`A blue shirt remains.'
+
+
+
+
+
+###########
+# Adverbs #
+###########
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adv
+ceno htamin sanitaca sa me
+ceno htamin sanitaca sa me
+I rice systematically eat RLS
+`I will eat rice systematically.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adv
+sanitaca ceno htamin sa me
+sanitaca ceno htamin sa me
+systematically I rice eat RLS
+`I will eat rice systematically.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adv
+ceno sanitaca htamin sa me
+ceno sanitaca htamin sa me
+I systematically rice eat RLS
+`I will eat rice systematically.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adv
+ceno htamin sa sanitaca me
+ceno htamin sa sanitaca me
+I rice eat systematically RLS
+`I will eat rice systematically.'
+
+####################
+# Embedded clauses #
+####################
+
+# emb-d
+# thu thei thwa hman / ceno ma thi hpu (preferred)
+# ceno [thu thei thwa hman] ma thi hpu (marked) 
+Source: b:290
+Vetted: s
+Judgment: g
+Phenomena: emb-d
+thei thwa hman ma thi hpu
+thei thwa hman ma thi hpu
+die go that NEG know RLS
+`(I) didn't know that (he) had died.'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: emb-d
+thu thei thwa hman ceno ma thi hpu
+thu thei thwa hman ceno ma thi hpu
+he die go that I NEG know RLS
+`I didn't know that he had died.'
+
+# bad - matrix subj before emb-d
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: emb-d
+ceno thu thei thwa hman ma thi hpu
+ceno thu thei thwa hman ma thi hpu
+I he die go that NEG know RLS
+`I didn't know that he had died.'
+
+# bad - no C
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: emb-d
+thu thei thwa ma thi hpu
+thu thei thwa ma thi hpu
+he die go NEG know RLS
+`(I) didn't know he had died.'
+
+# *1sg anywhere
+# palein is categorized as sentence-final particle
+# emb-q
+Source: b:378
+Vetted: s
+Judgment: g
+Phenomena: emb-q
+ganeinya hsouhma ba thahcinmya palein
+ganeinya hsouhma ba thahcinmya palein
+tonight sing.thing what songs wonder
+`I wonder what songs (they) will sing tonight.'
+
+
+#########################
+# Non-verbal predicates #
+#########################
+
+
+# ADJ
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+di ngapyothi kaun te
+di ngapyothi kaun te
+this banana be.good RLS
+`This banana is good.'
+
+# ADJ-Q
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+di ngapyothi kaun la
+di ngapyothi kaun la
+this banana be.good Q
+`Is this banana good?'
+
+# NP
+Source: b:150
+Vetted: s
+Judgment: g
+Phenomena: cop
+di sitha hsayawun te
+di sitha hsayawun te
+this soldier doctor RLS
+`This soldier is a doctor.'
+
+# NP-Q
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+di sitha hsayawun la
+di sitha hsayawun la
+this soldier doctor Q
+`Is this soldier a doctor?'
+
+# PP
+Source: b:85
+Vetted: s
+Judgment: g
+Phenomena: cop
+cauntha-tei ka bamapyei-ka te 
+cauntha-tei ka bamapyei-ka te 
+student-PL SUBJ Burma-from RLS
+`The students were from Burma.'
+
+# PP-Q
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+cauntha-tei ka bamapyei-ka la 
+cauntha-tei ka bamapyei-ka la 
+student-PL SUBJ Burma-from Q
+`Were the students from Burma?'
+
+
+#########################
+# Information structure #
+#########################
+
+# b:203, "exposure"
+
+# a kind of focus? 
+Source: b:203
+Vetted: s
+Judgment: g
+Phenomena: info
+ceno to ma thaya hpu
+ceno to ma thaya hpu
+I FOC NEG be.pleasant RLS
+`As for me, (it) is not pleasant = I don't like it.'
+
+# different, maybe "emphasis"
+Source: b:203
+Vetted: s
+Judgment: g
+Phenomena: info
+mya to thu-ha mya lesu hpe
+mya to thu-ha mya lesu hpe
+emerald FOC her-thing emerald ring INDEED
+`Hers was certainly an EMERALD ring.'
+
+
+###############
+# Noun phrase #
+###############
+
+#### (DET) CMN-NOUNS
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: det
+hmo can te
+hmo can te
+mushroom remain RLS
+`(A/0) mushroom remains.'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: det
+di hmo can te
+di hmo can te
+this mushroom remain RLS
+`This mushroom remains.'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: det
+hou hmo can te
+hou hmo can te
+that mushroom remain RLS
+`That mushroom remains.'
+
+# bad
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: det
+hmo di can te
+hmo di can te
+mushroom this remain RLS
+`This mushroom remains.'
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: det
+hmo hou can te
+hmo hou can te
+mushroom that remain RLS
+`That mushroom remains.'
+
+#### (*DET) PRONOUN/NAME
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: det
+lwin ei te
+lwin ei te
+lwin sleeps RLS
+`Lwin sleeps.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+di lwin ei te
+di lwin ei te
+this lwin sleeps RLS
+`This Lwin sleeps.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+lwin di ei te
+lwin di ei te
+lwin this sleeps RLS
+`This Lwin sleeps.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: det
+thu ei te
+thu ei te
+he sleeps RLS
+`He sleeps.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+di thu ei te
+di thu ei te
+this he sleeps RLS
+`This he sleeps.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+thu di ei te
+thu di ei te
+he this sleeps RLS
+`This he sleeps.'
+
+
+
+########
+# Case #
+########
+
+
+#sitha  solider
+#hsaya doctor
+#
+#
+# elicited with lwin 2014-01-30
+# yai' = HIT
+#
+# brent kou ceno ka yai te
+# brent kou ceno yai te
+# ceno brent kou yai te
+# * ceno brent yai te
+# ceno banana-kou yai te
+# ceno sushi(-kou) sa me
+
+
+
+
+
+
+
+
+
+#####################################################################
+######################################################################
+# Sean's section. I redid above - BPW
+#######################################
+
+### Case
+##############
+#
+##  noun-nom-ka_creaky intrans-verb
+#
+## 30 Human-OBJ, +_creaky +kou
+#Source: a:99
+#Vetted: s
+#Judgement: g
+#Phenomena: case
+#thu ka_creaky tin_tin _creaky   kou tha_ la
+#thu ka_creaky tin_tin _creaky   kou tha_ la
+#3P  SUB       TinTin  OBJ        OBJ kill Q
+#`He killed TinTin?`
+#
+## 31 Human-OBJ, +kou
+#Source: a:99
+#Vetted: s
+#Judgement: u
+#Phenomena: case
+#thu ka_creaky kou_ei: kou tha_ la
+#thu ka_creaky kou_ei: kou tha_ la
+#3P  SUB       KoAye   OBJ kill Q
+#`He killed Ko Aye?'
+#
+########
+## BAD #
+########
+## Case
+##############
+#
+## 32 Human object - bad no _creaky or kou
+#Source: a:99
+#Vetted: s
+#Judgement: u
+#Phenomena: case
+#thu ka_creaky tin_tin tha_ la
+#thu ka_creaky tin_tin tha_ la
+#3P  SUB TinTin  kill Q
+#`He killed Tin Tin?'
+#
+
+###  *noun-acc intrans verb
+##  ?noun-nom noun-acc-human-kou trans-verb
+#
+##  ?noun-nom noun-acc-nonhuman-_creaky trans-verb
+##  *noun-nom noun-acc-nonhuman-kou trans-verb
+#
