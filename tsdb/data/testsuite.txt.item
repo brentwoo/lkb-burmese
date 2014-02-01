@@ -2,14 +2,14 @@
 2@elicited@@@1@q@si hpyi la@@@@1@3@war happen RLS`Does war happen?'@wibel, sean and brent woo@january 17, 2014
 3@a:177@@@1@wo@thu nwaanou thau te@@@@1@4@he milk drink RLS`He drinks milk.'@wibel, sean and brent woo@january 17, 2014
 4@elicited@@@1@q@thu nwaanou thau la@@@@1@4@he milk drink Q`He drinks milk?'@wibel, sean and brent woo@january 17, 2014
-5@a:260@@@1@wo@myeyeise ka_creaky mye kou hpya te@@@@1@6@lawnmower SUB grass OBJ cut RLS`The lawnmore cuts the grass.'@wibel, sean and brent woo@january 17, 2014
-6@elicited@@@1@q@myeyeise ka_creaky mye kou hpya la@@@@1@6@lawnmower SUB grass OBJ cut Q`The lawnmover cuts the grass?'@wibel, sean and brent woo@january 17, 2014
+5@a:260@@@1@wo@myeyeise ka mye kou hpya te@@@@1@6@lawnmower SUB grass OBJ cut RLS`The lawnmore cuts the grass.'@wibel, sean and brent woo@january 17, 2014
+6@elicited@@@1@q@myeyeise ka mye kou hpya la@@@@1@6@lawnmower SUB grass OBJ cut Q`The lawnmover cuts the grass?'@wibel, sean and brent woo@january 17, 2014
 7@elicited@@@1@wo@ceno di sushi sa la@@@@1@5@I this sushi eat Q`I eat sushi?'@wibel, sean and brent woo@january 17, 2014
 8@author@@@1@wo@myeyeise ka hpya mye kou te@@@@0@6@lawnmower SUB cut grass OBJ RLS`The lawnmover cuts the grass?'@wibel, sean and brent woo@january 17, 2014
-9@author@@@1@wo@hpya mye kou myeyeise ka te@@@@0@6@cut grass OBJ lawnmower SUB RLS`The lawnmover cuts the grass?'@wibel, sean and brent woo@january 17, 2014
-10@author@@@1@wo@hpya myeyeise ka mye kou te@@@@0@6@cut lawnmower SUB grass OBJ RLS`The lawnmover cuts the grass?'@wibel, sean and brent woo@january 17, 2014
-11@author@@@1@wo@mye kou myeyeise ka hpya te@@@@0@6@grass OBJ lawnmower SUB cut RLS`The lawnmover cuts the grass?'@wibel, sean and brent woo@january 17, 2014
-12@author@@@1@wo@mye kou hpya myeyeise ka te@@@@0@6@grass OBJ lawnmower SUB cut RLS`The lawnmover cuts the grass?'@wibel, sean and brent woo@january 17, 2014
+9@author@@@1@wo@hpya mye kou myeyeise ka te@@@@0@6@cut grass OBJ lawnmower SUB RLS`The lawnmover cuts the grass.'@wibel, sean and brent woo@january 17, 2014
+10@author@@@1@wo@hpya myeyeise ka mye kou te@@@@0@6@cut lawnmower SUB grass OBJ RLS`The lawnmover cuts the grass.'@wibel, sean and brent woo@january 17, 2014
+11@author@@@1@wo@mye kou myeyeise ka hpya te@@@@1@6@grass OBJ lawnmower SUB cut RLS`The lawnmover cuts the grass.'@wibel, sean and brent woo@january 17, 2014
+12@author@@@1@wo@mye kou hpya myeyeise ka te@@@@0@6@grass OBJ lawnmower SUB cut RLS`The lawnmover cuts the grass.'@wibel, sean and brent woo@january 17, 2014
 13@a:131@@@1@tam@maunmaun hseilei thau te@@@@1@4@MaungMaung cigarette drink RLS`MaungMaung smoked/smokes cigarettes.'@wibel, sean and brent woo@january 17, 2014
 14@a:132@@@1@tam@thu di hsei thau me@@@@1@5@he this medicine drink IRR`He will take this medicine.'@wibel, sean and brent woo@january 17, 2014
 15@a:134@@@1@tam@nga htamin hce pi@@@@1@4@I rice cook PUNC`I have started to cook rice.'@wibel, sean and brent woo@january 17, 2014
@@ -86,8 +86,8 @@
 86@elicited@@@1@cop@di sitha hsayawun la@@@@1@4@this soldier doctor Q`Is this soldier a doctor?'@wibel, sean and brent woo@january 17, 2014
 87@b:85@@@1@cop@cauntha-tei ka bamapyei-ka te@@@@1@4@student-PL SUBJ Burma-from RLS`The students were from Burma.'@wibel, sean and brent woo@january 17, 2014
 88@elicited@@@1@cop@cauntha-tei ka bamapyei-ka la@@@@1@4@student-PL SUBJ Burma-from Q`Were the students from Burma?'@wibel, sean and brent woo@january 17, 2014
-89@b:203@@@1@info@ceno to ma thaya hpu@@@@1@5@I FOC NEG be.pleasant RLS`As for me, (it) is not pleasant = I don't like it.'@wibel, sean and brent woo@january 17, 2014
-90@b:203@@@1@info@mya to thu-ha mya lesu hpe@@@@1@6@emerald FOC her-thing emerald ring INDEED`Hers was certainly an EMERALD ring.'@wibel, sean and brent woo@january 17, 2014
+89@b:203@@@1@info@ceno to. ma thaya hpu@@@@1@5@I FOC NEG be.pleasant RLS`As for me, (it) is not pleasant = I don't like it.'@wibel, sean and brent woo@january 17, 2014
+90@b:203@@@1@info@mya to. thu-ha mya lesu hpe@@@@1@6@emerald FOC her-thing emerald ring INDEED`Hers was certainly an EMERALD ring.'@wibel, sean and brent woo@january 17, 2014
 91@elicited@@@1@det@hmo can te@@@@1@3@mushroom remain RLS`(A/0) mushroom remains.'@wibel, sean and brent woo@january 17, 2014
 92@elicited@@@1@det@di hmo can te@@@@1@4@this mushroom remain RLS`This mushroom remains.'@wibel, sean and brent woo@january 17, 2014
 93@elicited@@@1@det@hou hmo can te@@@@1@4@that mushroom remain RLS`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014

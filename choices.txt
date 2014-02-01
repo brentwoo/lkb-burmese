@@ -85,8 +85,6 @@ q-part-order=after
 q-part-orth=la
 
 section=info-str
-focus-pos=clause-initial
-  focus-marker1_type=adp
 
 section=arg-opt
 subj-drop=subj-drop-all
@@ -237,7 +235,7 @@ section=lexicon
     aux2_feat1_head=verb
   aux2_subj=np-comp-case
     aux2_compfeature1_name=form
-    aux2_compfeature1_value=finite, nonfinite
+    aux2_compfeature1_value=nonfinite
     aux2_stem1_orth=oun
     aux2_stem1_pred=_cml_v_rel
     aux2_stem2_orth=thei
@@ -249,7 +247,7 @@ section=lexicon
     aux3_feat1_head=verb
   aux3_subj=np-comp-case
     aux3_compfeature1_name=form
-    aux3_compfeature1_value=finite, nonfinite
+    aux3_compfeature1_value=nonfinite
     aux3_stem1_orth=to
     aux3_stem1_pred=_clm_v_rel
   aux4_name=rls-nonfut
@@ -303,10 +301,6 @@ section=lexicon
   adp2_order=after
     adp2_feat1_name=case
     adp2_feat1_value=acc
-  adp7_orth=to
-  adp7_order=after
-    adp7_feat1_name=information-structure meaning
-    adp7_feat1_value=focus
 
 section=morphology
 
@@ -315,7 +309,7 @@ section=toolbox-import
 section=test-sentences
   sentence1_orth=si hpyi la
   sentence2_orth=thu nwaanou thau la
-  sentence3_orth=myeyeisa ka mye kou hpya la
+  sentence3_orth=myeyeise ka mye kou hpya la
   sentence4_orth=nyunt ne lwin ne maunmaun ne htamin sa me
   sentence5_orth=thu caun hci te la
   sentence6_orth=di hmo can te

@@ -12,6 +12,18 @@ Source b: Okell, John. 1969. A Reference Grammar of Colloquial Burmese
 # Word order #
 ##############
 
+#
+#
+# elicited with lwin 2014-01-30
+# yai' = HIT
+#
+# brent kou ceno ka yai te
+# brent kou ceno yai te
+# ceno brent kou yai te
+# * ceno brent yai te
+# ceno banana-kou yai te
+# ceno sushi(-kou) sa me
+
 #1 Intransitive declarative
 Source: a:251
 Vetted: s
@@ -60,8 +72,8 @@ Source: a:260
 Vetted: s
 Judgment: g
 Phenomena: wo
-myeyeise ka_creaky mye kou hpya te
-myeyeise ka_creaky mye kou hpya te
+myeyeise ka mye kou hpya te
+myeyeise ka mye kou hpya te
 lawnmower SUB grass OBJ cut RLS
 `The lawnmore cuts the grass.'
 
@@ -70,8 +82,8 @@ Source: elicited
 Vetted: t
 Judgment: g
 Phenomena: q
-myeyeise ka_creaky mye kou hpya la
-myeyeise ka_creaky mye kou hpya la
+myeyeise ka mye kou hpya la
+myeyeise ka mye kou hpya la
 lawnmower SUB grass OBJ cut Q
 `The lawnmover cuts the grass?'
 
@@ -88,7 +100,7 @@ I this sushi eat Q
 # BAD transitives
 #================
 
-# 8 Transitive neutral - bad SVO
+# Transitive neutral - bad SVO
 Source: author
 Vetted: t
 Judgment: u
@@ -98,7 +110,7 @@ myeyeise ka hpya mye kou te
 lawnmower SUB cut grass OBJ RLS
 `The lawnmover cuts the grass?'
 
-# 9 Transitive neutral - bad VOS
+# Transitive neutral - bad VOS
 Source: author
 Vetted: t
 Judgment: u
@@ -106,9 +118,9 @@ Phenomena: wo
 hpya mye kou myeyeise ka te
 hpya mye kou myeyeise ka te
 cut grass OBJ lawnmower SUB RLS
-`The lawnmover cuts the grass?'
+`The lawnmover cuts the grass.'
 
-# 10 Transitive neutral - bad VSO
+# Transitive neutral - bad VSO
 Source: author
 Vetted: t
 Judgment: u
@@ -116,17 +128,18 @@ Phenomena: wo
 hpya myeyeise ka mye kou te
 hpya myeyeise ka mye kou te
 cut lawnmower SUB grass OBJ RLS
-`The lawnmover cuts the grass?'
+`The lawnmover cuts the grass.'
 
-# 11 Transitive neutral - bad OSV
+# Transitive neutral - OK OSV
+# 2014-01-31 BPW - Lwin told me this is actually a perfectly fine example. The subject and object can switch IFF they are both case marked. No special intonation or prosodic comma needed.
 Source: author
 Vetted: t
-Judgment: u
+Judgment: g
 Phenomena: wo
 mye kou myeyeise ka hpya te
 mye kou myeyeise ka hpya te
 grass OBJ lawnmower SUB cut RLS
-`The lawnmover cuts the grass?'
+`The lawnmover cuts the grass.'
 
 # 12 Transitive neutral - bad OVS
 Source: author
@@ -136,7 +149,7 @@ Phenomena: wo
 mye kou hpya myeyeise ka te
 mye kou hpya myeyeise ka te
 grass OBJ lawnmower SUB cut RLS
-`The lawnmover cuts the grass?'
+`The lawnmover cuts the grass.'
 
 #mye’=yei’=se’	a-thi’	ka	mye’	yain:	twei	kou	hpya’	nain	te
 #grass=cut=machine new	SUB	grass	wild	PLU	OBJ	cut	can	RLS
@@ -593,6 +606,7 @@ that child three CLF Rangoon reach go RLS
 # Matrix Y-N questions #
 ########################
 
+
 Source: b:330
 Vetted: s
 Judgment: g
@@ -758,20 +772,20 @@ Source: b:471
 Vetted: s
 Judgment: g
 Phenomena: crd
-awin yo ahtwe yo
-awin yo ahtwe yo
-entry and exit and
-`entry and exit'
+awin yo ahtwe yo can te
+awin yo ahtwe yo can te
+entry and exit and remain RLS
+`The entry and exit remain.'
 
-# BAD pattern 1a - 'yo' is the only one with nominalized verbs, those that start with 'a'
-Source: eliticed
+# you can only use YO with derived nouns
+Source: author
 Vetted: t
-Judgment: g
+Judgment: u
 Phenomena: crd
-awin ne ahtwe ne
-awin ne ahtwe ne
-entry and exit and
-`entry and exit'
+awin ne ahtwe ne can te
+awin ne ahtwe ne can te
+entry and exit and remain RLS
+`The entry and exit remain.'
 
 # pattern 2b
 # out
@@ -1128,28 +1142,9 @@ student-PL SUBJ Burma-from Q
 # Information structure #
 #########################
 
-# b:203, "exposure"
+# b:203, "exposure"??
 
-# a kind of focus? 
-Source: b:203
-Vetted: s
-Judgment: g
-Phenomena: info
-ceno to ma thaya hpu
-ceno to ma thaya hpu
-I FOC NEG be.pleasant RLS
-`As for me, (it) is not pleasant = I don't like it.'
-
-# different, maybe "emphasis"
-Source: b:203
-Vetted: s
-Judgment: g
-Phenomena: info
-mya to thu-ha mya lesu hpe
-mya to thu-ha mya lesu hpe
-emerald FOC her-thing emerald ring INDEED
-`Hers was certainly an EMERALD ring.'
-
+# no data
 
 ###############
 # Noun phrase #
@@ -1259,27 +1254,6 @@ thu di ei te
 thu di ei te
 he this sleeps RLS
 `This he sleeps.'
-
-
-
-########
-# Case #
-########
-
-
-#sitha  solider
-#hsaya doctor
-#
-#
-# elicited with lwin 2014-01-30
-# yai' = HIT
-#
-# brent kou ceno ka yai te
-# brent kou ceno yai te
-# ceno brent kou yai te
-# * ceno brent yai te
-# ceno banana-kou yai te
-# ceno sushi(-kou) sa me
 
 
 
