@@ -1,0 +1,373 @@
+LING 567 - Lab 3
+Brent Woo (author)
+Sean Wibel (partner)
+===================
+
+
+1. Phenomena we have added to the testsuite AND
+2. Choices in customization system
+==================================
+
+
+Tense
+------
+
+Burmese doesn't have explicit tense markers. The meanings of the various sentence-final particles, which are considered to encode "realis" "irrealis" "change of state", etc., coincide somewhat with our notion of tense. I included some examples of sentences that could be interpreted with different tense, or at least translated as such.
+
+
+Source: a:131
+Vetted: s
+Judgment: g
+Phenomena: tam
+maunmaun hseilei thau te
+maunmaun hseilei thau te
+MaungMaung cigarette drink RLS
+`MaungMaung smoked/smokes cigarettes.'
+NOT: MaungMaung will smoke cigarettes.
+
+Source: a:132
+Vetted: s
+Judgment: g
+Phenomena: tam
+thu di hsei thau me
+thu di hsei thau me
+he this medicine drink IRR
+`He will take this medicine.'
+NOT: He took this medicine.
+
+Source: a:134
+Vetted: s
+Judgment: g
+Phenomena: tam
+nga htamin hce pi
+nga htamin hce pi
+I rice cook PUNC
+`I have started to cook rice.'
+NOT: I cooked rice (finished and done), or I will cook rice.
+
+Because tense is construed by the discoursal context and/or adjunctival temporal phrases, it is not possible to construct an ungrammatical example. It wasn't included in the testsuite, but my consultant did confirm that 
+
+manehpyan htamin sa te
+tomorrow rice eat RLS
+`Tomorrow I ate rice.'
+
+is weird in the same sense that the English sentence has a semantic interpretation at odds with this world, but it is not ungrammatical.
+
+
+CHOICES - The customization quiz does not yet provide for an analysis of these sentence-final particles, so no changes to the grammar were made for this section.
+
+
+Apsect
+------
+
+Burmese has three post-verbal auxiliaries that mark aspect. Two of them ('oun', 'thei') are glossed as "cumulative" (CML) in the grammars, and sometimes translated as "still" or "not yet", depending on the polarity of the sentence. They occupy the same slot and have complementary distribution. 
+
+'oun' - appears only on affirmative, future, declarative sentences
+
+Source: a:137
+Vetted: s
+Judgment: g
+Phenomena: tam
+nga patala ti oun me
+nga patala ti oun me
+I xylophone play CML IRR
+`Ill go on playing the xylophone.'
+
+'oun' - may not appear on negative sentences
+
+Source: a:138
+Vetted: s
+Judgment: u
+Phenomena: tam
+sa oun te
+sa oun te
+eat CML RLS.nonfut
+`(I) still eat.'
+
+'thei' - appears only a non-future declaratives, of either polarity.
+
+Source: a:137
+Vetted: s
+Judgment: g
+Phenomena: tam
+nga patala ma ti thei hpu
+nga patala ma ti thei hpu
+I xylophone NEG play CML RLS
+`I wont play the xylophone yet.'
+
+Source: a:139
+Vetted: s
+Judgment: g
+Phenomena: tam
+saun ti thei te
+saun ti thei te
+harp play CML RLS
+`I had been playing the harp.'
+
+'thei' - here's one example of an ungrammatical use, where 'thei' is paired with the "future"/"irrealis" particle:
+
+Source: a:139
+Vetted: s
+Judgment: u
+Phenomena: tam
+saun ti thei me
+saun ti thei me
+harp play CML IRR
+`I will still play the harp.???'
+
+The other aspectual auxiliary ('to') is glossed as "culminative" (CLM), and sometimes translated as "now" or "anymore", again depending on the polarity of the sentence. It has the interesting meaning of indicating a transition from a non-event to an event, or an event to a non-event. So we get the following examples:
+
+Source: a:140
+Vetted: s
+Judgment: g
+Phenomena: tam
+sa to me
+sa to me
+eat CLM IRR
+`Ill eat now.'
+
+Source: a:140
+Vetted: s
+Judgment: g
+Phenomena: tam
+ma sa to hpu
+ma sa to hpu
+NEG eat CLM RLS
+`I wont eat anymore.'
+
+This hasn't been vetted yet, but presumably 'to' cannot occur with a nonfuture particle:
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: tam
+sa to te
+sa to te
+eat CLM RLS
+`Ill eat now.'
+
+CHOICES - in order to model this, in the Word Order section I enabled auxiliary verbs, which appear after their complement VPs. There can be more than one auxiliary in a clause, but only one aspect auxiliary, so I chose 'yes - there is more than one'.
+
+In the TAM section, I selected future-nonfuture tenses, which seem to be what is encoded in sentence-final particles. I picked two viewpoint aspects, called CUMULATIVE and CULMINATIVE.
+
+I included in the lexicon two types of auxiliaries, one called ASP-CML, the other ASP-CLM. Both were similar except for the value of aspect. Both take a NP subject carried up from the verbal complement, finite or nonfinite.
+
+
+Agreement
+---------
+
+Burmese doesn't show person, number, case, gender, determiner, adjective, etc. agreement.  One possible case of agreement, shown below, is the negative sentence particles mentioned in the Negation section. If a verb is preceded by the negative particle 'ma', it must co-occur with a negative polarity sentence-final particle.
+
+Source: elicited
+Vetted: t
+Judgment: g 
+Phenomena: agr
+lwin di sushi ma sa hpu
+lwin di sushi ma sa hpu
+Lwin this sushi NEG eat RLS.NEG
+`Lwin doesnt eat this sushi.'
+
+This is an example of a "non-agreeing" sentence final particle, which is non-negative:
+
+Source: elicited
+Vetted: t
+Judgment: u 
+Phenomena: agr
+lwin di sushi ma sa te
+lwin di sushi ma sa te
+Lwin this sushi NEG eat RLS
+`Lwin doesnt eat this sushi.'
+
+CHOICES - this is not reflected in the grammar yet. Negation 'ma' is described below, but the agreeing mechanism is not coded in yet.
+
+
+Negation
+--------
+
+Negation is achieved with a negative particle 'ma' prefixed to the verb. Sentences with negative polarity REQUIRE a negative verb-clause marker, one of the following. 
+Independent clause: hpu (informative), ne (imperative). 
+Dependent clause: hpe ("without"), hkin ("before"), mahcin ("between")
+
+Here is a simple negative sentence. Note the co-occurance with the negative particle 'ma' and the negative realis particle 'hpu'.
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: neg
+lwin di sushi ma sa hpu
+lwin di sushi ma sa hpu
+Lwin this sushi not eat RLS
+`Lwin does not eat this sushi.'
+
+Here is a negative interrogative. This is interesting because it shows that sentence-final particles and the question particle are NOT in complementary distribution (and further polite particles can appear between the RLS marker and the Q particle).
+
+Source: a:149
+Vetted: s
+Judgment: g
+Phenomena: neg
+thu aye ma thau hpu la
+thu aye ma thau hpu la
+he liquor NEG drink RLS Q
+`Doesnt/wont he drink alcohol?'
+
+These examples show that the negative particle 'ma' and negative sentence particles like 'hpu' need each other:
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: neg
+lwin di sushi ma sa
+lwin di sushi ma sa
+Lwin this sushi not eat
+`Lwin does not eat this sushi.'
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: neg
+lwin di sushi sa hpu
+lwin di sushi sa hpu
+Lwin this sushi eat RLS
+`Lwin does not eat this sushi.'
+
+This example shows that negative sentences cannot take positive sentence particles:
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: neg
+lwin di sushi sa ma te
+lwin di sushi sa ma te
+Lwin this sushi not eat RLS
+`Lwin does not eat this sushi.'
+
+This example shows that 'ma' must go before the verb, not after.
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: neg
+lwin di sushi sa ma hpu
+lwin di sushi sa ma hpu
+Lwin this sushi eat not RLS
+`Lwin does not eat this sushi.'
+
+CHOICES - in the Sentential Negation section, I chose simple negation with an adverb that is a modifier that appears before V, spelled "ma". I won't be able to model the ungrammaticality of non-matching particles until those have an analysis.
+
+
+Argument Optionality
+--------------------
+
+Burmese liberally allows subject dropping with any verb. In any given sentence, a verb can appear with all its arguments overt, or one or more of them can be unpronounced. Here are some contrasting examples:
+
+Full sentence:
+
+Source: b:131
+Vetted: s
+Judgment: g
+Phenomena: pro-d
+nga se yaun te
+nga se yaun te
+I machine sell RLS
+`I sold the machine.'
+
+Subject dropping is allowed in all environments. Object dropping is also allowed, when sufficient context is given, but I need to verify these examples.
+
+An interesting ambiguity arises with unmarked arguments (remember, case marking is optional...). Although I meant to provide a pro-drop version of the above example, LKB returned two parses (without the final particle), showing that as it stands the grammar unsurprisingly can't tell whether "machine" is the subject or object here. 
+
+Source: b:131
+Vetted: s
+Judgment: g
+Phenomena: pro-d
+se yaun te
+se yaun te
+machine sell RLS
+`(?) sold the machine.'
+OR
+`The machine sold (?).'
+
+CHOICES - Subject dropping can occur with any verb, and no verb marking is permitted as there is no verb marking. I chose the more conservative option for now, that object dropping is lexically licensed.
+
+
+Demonstratives
+---------------
+
+Demonstratives are optional, and appear in Det-Noun order. There are two: 'di' and 'hou', proximal and distal. 
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cogst
+di sitha cou hse te
+di sitha cou hse te
+this soldier rope pull RLS
+`This soldier pulls the rope.'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cogst
+hou sitha cou hse te
+hou sitha cou hse te
+that soldier rope pull RLS
+`That soldier pulls the rope.'
+
+They may not appear in Noun-Det order. This example is ungrammatical under the reading "that soldier..." but a parse will still obtain with the determiner attaching to "rope" instead.
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: cogst
+sitha hou cou hse te
+sitha hou cou hse te
+that soldier rope pull RLS
+`That soldier pulls the rope.'
+
+CHOICES - In the word order section, determiners as independent words were added with Det-Noun word order. The two determiners were added to the lexicon.
+
+
+3. Properties in test suite but not in grammar
+===============================================
+
+* Sentence-final particles - this is the main thing preventing better coverage of the testsuite. In the next week or so I hope to work out an analysis for these particles that will allow most of the testsuite to be parsed, since the following two depend on these being included in the grammar.
+
+* Agreeing negation - negative particle 'ma' must appear with a negative polarity sentence-final particle. 
+
+* Tense - tense is encoded within the sentence-final particles.
+
+4. Coverage of grammar over testsuite
+=====================================
+
+Currently, of the 49 items, 4 sentences parse, but 1 of those are incorrect. This is somewhat unsurprising given the oft-mentioned critical complement of the grammar left unanalyzed, the sentence-final particles.
+
+These are the well-formed sentences that parse correctly: 
+
+#2
+si hpyi la
+war happen Q
+`War happens?'
+
+#4
+thu nwaanou thau la
+he milk drink Q
+`He drinks milk?'
+
+#7
+ceno di sushi sa la
+I this sushi eat Q
+`I eat this sushi?'
+
+This one should not parse, but it is unsurprising because SFParticles are not accounted for at all.
+
+#31 - missing negative sentence-final particle
+lwin di sushi ma sa
+lwin this sushi NEG eat
+`Lwin doesn't eat this sushi.'
+
+All of the rest of the errors are attributed to "no analysis found for sentence final particles" -- te, me, pi, hpu, tha, ne (imperative).
+
+
+5. Limitations of customization system
+=======================================
+
+Within the lab, the customization system is able to take care of all Burmese phenomena. We await further customization with regards to the agreement and negation properties, and I need not mention the sentence-final particles of course. 

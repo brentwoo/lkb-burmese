@@ -1,0 +1,316 @@
+ LING 567 - Lab 4
+Brent Woo (author)
+Sean Wibel (partner)
+===================
+
+
+1. Phenomena we have added to the testsuite AND
+2. Choices in customization system
+==================================
+
+Matrix yes-no questions
+------------------------
+
+Burmese marks questions with a particle "la" at the end of the sentence. These questions have been part of the testsuite early on, but new examples show that various positions of the question marker are ungrammatical. This example shows that the question particle can co-occur with aux verbs (previously called sentence particles): 
+
+Source: b:330
+Vetted: s
+Judgment: g
+Phenomena: q
+thu caun hci te la
+thu caun hci te la
+he cat like RLS Q
+`Does he like cats?'
+
+But omitting the particle is also a possibility. But in no circumstance can a sentence appear without some sort of marker at the end.
+
+CHOICES - this was done already, but in the Matrix Y/N questions section, I picked a separate, sentence-final question particle, that is spelled LA.
+
+
+Coordination
+------------
+
+Burmese has three mostly equivalent particles that signal coordination: ne, yo, ye. All three are common in colloquial speak and neither the grammar nor the consultant described a difference in meaning between them. (Maybe there is some sociolinguistic reason for one or the other)
+
+The particles appear after the coordinand. There are two main patterns of coordination: omnisyndeton and polysyndenton, where all but the last coordinand are marked. Asyndeton is also an option.
+
+My speaker disagreed with a lot of what was asserted in the book. Examples given with "pa" as the last coordinand have a decidedly different meaning, in my understanding it's somewhat like the "mo" in Japanese, where the phrase indicated by "pa" is somewhat appended onto a previously mentioned list. ("I ate rice. Lwin PA=too ate rice.") I did not include such examples as they seemed outside the scope. The book also describes a "second to last" coordinand-marking pattern, but this too was judged marginal and unnatural without a significant pause before the second to last coordinand.
+
+Here are the canonical patterns. All coordinands marked with ne:
+
+Source: author
+Vetted: t
+Judgment: g
+Phenomena: crd
+nyunt ne lwin ne maunmaun ne htamin sa me
+nyunt ne lwin ne maunmaun ne htamin sa me
+name and name and name and rice eat RLS
+`Nyunt, Lwin, and Maunmaun will eat rice.'
+
+All coordinands marked with yo:
+
+Source: b:471
+Vetted: s
+Judgment: g
+Phenomena: crd
+awin yo ahtwe yo can te
+awin yo ahtwe yo can te
+entry and exit and remain RLS
+`The entry and exit remain.'
+
+All coordinands marked with ye:
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: crd
+swedi ye lwin ye maunmaun ye ne htamin sa me
+swedi ye lwin ye maunmaun ye ne htamin sa me
+name and name and name and and rice eat RLS
+`Swedi, Lwin, and MaunMaun will eat rice.'
+
+Asyndeton is an option:
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: crd
+hmo ngapyothi htamin sa me
+hmo ngapyothi htamin sa me
+mushroom banana rice eat RLS
+`(I) will eat mushroom, banana, and rice.'
+
+One interesting distributional note is that out of the three particles only YO is available for use with "derived nouns". Above example copied:
+
+Source: b:471
+Vetted: s
+Judgment: g
+Phenomena: crd
+awin yo ahtwe yo can te
+awin yo ahtwe yo can te
+entry and exit and remain RLS
+`The entry and exit remain.'
+
+But using NE is not possible:
+
+Source: author
+Vetted: t
+Judgment: u
+Phenomena: crd
+awin ne ahtwe ne can te
+awin ne ahtwe ne can te
+entry and exit and remain RLS
+`The entry and exit remain.'
+
+CHOICES - I added three coordination strategies, each the same except for the spelling of the particle. Each strategy coordinates NPs in an omnisyndeton pattern, by a word spelled NE/YO/YE that comes after the coordinand.
+
+Anticipating YO's exceptional distribution, I included a new subtype of common-noun (cmnn) called derived-common-noun (derived-cmnn), which includes "awin" and "ahtwe" (entry, exit). 
+
+I added a fourth coordination strategy, asyndeton among NPs.
+
+
+Attributive adjectives
+----------------------
+
+Adjectives generally follow the noun.
+
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: adj
+einci ahaun apya can te
+einci ahaun apya can te
+shirt old blue remain RLS
+`A blue old shirt remains.'
+
+
+Adjectives that are derived from verbs precede the verb.
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: adj
+kaun-te. einci apya can te
+kaun-te. einci apya can te
+be.good-ATTRIB shirt blue remain RLS
+`A good blue shirt remains.' 
+
+Other adjectives should not precede the verb.
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: adj
+apya einci can te 
+apya einci can te 
+blue shirt remain RLS
+`A blue shirt remains.'
+
+CHOICES - no special choices made.
+
+Adverbs
+--------
+
+Adverbs would normally precede the verb:
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adv
+ceno htamin sanitaca sa me
+ceno htamin sanitaca sa me
+I rice systematically eat RLS
+`I will eat rice systematically.'
+
+Any other order is not grammatical:
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adv
+sanitaca ceno htamin sa me
+sanitaca ceno htamin sa me
+systematically I rice eat RLS
+`I will eat rice systematically.'
+
+CHOICES - no special choices made.
+
+
+Embedded clauses
+----------------
+
+Embedded clauses are simply put before the entire main clause, with a complementizer "hman". All other clausal rules are available, like subject/object dropping.
+
+Source: b:290
+Vetted: s
+Judgment: g
+Phenomena: emb-d
+thei thwa hman ma thi hpu
+thei thwa hman ma thi hpu
+die go that NEG know RLS
+`(I) didn't know that (he) had died.'
+
+If there is an overt main clause subject, it appears after the embedded clause. This example has all overt arguments:
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: emb-d
+thu thei thwa hman ceno ma thi hpu
+thu thei thwa hman ceno ma thi hpu
+he die go that I NEG know RLS
+`I didn't know that he had died.'
+
+It is ungrammatical to put the main clause subject before the embedded clause.
+
+Source: elicited
+Vetted: t
+Judgment: u
+Phenomena: emb-d
+ceno thu thei thwa hman ma thi hpu
+ceno thu thei thwa hman ma thi hpu
+I he die go that NEG know RLS
+`I didn't know that he had died.'
+
+Regarding embedded questions: it doesn't seem to be an option. The grammar did not give any examples, but I found this one example translated as an embedded question:
+
+Source: b:378
+Vetted: s
+Judgment: g
+Phenomena: emb-q
+ganeinya hsouhma ba thahcinmya palein
+ganeinya hsouhma ba thahcinmya palein
+tonight sing.thing what songs wonder
+`I wonder what songs (they) will sing tonight.'
+
+where PALEIN is listed as a sentence final particle. My speaker confirmed that there is no better way to translate "I wonder what..." and that putting a matrix subject anywhere in the sentence is ungrammatical (reference to speaker is implicit by PALEIN), which suggests that this isn't actually an embedding.
+
+CHOICES - no special choices made other than added lexical entries. These definitely don't parse.
+
+
+Non-verbal predicates
+---------------------
+
+There is no copular verb. Many adjectives function the same way as verbs.
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+di ngapyothi kaun te
+di ngapyothi kaun te
+this banana be.good RLS
+`This banana is good.'
+
+Noun phrases are simply joined, followed by the sentence particle.
+
+Source: b:150
+Vetted: s
+Judgment: g
+Phenomena: cop
+di sitha hsayawun te
+di sitha hsayawun te
+this soldier doctor RLS
+`This soldier is a doctor.'
+
+Same thing with prepositional phrases. 
+
+Source: b:85
+Vetted: s
+Judgment: g
+Phenomena: cop
+cauntha-tei ka bamapyei-ka te 
+cauntha-tei ka bamapyei-ka te 
+student-PL SUBJ Burma-from RLS
+`The students were from Burma.'
+
+CHOICES - no special choices needed to be made to describe this. But the lack of a clear main verb in, say, the NP-NP sentence disrupts the straightforward analysis of sentence particles as aux verbs.
+
+
+Information structure
+---------------------
+
+There does not appear to be any equivalent of topic or focus marking in Burmese. It is mentioned in the grammar that employing the case markers, which are normally optional, is a way of emphasizing or bringing clarity to the situation, but nothing carries a notion of 'continued topic' or 'contrastive focus'.
+
+CHOICES - n/a
+
+Additional 
+-----------
+
+In the testsuite, I redid some Lab2 sections, including noun phrase. 
+Renamed some of the types, and removed the "human" feature, it doesn't seem to be syntactically relevant. 
+
+
+3. Phenomena in testsuite but not grammar
+=========================================
+
+* Adjectives - no provision in the questionnaire
+* Adverbs - ""
+* Embedded clauses - "" 
+* Non-verbal predicates -""
+
+I will also need to describe the distribution of the YO coordinand and restrict the others from appearing with derived common nouns.
+
+Getting the aux verbs distribution correct will require some .tdl editing. 
+
+
+4. Coverage of the grammar over the testsuite
+=============================================
+Out of the 101 examples, (66 grammatical, 35 ungrammatical)
+
+* 30 (30%) grammatical and do parse. Many of these are due to analyzing sentence-final particles as auxiliaries, which makes a lot of the previous lab work parsable. 
+
+* 11 (11%) grammatical but don't parse. Most of these are exactly as you predicted, the ones where question particle LA occurs, but no aux verb/sentencefinal particle. The others are coordination particle "agreement" (the YO+derived noun problem) problems. 
+
+* 11 (11%) ungrammatical but do parse. These are all due to improper treatment of the aux verbs/final particles. HPU must only appear in negative clauses, the aspect auxiliaries must only appear in certain non-future/future contexts. 
+
+* 15 (15%) ungrammatical and don't parse. 
+
+
+5. Improving grammar
+====================
+
+The single biggest change would be moving forward with the sentence-final particles as aux verbs analysis. This allows a much better portion of the grammar to be taken care of. But issues remain to be fixed in tdl, such as polarity-agreeing aux verbs, "agreeing" coordination particle YO, fixing the distribution of the aspect auxiliaries. And of course everything listed in section 3.
+
+I will respond to feedback from previous labs on GoPost - apologies I didn't get to them in time for this lab's submission.
