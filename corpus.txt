@@ -1,0 +1,336 @@
+Language: Burmese
+Language code: mya
+Lines: orth translit-seg gloss translat
+Author: Brent Wpp
+Date: Feb 7, 2014
+Source a: Southeast Asian Languages (SEAlang) Burmese bitext corpus
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူ့ကိုယ်သူ ရုတ်တရက် စင်ကာပူရောက်နေသလားဟုပင် ထင်လိုက်မိသည်။
+xq
+xq
+Unexpectedly, he thought he was in Singapore.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+လမ်းတွေအားလုံး ကောင်းမှကောင်း ဆိုသလို ဖြစ်နေသည်။
+xq
+xq
+All the roads were very good.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+အားလုံးကွန်ကရစ်ခင်းလို့။
+xq
+xq
+They were all covered in concrete.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+အဆောက်အဦတွေကလည်း အသစ်စက်စက်၊ ရန်ကုန်နဲ့တခြားစီ။
+xq
+xq
+The buildings were new; completely different form Yangon.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူတို့နေရသည့် အဆောင်ကို ကြည့်ဦးမလား၊ ရေမီးအစုံနှင့် ကုတင်အိပ်ယာ အပြည့်အစုံနှင့် ဘာမှလိုလေသေးမရှိ။
+xq
+xq
+Look at the apartments they were given, complete with water and lights, beds and mattresses, everything supplied.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+နာမည်ကိုက ခန့်ခန့်ငြားငြား၊ နေပြည်တော်တဲ့၊ သူများတွေက ပြောကြသည်၊ နေပြည်တော်သွားရတာ စိ်တ်ညစ်စရာ ကောင်းသည်၊ မသွားချင်တဲ့။
+xq
+xq
+The name itself is dignified; they call it Naypyidaw. People say they feel frustrated to go to Naypyidaw; they do not want to go there.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+တော်တော် အကောင်းမမြင်တတ်သည့် သူများဖြစ်သည်။
+xq
+xq
+They are pessimistic.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ဒီလောက်ကောင်းသည့်နေရာမှာ အလုပ်လာလုပ်ရတာကိုတောင် ကျေနပ်မှုမရှိကြ၊ နိုင်ငံတော် အကြီးအကဲများ၏ စေတနာကို နားမလည်ကြ။
+xq
+xq
+They are not pleased to work in this very good place; they do not appreciate the goodness of the country’s top officials.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ဘယ်လောက် တောင် စေတနာ ကောင်းသလဲဆိုရင် ရန်ကုန်မှာ အကောင်းဆုံးဆိုသည့် ဂျင်နရေတာကြီး ဒီကိုရွှေ့ပေးတာပဲကြည့်။
+xq
+xq
+See the goodwill they showed as they have moved the best generator from Yangon for them.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ရန်ကုန် ကလူတွေ မီးပျက်ရုံမကလို့ ပျက်ချင်ရာပျက် ဖြစ်ချင်ရာဖြစ် ဒီကနိုင်ငံ့၀န်ထမ်းတွေလောက် အရေးမကြီးဘူး ဟုယူဆပေး သည့် စူပါဦးနှောက်များကို ရွှေတောင်ချထားသင့်သည်။
+xq
+xq
+Their super brains should be gilded for thinking that the government employees here are more important than the people in Yangon, so whether they have electricity or not, let them suffer.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ဂျင်နရေတာ အသစ်မတပ်ပေးတာကတော့ နားလည်ပေးလို့ ရပါသည်။
+xq
+xq
+We understand that a new generator has not been installed.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သာကေတက ဖြုတ်လာသည့် မီးစက်လောက်ကောင်းသည့်စက် ကမ္ဘာပေါ်မှာ မရှိသေးသောကြောင့်ပဲဖြစ်မည်။<
+xq
+xq
+It must be that there is no generator in the world that is better than the used one brought from Thaketa.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူ အလုပ်စဆင်းသည့်နေ့မှာဆို သူ့ကိုယ်သူမြန်မာပြည်မှာ ဆိုတာတောင်မေ့သွားသည်။
+xq
+xq
+The first day he started work, he even forgot he was in Myanmar.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ရုံးခန်းထဲကို ဖိနပ်စီး မ၀င်ရ။
+xq
+xq
+You are not allowed to wear slippers in the office.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ဘုရား တက်သလို ချွတ်ကိုင်မယ်လုပ်ပြီးမှ ပြန်ချလိုက်ရသည်။
+xq
+xq
+Just when he was going to take them off and hold them in his hands as he always did at the pagoda, he was asked to put them down.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+စီးလာသည့်ဖိနပ်ချွတ်ပြီး အ၀တ်ဖိနပ်တရံ ပြောင်းစီးရသည်။
+xq
+xq
+He had to take off his slippers and changed into ones made of cloth.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+အဲဒီနေ့ ကဆို တနေ့လုံး အလုပ်လုပ်ရတာမဖြောင့်၊ အလှူအိမ်တွေမှာလို ဖိနပ်အခိုးခံမှာ စိုးသောကြောင့်ဖြစ်သည်။
+xq
+xq
+He did not have peace of mind working the whole day that day because he feared his slippers would be stolen like at an alms offering house.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+တော်သေးသည် အဲဒီနေ့က ဖိနပ်အခိုးမခံရ။ နောက်မှ သတိရသွားသည်။
+xq
+xq
+Fortunately, his slippers were not stolen that day. Later, this was what he remembered.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူကဖိနပ် ကောင်းကောင်းစီးနိုင်သူမှ မဟုတ်ဘဲ။
+xq
+xq
+He was a person who could not afford to wear good slippers.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူ့ဖိနပ်စုတ်ကို ဘယ်သူမှ မခိုးသလို ကျန်၀န်ထမ်းများ၏ ဖိနပ်စုတ်များကိုလည်း သူစိတ်မ၀င်စားပါ။
+xq
+xq
+As nobody would want to steal his tattered slippers, he too was not interested in other employees’ tattered slippers.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူတို့ကို ၀န်ကြီးကိုယ်တိုင် ကြိုဆို နှုတ်ခွန်းဆက်စကားပြောကြားသည်။
+xq
+xq
+The Minister himself gave them a warm welcome speech.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+အဲဒီမှာ နိုင်ငံတော်၏ စေတနာများကို ထပ်ဆင့် သိလိုက်ရပြန်သည်။
+xq
+xq
+It was there that they knew more about the goodwill of the government.
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+နှုတ်ခွန်းဆက်စကားပြောအပြီးမှာ ၀န်ကြီးက စားပွဲ ကုလားထိုင် ရုံးအသုံး အဆောင်များကို လိုက်ကြည့် သည်။
+xq
+xq
+After the welcome speech, the Minister inspected the tables, chairs and office equipment.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ခုံတလုံးက ဟောင်းနေသဖြင့် ချက်ချင်း အသစ်နှင့် လဲခိုင်းသည်။
+xq
+xq
+He immediately had a new chair replaced for an old one he had noticed.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+“အားလုံးပဲ သေသေချာချာ မှတ်ထားကြ၊ ဟောဒီရုံးထဲမှာ လွတ်လပ်ရေး မရခင်က ပစ္စည်းတွေ၊ အတွေးအခေါ်တွေ ဘာမှ မလိုချင်ဘူး” ဟုပြောသွားသည်။
+xq
+xq
+“All of you keep this in mind. I don’t want any materials or ideas acquired before we gained independence in this office,” he warned them.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ကောင်းလိုက်သည့်စေတနာ၊ လွတ်လပ်ရေးမရခင်က ပစ္စည်းများ၊ အတွေးအခေါ်များ၊ လစာများ၊ ကုန်စျေးနှုန်းများ လုံး၀မရှိတော့၊ လုံး၀မဟုတ်တော့၊ ဒီတော့ သူကလည်း ၀န်ကြီး ဖြစ်စေချင်သလို အမီလိုက် မည်ဟုစဉ်းစားသည်။
+xq
+xq
+What a wonderful goodwill! Since materials, ideas, salaries, commodity prices that were obtained before independence was gained no longer existed, he thought of trying to do what the Minister wanted.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+အရင်နှင့်မတူ တမူထူးခြားများပြားစွာ၊ လွတ်လပ်ရေး မရခင်ကနှင့် ခြားနားစွာ အကြွေးများများ တင်ပစ်လိုက်လျင် ကောင်းမလား ဟုတွေးမိသည်။
+xq
+xq
+He wondered if it would be better to let his debts grow more than the usual in order to let it be different from the time before independence.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+အကြွေးမတင်ဘဲခံနိုင်မလား နေပြည်တော်မှာ ဆန်တပြည် (အလယ်အလတ်စား) ကျပ် ၁၃၀၀၊ ကြက်အစိ်တ်သား ၁၇၀၀၊ ၂၀၀၀ ကျပ်၊ ငါးသလဲထိုး ၁၀ ကျပ်သား ၈၀၀၊ တခြားမုန့်မစား လက်ဖက်ရည်မသောက်ဘဲကို မလောက်တာ ဆိုတော့ ဒါလည်းလွတ်လပ်ရေး မရခင်ကနှင့်မတူ တမူထူးခြားတာပဲဖြစ်သည်။
+xq
+xq
+Would it be possible not to run up debts? One pyi of mediocre quality rice is Kyat 1,300, 25 ticals of chicken is between Kyat 1,700 and 2,000, 10 ticals of anchovy is Kyat 800 in Naypyidaw. At this rate, even without buying snack and tea the salary is not enough. This extraordinary situation is different from that of the pre-independence days.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူတို့အဆောင်ကနေ ရုံးကိုဖယ်ရီ ရှိသည်။
+xq
+xq
+Ferry is provided between their lodgings and office.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+နံနက် ၈ နာရီခွဲ ဖယ်ရီကြိုသည်၊ ဖယ်ရီမမီလျင် ဆိုက်ကယ်တက္ကစီဖြစ်ဖြစ်၊ သုံးဘီးကားဖြစ်ဖြစ်စီးရသည်။
+xq
+xq
+The ferry comes at 8 o’clock in the morning. If you miss the ferry, you either have to hire a motorcycle or a three-wheeler taxi.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ဒါလည်း နိုင်ငံတော်က စေတနာဖြင့် ရန်ကုန်၀န်ထမ်းများဖြစ်ချင်ရာဖြစ်ဆိုကာ ရန်ကုန်မှ ဖယ်ရီခပ်လတ်လတ်များ အားလုံးကို နေပြည်တော် တကူးတက ရွှေ့ပေးထားတာ ဖြစ်သည်။
+xq
+xq
+This is also the nation’s goodwill of going out of its way to move all the moderately good cars from Yangon to Naypyidaw at the expense of the employees left in Yangon without any consideration for them.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+ဖယ်ရီမီအောင်ထရမှာက သူတို့ တာ၀န်မ ဟုတ်လား။ မမီရင်တော့ ကျပ် ၁၂၀၀ ကုန်ပစေပေါ့။
+xq
+xq
+To be in time for the ferry is their responsibility. If not, it is up to them to pay Kyat 1,200 for taxi.
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူကဒုတိယတန်း စာရေးကလေးဆိုတော့ သူ့လစာက ကျပ် ၃၁၀၀၀ (၂၅ ဒေါ်လာ ကျော်ကျော်) ကြီးများတောင် ရသည်။
+xq
+xq
+He is a second division clerk whose salary is Kyat 31,000 (US$ 25).
+
+
+Source: a:1
+Vetted: s
+Judgment: g
+Phenomena:
+သူ့ရာထူးနှင့် ကျပ် ၃၂၀၀၀ မှာဂိတ်ဆုံးမည်။
+xq
+xq
+His maximum salary will be Kyat 32,000.
+

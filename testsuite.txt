@@ -24,7 +24,7 @@ Source b: Okell, John. 1969. A Reference Grammar of Colloquial Burmese
 # ceno banana-kou yai te
 # ceno sushi(-kou) sa me
 
-#1 Intransitive declarative
+#Intransitive declarative
 Source: a:251
 Vetted: s
 Judgment: g
@@ -34,7 +34,7 @@ si hpyi te
 war happen RLS
 `War broke out.'
 
-#2 Intransitive interr
+#Intransitive interr
 Source: elicited
 Vetted: t
 Judgment: g
@@ -43,6 +43,63 @@ si hpyi la
 si hpyi la
 war happen RLS
 `Does war happen?'
+
+Source: a:251
+Vetted: f
+Judgment: u
+Phenomena: wo
+si hpyi
+si hpyi
+war happen
+`War broke out.'
+
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+lwin hsai me
+lwin hsai me
+lwin arrives RLS
+`Lwin will arrive.’
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: q
+lwin hsai la
+lwin hsai la
+lwin arrives Q
+`Lwin will arrive?’
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+lwin hsai
+lwin hsai
+lwin arrives
+`Lwin will arrive.’
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+maunmaun thei la
+maunmaun thei la
+maunmaun die Q
+`MaunMaun will die?’
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+maunmaun thei
+maunmaun thei
+maunmaun die
+`MaunMaun will die.’
+
+
 
 # Transitive verbs
 #=================
@@ -75,7 +132,7 @@ Phenomena: wo
 myeyeise ka mye kou hpya te
 myeyeise ka mye kou hpya te
 lawnmower SUB grass OBJ cut RLS
-`The lawnmore cuts the grass.'
+`The lawnmower cuts the grass.'
 
 #6 Transitive interr
 Source: elicited 
@@ -96,6 +153,16 @@ ceno di sushi sa la
 ceno di sushi sa la
 I this sushi eat Q
 `I eat sushi?'
+
+Source: a:265
+Vetted: s
+Judgment: g
+Phenomena: wo
+aye ka lu kou hpye te
+aye ka lu kou hpye te
+liquor SUBJ man OBJ destroy RLS
+`Liquor destroys man.'
+
 
 # BAD transitives
 #================
@@ -151,6 +218,91 @@ mye kou hpya myeyeise ka te
 grass OBJ lawnmower SUB cut RLS
 `The lawnmover cuts the grass.'
 
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+aye ka hpye lu kou la
+aye ka hpye lu kou la
+liquor SUBJ destroy man OBJ RLS
+`Liquor destroys man.'
+
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+hpye aye ka lu kou la
+hpye aye ka lu kou la
+destroy liquor SUBJ man OBJ RLS
+`Liquor destroys man.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+thu thau nwaanou  te
+thu thau nwaanou  te
+he drink milk RLS
+`He drinks milk.'
+
+Source: a:260
+Vetted: s
+Judgment: g
+Phenomena: wo
+myeyeise athi ka mye yain kou hpya nain te
+myeyeise athi ka mye yain kou hpya nain te
+lawnmower new SUBJ grass wild OBJ cut can RLS
+`The new lawnmower can cut the wild grass.'
+
+Source: a:260
+Vetted: f
+Judgment: g
+Phenomena: wo
+myeyeise athi ka mye yain kou hpya te
+myeyeise athi ka mye yain kou hpya te
+lawnmower new SUBJ grass wild OBJ cut RLS
+`The new lawnmower cuts the wild grass.'
+
+Source: a:260
+Vetted: f
+Judgment: g
+Phenomena: wo
+hou myeyeise athi ka mye yain kou hpya te
+hou myeyeise athi ka mye yain kou hpya te
+that lawnmower new SUBJ grass wild OBJ cut RLS
+`That new lawnmower cuts the wild grass.'
+
+Source: a:260
+Vetted: f
+Judgment: g
+Phenomena: wo
+hou myeyeise athi ka di mye yain kou hpya la
+hou myeyeise athi ka di mye yain kou hpya la
+that lawnmower new SUBJ this grass wild OBJ cut RLS
+`That new lawnmower cuts this wild grass?’
+
+
+Source: a:260
+Vetted: f
+Judgment: g
+Phenomena: wo
+hou myeyeise athi ka di mye yain myin kou sanitaca hpya la
+hou myeyeise athi ka di mye yain myin kou sanitaca hpya la
+that lawnmower new SUBJ this grass wild tall OBJ systematically cut RLS
+`That new lawnmower systematically cuts this tall wild grass?’
+
+
+Source: a:260
+Vetted: f
+Judgment: u
+Phenomena: wo
+hou myeyeise athi ka di mye yain kou hpya
+hou myeyeise athi ka di mye yain kou hpya
+that lawnmower new SUBJ this grass wild OBJ cut
+`That new lawnmower cuts this wild grass…’
+
+
 #mye’=yei’=se’	a-thi’	ka	mye’	yain:	twei	kou	hpya’	nain	te
 #grass=cut=machine new	SUB	grass	wild	PLU	OBJ	cut	can	RLS
 #‘The new lawnmover can cut the wild grass.’ (260$18)
@@ -171,17 +323,196 @@ grass OBJ lawnmower SUB cut RLS
 #`You put the grass on the cart?' 
 #(272$67)
 
-#DO-IO-V
 
-#thuza.	kou	nga	hywei	le’=nka’	yaun:	lai’	te
-#name	to	I	gold	bangle		sell	away	RLS
-#‘I sold Thuza the gold bangle.’ (278$92)
-#IO-S-DO-V
+Source: a:278
+Vetted: s
+Judgment: g
+Phenomena: wo
+thuza kou nga hywei lekau yaun lai te
+thuza kou nga hywei lekau yaun lai te
+name to I gold bangle sell away RLS
+`I sold Thuza the gold bangle.'
 
-#nga.	kou	touhyi	ka	ja-an	zaga:	thin	pei:	te
-#I	OBJ	Toshi	SUB	Japan	speech	teach	give	RLS
-#‘Toshi taught me Japanese.’ (279$99)
-#IO-S-DO-V
+Source: a:278
+Vetted: s
+Judgment: g
+Phenomena: wo
+thuza nga hsi ka hywei lekau we te
+thuza nga hsi ka hywei lekau we te
+name I LOC ABL gold bangle buy RLS
+`Thuza bought a gold bangle from me.'
+
+Source: a:278
+Vetted: s
+Judgment: g
+Phenomena: wo
+tinhpei nga hsi ka paihsan hci te
+tinhpei nga hsi ka paihsan hci te
+name I LOC ABL money borrow RLS
+`TinPe borrowed money from me.'
+
+#cannot omit HSI
+Source: a:278
+Vetted: s
+Judgment: g
+Phenomena: wo
+nga ahpou ka jika we te
+nga ahpou ka jika we te
+I granddad ABL jeep buy RLS
+`I bought a jeep from granddad.'
+
+
+Source: a:277
+Vetted: s
+Judgment: g
+Phenomena: wo
+hseicaun kou ngwei ngathan hlu me
+hseicaun kou ngwei ngathan hlu me
+medschool to money fivemillion donate IRR
+`(I) will donate five million to medical school.
+
+Source: a:277
+Vetted: f
+Judgment: u
+Phenomena: wo
+hseicaun kou ngwei ngathan hlu
+hseicaun kou ngwei ngathan hlu
+medschool to money fivemillion donate
+`(I) will donate five million to medical school.
+
+
+# source b says that all of the following permutations are licit
+
+Source: b:126
+Vetted: s
+Judgment: g
+Phenomena: wo
+manehpan yankoun ahtou pou me
+manehpan yankoun ahtou pou me
+tomorrow Rangoon parcel send RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: s
+Judgment: g
+Phenomena: wo
+manehpan ahtou yankoun pou me
+manehpan ahtou yankoun pou me
+tomorrow parcel Rangoon send RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: s
+Judgment: g
+Phenomena: wo
+yankoun manehpan ahtou pou me
+yankoun manehpan ahtou pou me
+Rangoon tomorrow parcel send RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: s
+Judgment: g
+Phenomena: wo
+yankoun ahtou manehpan pou me
+yankoun ahtou manehpan pou me
+Rangoon parcel tomorrow send RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: s
+Judgment: g
+Phenomena: wo
+ahtou manehpan yankoun pou me
+ahtou manehpan yankoun pou me
+parcel tomorrow Rangoon send RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: s
+Judgment: g
+Phenomena: wo
+ahtou yankoun manehpan pou me
+ahtou yankoun manehpan pou me
+parcel Rangoon tomorrow send RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+# except the verb must be at the end
+
+Source: b:126
+Vetted: s
+Judgment: u
+Phenomena: wo
+ahtou yankoun pou manehpan me
+ahtou yankoun pou manehpan me
+parcel Rangoon send tomorrow RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: s
+Judgment: u
+Phenomena: wo
+ahtou pou yankoun manehpan me
+ahtou pou yankoun manehpan me
+parcel send Rangoon tomorrow RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: s
+Judgment: u
+Phenomena: wo
+pou ahtou yankoun manehpan me
+pou ahtou yankoun manehpan me
+send parcel Rangoon tomorrow RLS
+`(I) will send the parcel to Rangoon tomorrow.'
+
+# so must the particle
+
+Source: b:126
+Vetted: f
+Judgment: u
+Phenomena: wo
+manehpan yankoun ahtou me pou
+manehpan yankoun ahtou me pou
+tomorrow Rangoon parcel RLS send
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: f
+Judgment: u
+Phenomena: wo
+manehpan yankoun me ahtou pou
+manehpan yankoun me ahtou pou
+tomorrow Rangoon RLS parcel send
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: f
+Judgment: u
+Phenomena: wo
+manehpan me yankoun ahtou pou
+manehpan me yankoun ahtou pou
+tomorrow RLS Rangoon parcel send
+`(I) will send the parcel to Rangoon tomorrow.'
+
+Source: b:126
+Vetted: f
+Judgment: u
+Phenomena: wo
+me manehpan yankoun ahtou pou
+me manehpan yankoun ahtou pou
+RLS tomorrow Rangoon parcel send
+`(I) will send the parcel to Rangoon tomorrow.'
+
+
+Source: b:126
+Vetted: f
+Judgment: u
+Phenomena: wo
+manehpan yankoun ahtou pou
+manehpan yankoun ahtou pou
+tomorrow Rangoon parcel send
+`(I) will send the parcel to Rangoon tomorrow.'
 
 ################
 # Tense/Aspect #
@@ -569,24 +900,34 @@ hou sitha cou hse te
 that soldier rope pull RLS
 `That soldier pulls the rope.'
 
-# bad demonstratives 
+# demonstratives 
 Source: elicited
 Vetted: t
-Judgment: u 
+Judgment: g
+Phenomena: cogst
+hou sitha cou hse la
+hou sitha cou hse la
+that soldier rope pull Q
+`That soldier pulls the rope?'
+
+# demonstratives 
+Source: elicited
+Vetted: t
+Judgment: g 
 Phenomena: cogst
 sitha di cou hse te
 sitha di cou hse te
 soldier this rope pull RLS
-`This soldier pulls the rope.'
+`The soldier pulls this rope.'
 
 # bad demonstratives 
 Source: elicited
 Vetted: t
 Judgment: u
 Phenomena: cogst
-sitha hou cou hse te
-sitha hou cou hse te
-that soldier rope pull RLS
+sitha cou hou hse te
+sitha cou hou hse te
+soldier rope that pull RLS
 `That soldier pulls the rope.'
 
 # complex np with number and classifier
@@ -931,6 +1272,69 @@ kaun-te. einci apya can te
 be.good-ATTRIB shirt blue remain RLS
 `A good blue shirt remains.' 
 
+Source: a:289
+Vetted: s
+Judgment: g
+Phenomena: adj
+di lan ka ce te
+di lan ka ce te
+this street SUBJ wide RLS
+`This street is wide.'
+
+Source: a:289
+Vetted: s
+Judgment: g
+Phenomena: adj
+aya myin te
+aya myin te
+height tall RLS
+'(She) is tall.'
+
+Source: a:289
+Vetted: s
+Judgment: g
+Phenomena: adj
+thu ka nan te
+thu ka nan te
+she SUBJ wanton RLS
+`She is wanton.'
+
+Source: a:289
+Vetted: s
+Judgment: g
+Phenomena: adj
+di sapwe ka nein te
+di sapwe ka nein te
+this table SUBJ low RLS
+`This table is low.'
+
+Source: a:289
+Vetted: s
+Judgment: g
+Phenomena: adj
+htamin na te
+htamin na te
+rice well.cooked RLS
+`The rice is well cooked.'
+
+Source: a:289
+Vetted: s
+Judgment: g
+Phenomena: adj
+yei nau te
+yei nau te
+water turbid RLS
+`The water is turbid.'
+
+Source: a:289
+Vetted: s
+Judgment: g
+Phenomena: adj
+thu ka pya te
+thu ka pya te
+he SUBJ sever RLS
+`He is decisive.'
+
 # BAD
 #------
 
@@ -970,6 +1374,71 @@ einci can te apya
 shirt remain RLS blue
 `A blue shirt remains.'
 
+
+#@@@@@@@@ 
+
+Source: a:289
+Vetted: f
+Judgment: u
+Phenomena: adj
+ce di lan ka te
+ce di lan ka te
+wide this street SUBJ RLS
+`This street is wide.'
+
+Source: a:289
+Vetted: f
+Judgment: u
+Phenomena: adj
+myin aya te
+myin aya te
+tall height RLS
+'(She) is tall.'
+
+Source: a:289
+Vetted: f
+Judgment: u
+Phenomena: adj
+nan thu ka te
+nan thu ka te
+wanton she SUBJ RLS
+`She is wanton.'
+
+Source: a:289
+Vetted: f
+Judgment: u
+Phenomena: adj
+nein di sapwe ka te
+nein di sapwe ka te
+low this table SUBJ RLS
+`This table is low.'
+
+Source: a:289
+Vetted: f
+Judgment: u
+Phenomena: adj
+na htamin te
+na htamin te
+well.cooked rice RLS
+`The rice is well cooked.'
+
+Source: a:289
+Vetted: f
+Judgment: u
+Phenomena: adj
+nau yei te
+nau yei te
+turbid water RLS
+`The water is turbid.'
+
+Source: a:289
+Vetted: f
+Judgment: u
+Phenomena: adj
+pya thu ka te
+pya thu ka te
+sever he SUBJ RLS
+`He is decisive.'
 
 
 
@@ -1017,6 +1486,16 @@ I rice eat systematically RLS
 ####################
 # Embedded clauses #
 ####################
+
+
+Source: a:297
+Vetted: s
+Judgment: g
+Phenomena: emb-d
+muya la te htin te
+muya la te htin te
+name come RLS think RLS
+`I think that Muya came.'
 
 # emb-d
 # thu thei thwa hman / ceno ma thi hpu (preferred)
@@ -1071,6 +1550,16 @@ ganeinya hsouhma ba thahcinmya palein
 tonight sing.thing what songs wonder
 `I wonder what songs (they) will sing tonight.'
 
+# better example of embededd Q. I asked Lwin "how do you say 'I know who will sing'"
+# le is Q particle for wh-q
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: emb-q
+be tu thichinso me le kyunaw thi te
+be tu thichinso me le kyunaw thi te
+which pronoun sing RLS Q I know RLS
+`I know who will sing.'
 
 #########################
 # Non-verbal predicates #
@@ -1086,6 +1575,16 @@ di ngapyothi kaun te
 di ngapyothi kaun te
 this banana be.good RLS
 `This banana is good.'
+
+# ADJ
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+di ngapyothi pya te
+di ngapyothi pya te
+this banana blue RLS
+`This banana is blue.''
 
 # ADJ-Q
 Source: elicited
@@ -1116,6 +1615,55 @@ di sitha hsayawun la
 di sitha hsayawun la
 this soldier doctor Q
 `Is this soldier a doctor?'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+khinbya kyaungsaya la
+khinbya kyaungsaya la
+you teacher Q
+`Are you a teacher?'
+
+Source: a:250
+Vetted: s
+Judgment: g
+Phenomena: cop
+thuhka ka dayaita hpyi te
+thuhka ka dayaita hpyi te
+name SUBJ director be RLS
+`Thuka is a director.'
+
+# cop can be omitted along with final aux
+Source: a:250
+Vetted: s
+Judgment: g
+Phenomena: cop
+thuhka ka dayaita 
+thuhka ka dayaita 
+name SUBJ director
+`Thuka is a director.'
+
+# cannot negate it
+Source: a:250
+Vetted: s
+Judgment: u
+Phenomena: cop
+thuhka ka dayaita ma hpyi hpu
+thuhka ka dayaita ma hpyi hpu
+name SUBJ director NEG be RLS
+`Thuka is not a director.'
+
+
+# must instead use "be.true" verb
+Source: a:250
+Vetted: s
+Judgment: u
+Phenomena: cop
+thuhka ka dayaita ma hou hpu
+thuhka ka dayaita ma hou hpu
+name SUBJ director NEG true RLS
+`Thuka is not a director.'
 
 # PP
 Source: b:85
@@ -1199,6 +1747,33 @@ hmo hou can te
 mushroom that remain RLS
 `That mushroom remains.'
 
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+te hmo hou can
+te hmo hou can
+mushroom RLS that remain
+`That mushroom remains.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+te hmo hou can
+te hmo hou can
+RLS mushroom that remain
+`That mushroom remains.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+hmo hou te can
+hmo hou te can
+mushroom that RLS remain
+`That mushroom remains.'
+
 #### (*DET) PRONOUN/NAME
 
 Source: author
@@ -1245,6 +1820,42 @@ di thu ei te
 di thu ei te
 this he sleeps RLS
 `This he sleeps.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+di nga ei te
+di nga ei te
+this I sleeps RLS
+`This I sleeps.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+di nin ei te
+di nin ei te
+this you sleeps RLS
+`This you sleeps.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+di khinbya ei te
+di khinbya ei te
+this you sleeps RLS
+`This you sleeps.'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: det
+di ceno ei te
+di ceno ei te
+this I sleeps RLS
+`This I sleeps.'
 
 Source: author
 Vetted: f
