@@ -840,36 +840,55 @@ he eat RLS
 ########################
 
 # 2014-01-23 BPW - subjects are frequently dropped. Burmese has no verb morphology to hint at the dropped subject either.
+# BPW lab5 - although they can be disambiguated by arg markings 
 
-# full sentence.
-Source: b:131
-Vetted: s
+Source: elicited
+Vetted: t
 Judgment: g
 Phenomena: pro-d
-nga se yaun te
-nga se yaun te
-I machine sell RLS
-`I sold the machine.'
+di sitha cou hse te
+di sitha cou hse te
+this soldier rope pull RLS
+`This soldier pulls the rope.'
 
-# S-drop
-Source: b:131
-Vetted: s
-Judgment: g
-Phenomena: pro-d
-se yaun te
-se yaun te
-machine sell RLS
-`(?) sold the machine.'
-
-# O-drop?
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: pro-d
-nga yaun te
-nga yaun te
-I sell RLS
-`I sold (?).' 
+di sitha hse te
+di sitha hse te
+this soldier pull RLS
+`This soldier pulls () OR () pulls this soldier.'
+
+# this doesn't parse...???
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pro-d
+di sitha ka hse te
+di sitha ka hse te
+this soldier SUBJ pull RLS
+`This soldier pulls ().'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: pro-d
+cou hse te
+cou hse te
+rope pull RLS
+`The rope pulls () OR () pulls the rope.'
+
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: pro-d
+cou kou hse te
+cou kou hse te
+rope OBJ pull RLS
+`The rope pulls () OR () pulls the rope.'
+
+
 
 ##################
 # Demonstratives #
@@ -918,6 +937,16 @@ Phenomena: cogst
 sitha di cou hse te
 sitha di cou hse te
 soldier this rope pull RLS
+`The soldier pulls this rope.'
+
+# demonstratives 
+Source: author
+Vetted: f
+Judgment: g 
+Phenomena: cogst
+hou sitha di cou hse te
+hou sitha di cou hse te
+that soldier this rope pull RLS
 `The soldier pulls this rope.'
 
 # bad demonstratives 
@@ -1447,41 +1476,42 @@ sever he SUBJ RLS
 # Adverbs #
 ###########
 
-Source: author
-Vetted: f
+Source: b:135
+Vetted: s
 Judgment: g
 Phenomena: adv
-ceno htamin sanitaca sa me
-ceno htamin sanitaca sa me
-I rice systematically eat RLS
-`I will eat rice systematically.'
+ceno coucousasa ce me
+ceno coucousasa ce me
+I dilligently learn RLS
+`I will dilligently learn.'
 
-Source: author
+
+Source: b:135
 Vetted: f
 Judgment: u
 Phenomena: adv
-sanitaca ceno htamin sa me
-sanitaca ceno htamin sa me
-systematically I rice eat RLS
-`I will eat rice systematically.'
+ceno ce coucousasa  me
+ceno ce coucousasa  me
+I learn coucousasa RLS
+`I will dilligently learn.'
 
-Source: author
+Source: b:135
 Vetted: f
 Judgment: u
 Phenomena: adv
-ceno sanitaca htamin sa me
-ceno sanitaca htamin sa me
-I systematically rice eat RLS
-`I will eat rice systematically.'
+ceno ce me coucousasa 
+ceno ce me coucousasa  
+I learn RLS coucousasa
+`I will dilligently learn.'
 
-Source: author
+Source: b:135
 Vetted: f
 Judgment: u
 Phenomena: adv
-ceno htamin sa sanitaca me
-ceno htamin sa sanitaca me
-I rice eat systematically RLS
-`I will eat rice systematically.'
+coucousasa ceno ce me
+coucousasa ceno ce me
+dilligently I learn RLS
+`I will dilligently learn.'
 
 ####################
 # Embedded clauses #
@@ -1777,7 +1807,7 @@ mushroom that RLS remain
 #### (*DET) PRONOUN/NAME
 
 Source: author
-Vetted: f
+Vetted: t
 Judgment: g
 Phenomena: det
 lwin ei te
@@ -1786,7 +1816,7 @@ lwin sleeps RLS
 `Lwin sleeps.'
 
 Source: author
-Vetted: f
+Vetted: t
 Judgment: u
 Phenomena: det
 di lwin ei te
@@ -1813,7 +1843,7 @@ he sleeps RLS
 `He sleeps.'
 
 Source: author
-Vetted: f
+Vetted: t
 Judgment: u
 Phenomena: det
 di thu ei te

@@ -72,94 +72,97 @@
 72@author@@@1@pn@nga sa te@@@@1@3@I eat RLS`I eat.'@wibel, sean and brent woo@january 17, 2014
 73@author@@@1@pn@nin sa te@@@@1@3@you eat RLS`You eat.'@wibel, sean and brent woo@january 17, 2014
 74@author@@@1@pn@thu sa te@@@@1@3@he eat RLS`He eats.'@wibel, sean and brent woo@january 17, 2014
-75@b:131@@@1@pro-d@nga se yaun te@@@@1@4@I machine sell RLS`I sold the machine.'@wibel, sean and brent woo@january 17, 2014
-76@b:131@@@1@pro-d@se yaun te@@@@1@3@machine sell RLS`(?) sold the machine.'@wibel, sean and brent woo@january 17, 2014
-77@author@@@1@pro-d@nga yaun te@@@@0@3@I sell RLS`I sold (?).'@wibel, sean and brent woo@january 17, 2014
-78@elicited@@@1@cogst@di sitha cou hse te@@@@1@5@this soldier rope pull RLS`This soldier pulls the rope.'@wibel, sean and brent woo@january 17, 2014
-79@elicited@@@1@cogst@hou sitha cou hse te@@@@1@5@that soldier rope pull RLS`That soldier pulls the rope.'@wibel, sean and brent woo@january 17, 2014
-80@elicited@@@1@cogst@hou sitha cou hse la@@@@1@5@that soldier rope pull Q`That soldier pulls the rope?'@wibel, sean and brent woo@january 17, 2014
-81@elicited@@@1@cogst@sitha di cou hse te@@@@1@5@soldier this rope pull RLS`The soldier pulls this rope.'@wibel, sean and brent woo@january 17, 2014
-82@elicited@@@1@cogst@sitha cou hou hse te@@@@0@5@soldier rope that pull RLS`That soldier pulls the rope.'@wibel, sean and brent woo@january 17, 2014
-83@a:44@@@1@cogst@hou hkalei thoun yau yankoun yau thwa te@@@@1@8@that child three CLF Rangoon reach go RLS`Those three children have gone to Rangoon.'@wibel, sean and brent woo@january 17, 2014
-84@b:330@@@1@q@thu caun hci te la@@@@1@5@he cat like RLS Q`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
-85@author@@@1@q@thu caun hci la te@@@@0@5@he cat like Q RLS`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
-86@author@@@1@q@thu caun la hci te@@@@0@5@he cat Q like RLS`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
-87@author@@@1@q@thu la caun hci te@@@@0@5@he Q cat like  RLS`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
-88@author@@@1@q@la thu caun hci te@@@@0@5@Q he cat like  RLS`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
-89@b:328@@@1@q@miyahta hsai ma la thei hpu la@@@@1@7@train arrive not come CML RLS Q`Hasn't the train come in yet?'@wibel, sean and brent woo@january 17, 2014
-90@b:329@@@1@q@thu-meinma hko ma la hpu la@@@@1@6@he-wife bring not come RLS Q`Won't (he) bring his wife?'@wibel, sean and brent woo@january 17, 2014
-91@author@@@1@crd@nyunt ne lwin ne maunmaun ne htamin sa me@@@@1@9@name and name and name and rice eat RLS`Nyunt, Lwin, and Maunmaun will eat rice.'@wibel, sean and brent woo@january 17, 2014
-92@b:190@@@1@crd@lwin ne nyunt ne aung pa htamin sa me@@@@1@9@name and name and name and rice eat RLS`Lwin, Nyunt, and Aung will eat rice.'@wibel, sean and brent woo@january 17, 2014
-93@b:368@@@1@crd@ngayou jin ne hsa@@@@1@4@chili ginger and salt`chili, ginger, and salt'@wibel, sean and brent woo@january 17, 2014
-94@b:190@@@1@crd@thithatoun ama apya ne ahyei@@@@1@5@woodplank hard flat and long`hard, flat, and long plank of wood'@wibel, sean and brent woo@january 17, 2014
-95@b:471@@@1@crd@awin yo ahtwe yo can te@@@@1@6@entry and exit and remain RLS`The entry and exit remain.'@wibel, sean and brent woo@january 17, 2014
-96@author@@@1@crd@awin ne ahtwe ne can te@@@@0@6@entry and exit and remain RLS`The entry and exit remain.'@wibel, sean and brent woo@january 17, 2014
-97@b:471@@@1@crd@bamapyei-ka yo youdaya-ka yo eindiya-ka pa@@@@1@6@Burma-from and Siam-from and India-from and`from Burma, Siam, and India (too)'@wibel, sean and brent woo@january 17, 2014
-98@b:376@@@1@crd@lethama-tei yo kounthe-tei pa te ca te@@@@1@7@farmer-PL and trader-PL and attend all RLS`Both farmers and traders attended.'@wibel, sean and brent woo@january 17, 2014
-99@b:459@@@1@crd@hsaya ye jun ye hpei hcin pa te@@@@1@8@teacher and name and invite want POL RLS`I want to invite John and teacher.'@wibel, sean and brent woo@january 17, 2014
-100@elicited@@@1@crd@swedi ye lwin ye maunmaun ye ne htamin sa me@@@@1@10@name and name and name and and rice eat RLS`Swedi, Lwin, and MaunMaun will eat rice.'@wibel, sean and brent woo@january 17, 2014
-101@elicited@@@1@crd@hmo ngapyothi htamin sa me@@@@1@5@mushroom banana rice eat RLS`(I) will eat mushroom, banana, and rice.'@wibel, sean and brent woo@january 17, 2014
-102@b:180@@@1@crd@dihma le htou te dihma le thwin te@@@@1@8@here and withdraw RLS here and deposit RLS`Here one can withdraw and deposit.'@wibel, sean and brent woo@january 17, 2014
-103@elicited@@@1@crd@lwin thau le thau sa le sa te@@@@1@8@lwin drink and drink eat and eat RLS`Lwin drinks and eats.'@wibel, sean and brent woo@january 17, 2014
-104@elicited@@@1@adj@einci ahaun apya can te@@@@1@5@shirt old blue remain RLS`A blue old shirt remains.'@wibel, sean and brent woo@january 17, 2014
-105@elicited@@@1@adj@einci apya ahaun can te@@@@1@5@shirt blue old remain RLS`An old blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
-106@elicited@@@1@adj@kaun-te. einci apya can te@@@@1@5@be.good-ATTRIB shirt blue remain RLS`A good blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
-107@a:289@@@1@adj@di lan ka ce te@@@@1@5@this street SUBJ wide RLS`This street is wide.'@wibel, sean and brent woo@january 17, 2014
-108@a:289@@@1@adj@aya myin te@@@@1@3@height tall RLS'(She) is tall.'@wibel, sean and brent woo@january 17, 2014
-109@a:289@@@1@adj@thu ka nan te@@@@1@4@she SUBJ wanton RLS`She is wanton.'@wibel, sean and brent woo@january 17, 2014
-110@a:289@@@1@adj@di sapwe ka nein te@@@@1@5@this table SUBJ low RLS`This table is low.'@wibel, sean and brent woo@january 17, 2014
-111@a:289@@@1@adj@htamin na te@@@@1@3@rice well.cooked RLS`The rice is well cooked.'@wibel, sean and brent woo@january 17, 2014
-112@a:289@@@1@adj@yei nau te@@@@1@3@water turbid RLS`The water is turbid.'@wibel, sean and brent woo@january 17, 2014
-113@a:289@@@1@adj@thu ka pya te@@@@1@4@he SUBJ sever RLS`He is decisive.'@wibel, sean and brent woo@january 17, 2014
-114@elicited@@@1@adj@einci kaun-te. can te@@@@0@4@shirt be.good-ATTRIB remain RLS`A good shirt remains.'@wibel, sean and brent woo@january 17, 2014
-115@elicited@@@1@adj@apya einci can te@@@@0@4@blue shirt remain RLS`A blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
-116@elicited@@@1@adj@einci can apya te@@@@0@4@shirt remain blue RLS`A blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
-117@elicited@@@1@adj@einci can te apya@@@@0@4@shirt remain RLS blue`A blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
-118@a:289@@@1@adj@ce di lan ka te@@@@0@5@wide this street SUBJ RLS`This street is wide.'@wibel, sean and brent woo@january 17, 2014
-119@a:289@@@1@adj@myin aya te@@@@0@3@tall height RLS'(She) is tall.'@wibel, sean and brent woo@january 17, 2014
-120@a:289@@@1@adj@nan thu ka te@@@@0@4@wanton she SUBJ RLS`She is wanton.'@wibel, sean and brent woo@january 17, 2014
-121@a:289@@@1@adj@nein di sapwe ka te@@@@0@5@low this table SUBJ RLS`This table is low.'@wibel, sean and brent woo@january 17, 2014
-122@a:289@@@1@adj@na htamin te@@@@0@3@well.cooked rice RLS`The rice is well cooked.'@wibel, sean and brent woo@january 17, 2014
-123@a:289@@@1@adj@nau yei te@@@@0@3@turbid water RLS`The water is turbid.'@wibel, sean and brent woo@january 17, 2014
-124@a:289@@@1@adj@pya thu ka te@@@@0@4@sever he SUBJ RLS`He is decisive.'@wibel, sean and brent woo@january 17, 2014
-125@author@@@1@adv@ceno htamin sanitaca sa me@@@@1@5@I rice systematically eat RLS`I will eat rice systematically.'@wibel, sean and brent woo@january 17, 2014
-126@author@@@1@adv@sanitaca ceno htamin sa me@@@@0@5@systematically I rice eat RLS`I will eat rice systematically.'@wibel, sean and brent woo@january 17, 2014
-127@author@@@1@adv@ceno sanitaca htamin sa me@@@@0@5@I systematically rice eat RLS`I will eat rice systematically.'@wibel, sean and brent woo@january 17, 2014
-128@author@@@1@adv@ceno htamin sa sanitaca me@@@@0@5@I rice eat systematically RLS`I will eat rice systematically.'@wibel, sean and brent woo@january 17, 2014
-129@a:297@@@1@emb-d@muya la te htin te@@@@1@5@name come RLS think RLS`I think that Muya came.'@wibel, sean and brent woo@january 17, 2014
-130@b:290@@@1@emb-d@thei thwa hman ma thi hpu@@@@1@6@die go that NEG know RLS`(I) didn't know that (he) had died.'@wibel, sean and brent woo@january 17, 2014
-131@elicited@@@1@emb-d@thu thei thwa hman ceno ma thi hpu@@@@1@8@he die go that I NEG know RLS`I didn't know that he had died.'@wibel, sean and brent woo@january 17, 2014
-132@elicited@@@1@emb-d@ceno thu thei thwa hman ma thi hpu@@@@0@8@I he die go that NEG know RLS`I didn't know that he had died.'@wibel, sean and brent woo@january 17, 2014
-133@elicited@@@1@emb-d@thu thei thwa ma thi hpu@@@@0@6@he die go NEG know RLS`(I) didn't know he had died.'@wibel, sean and brent woo@january 17, 2014
-134@b:378@@@1@emb-q@ganeinya hsouhma ba thahcinmya palein@@@@1@5@tonight sing.thing what songs wonder`I wonder what songs (they) will sing tonight.'@wibel, sean and brent woo@january 17, 2014
-135@elicited@@@1@emb-q@be tu thichinso me le kyunaw thi te@@@@1@8@which pronoun sing RLS Q I know RLS`I know who will sing.'@wibel, sean and brent woo@january 17, 2014
-136@elicited@@@1@cop@di ngapyothi kaun te@@@@1@4@this banana be.good RLS`This banana is good.'@wibel, sean and brent woo@january 17, 2014
-137@elicited@@@1@cop@di ngapyothi pya te@@@@1@4@this banana blue RLS`This banana is blue.''@wibel, sean and brent woo@january 17, 2014
-138@elicited@@@1@cop@di ngapyothi kaun la@@@@1@4@this banana be.good Q`Is this banana good?'@wibel, sean and brent woo@january 17, 2014
-139@b:150@@@1@cop@di sitha hsayawun te@@@@1@4@this soldier doctor RLS`This soldier is a doctor.'@wibel, sean and brent woo@january 17, 2014
-140@elicited@@@1@cop@di sitha hsayawun la@@@@1@4@this soldier doctor Q`Is this soldier a doctor?'@wibel, sean and brent woo@january 17, 2014
-141@elicited@@@1@cop@khinbya kyaungsaya la@@@@1@3@you teacher Q`Are you a teacher?'@wibel, sean and brent woo@january 17, 2014
-142@a:250@@@1@cop@thuhka ka dayaita hpyi te@@@@1@5@name SUBJ director be RLS`Thuka is a director.'@wibel, sean and brent woo@january 17, 2014
-143@a:250@@@1@cop@thuhka ka dayaita@@@@1@3@name SUBJ director`Thuka is a director.'@wibel, sean and brent woo@january 17, 2014
-144@a:250@@@1@cop@thuhka ka dayaita ma hpyi hpu@@@@0@6@name SUBJ director NEG be RLS`Thuka is not a director.'@wibel, sean and brent woo@january 17, 2014
-145@a:250@@@1@cop@thuhka ka dayaita ma hou hpu@@@@0@6@name SUBJ director NEG true RLS`Thuka is not a director.'@wibel, sean and brent woo@january 17, 2014
-146@b:85@@@1@cop@cauntha-tei ka bamapyei-ka te@@@@1@4@student-PL SUBJ Burma-from RLS`The students were from Burma.'@wibel, sean and brent woo@january 17, 2014
-147@elicited@@@1@cop@cauntha-tei ka bamapyei-ka la@@@@1@4@student-PL SUBJ Burma-from Q`Were the students from Burma?'@wibel, sean and brent woo@january 17, 2014
-148@elicited@@@1@det@hmo can te@@@@1@3@mushroom remain RLS`(A/0) mushroom remains.'@wibel, sean and brent woo@january 17, 2014
-149@elicited@@@1@det@di hmo can te@@@@1@4@this mushroom remain RLS`This mushroom remains.'@wibel, sean and brent woo@january 17, 2014
-150@elicited@@@1@det@hou hmo can te@@@@1@4@that mushroom remain RLS`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
-151@elicited@@@1@det@hmo di can te@@@@0@4@mushroom this remain RLS`This mushroom remains.'@wibel, sean and brent woo@january 17, 2014
-152@elicited@@@1@det@hmo hou can te@@@@0@4@mushroom that remain RLS`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
-153@author@@@1@det@te hmo hou can@@@@0@4@mushroom RLS that remain`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
-154@author@@@1@det@te hmo hou can@@@@0@4@RLS mushroom that remain`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
-155@author@@@1@det@hmo hou te can@@@@0@4@mushroom that RLS remain`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
-156@author@@@1@det@lwin ei te@@@@1@3@lwin sleeps RLS`Lwin sleeps.'@wibel, sean and brent woo@january 17, 2014
-157@author@@@1@det@di lwin ei te@@@@0@4@this lwin sleeps RLS`This Lwin sleeps.'@wibel, sean and brent woo@january 17, 2014
-158@author@@@1@det@lwin di ei te@@@@0@4@lwin this sleeps RLS`This Lwin sleeps.'@wibel, sean and brent woo@january 17, 2014
-159@author@@@1@det@thu ei te@@@@1@3@he sleeps RLS`He sleeps.'@wibel, sean and brent woo@january 17, 2014
-160@author@@@1@det@di thu ei te@@@@0@4@this he sleeps RLS`This he sleeps.'@wibel, sean and brent woo@january 17, 2014
-161@author@@@1@det@di nga ei te@@@@0@4@this I sleeps RLS`This I sleeps.'@wibel, sean and brent woo@january 17, 2014
-162@author@@@1@det@di nin ei te@@@@0@4@this you sleeps RLS`This you sleeps.'@wibel, sean and brent woo@january 17, 2014
-163@author@@@1@det@di khinbya ei te@@@@0@4@this you sleeps RLS`This you sleeps.'@wibel, sean and brent woo@january 17, 2014
-164@author@@@1@det@di ceno ei te@@@@0@4@this I sleeps RLS`This I sleeps.'@wibel, sean and brent woo@january 17, 2014
-165@author@@@1@det@thu di ei te@@@@0@4@he this sleeps RLS`This he sleeps.'@wibel, sean and brent woo@january 17, 2014
+75@elicited@@@1@pro-d@di sitha cou hse te@@@@1@5@this soldier rope pull RLS`This soldier pulls the rope.'@wibel, sean and brent woo@january 17, 2014
+76@author@@@1@pro-d@di sitha hse te@@@@1@4@this soldier pull RLS`This soldier pulls () OR () pulls this soldier.'@wibel, sean and brent woo@january 17, 2014
+77@author@@@1@pro-d@di sitha ka hse te@@@@1@5@this soldier SUBJ pull RLS`This soldier pulls ().'@wibel, sean and brent woo@january 17, 2014
+78@elicited@@@1@pro-d@cou hse te@@@@1@3@rope pull RLS`The rope pulls () OR () pulls the rope.'@wibel, sean and brent woo@january 17, 2014
+79@elicited@@@1@pro-d@cou kou hse te@@@@1@4@rope OBJ pull RLS`The rope pulls () OR () pulls the rope.'@wibel, sean and brent woo@january 17, 2014
+80@elicited@@@1@cogst@di sitha cou hse te@@@@1@5@this soldier rope pull RLS`This soldier pulls the rope.'@wibel, sean and brent woo@january 17, 2014
+81@elicited@@@1@cogst@hou sitha cou hse te@@@@1@5@that soldier rope pull RLS`That soldier pulls the rope.'@wibel, sean and brent woo@january 17, 2014
+82@elicited@@@1@cogst@hou sitha cou hse la@@@@1@5@that soldier rope pull Q`That soldier pulls the rope?'@wibel, sean and brent woo@january 17, 2014
+83@elicited@@@1@cogst@sitha di cou hse te@@@@1@5@soldier this rope pull RLS`The soldier pulls this rope.'@wibel, sean and brent woo@january 17, 2014
+84@author@@@1@cogst@hou sitha di cou hse te@@@@1@6@that soldier this rope pull RLS`The soldier pulls this rope.'@wibel, sean and brent woo@january 17, 2014
+85@elicited@@@1@cogst@sitha cou hou hse te@@@@0@5@soldier rope that pull RLS`That soldier pulls the rope.'@wibel, sean and brent woo@january 17, 2014
+86@a:44@@@1@cogst@hou hkalei thoun yau yankoun yau thwa te@@@@1@8@that child three CLF Rangoon reach go RLS`Those three children have gone to Rangoon.'@wibel, sean and brent woo@january 17, 2014
+87@b:330@@@1@q@thu caun hci te la@@@@1@5@he cat like RLS Q`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
+88@author@@@1@q@thu caun hci la te@@@@0@5@he cat like Q RLS`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
+89@author@@@1@q@thu caun la hci te@@@@0@5@he cat Q like RLS`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
+90@author@@@1@q@thu la caun hci te@@@@0@5@he Q cat like  RLS`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
+91@author@@@1@q@la thu caun hci te@@@@0@5@Q he cat like  RLS`Does he like cats?'@wibel, sean and brent woo@january 17, 2014
+92@b:328@@@1@q@miyahta hsai ma la thei hpu la@@@@1@7@train arrive not come CML RLS Q`Hasn't the train come in yet?'@wibel, sean and brent woo@january 17, 2014
+93@b:329@@@1@q@thu-meinma hko ma la hpu la@@@@1@6@he-wife bring not come RLS Q`Won't (he) bring his wife?'@wibel, sean and brent woo@january 17, 2014
+94@author@@@1@crd@nyunt ne lwin ne maunmaun ne htamin sa me@@@@1@9@name and name and name and rice eat RLS`Nyunt, Lwin, and Maunmaun will eat rice.'@wibel, sean and brent woo@january 17, 2014
+95@b:190@@@1@crd@lwin ne nyunt ne aung pa htamin sa me@@@@1@9@name and name and name and rice eat RLS`Lwin, Nyunt, and Aung will eat rice.'@wibel, sean and brent woo@january 17, 2014
+96@b:368@@@1@crd@ngayou jin ne hsa@@@@1@4@chili ginger and salt`chili, ginger, and salt'@wibel, sean and brent woo@january 17, 2014
+97@b:190@@@1@crd@thithatoun ama apya ne ahyei@@@@1@5@woodplank hard flat and long`hard, flat, and long plank of wood'@wibel, sean and brent woo@january 17, 2014
+98@b:471@@@1@crd@awin yo ahtwe yo can te@@@@1@6@entry and exit and remain RLS`The entry and exit remain.'@wibel, sean and brent woo@january 17, 2014
+99@author@@@1@crd@awin ne ahtwe ne can te@@@@0@6@entry and exit and remain RLS`The entry and exit remain.'@wibel, sean and brent woo@january 17, 2014
+100@b:471@@@1@crd@bamapyei-ka yo youdaya-ka yo eindiya-ka pa@@@@1@6@Burma-from and Siam-from and India-from and`from Burma, Siam, and India (too)'@wibel, sean and brent woo@january 17, 2014
+101@b:376@@@1@crd@lethama-tei yo kounthe-tei pa te ca te@@@@1@7@farmer-PL and trader-PL and attend all RLS`Both farmers and traders attended.'@wibel, sean and brent woo@january 17, 2014
+102@b:459@@@1@crd@hsaya ye jun ye hpei hcin pa te@@@@1@8@teacher and name and invite want POL RLS`I want to invite John and teacher.'@wibel, sean and brent woo@january 17, 2014
+103@elicited@@@1@crd@swedi ye lwin ye maunmaun ye ne htamin sa me@@@@1@10@name and name and name and and rice eat RLS`Swedi, Lwin, and MaunMaun will eat rice.'@wibel, sean and brent woo@january 17, 2014
+104@elicited@@@1@crd@hmo ngapyothi htamin sa me@@@@1@5@mushroom banana rice eat RLS`(I) will eat mushroom, banana, and rice.'@wibel, sean and brent woo@january 17, 2014
+105@b:180@@@1@crd@dihma le htou te dihma le thwin te@@@@1@8@here and withdraw RLS here and deposit RLS`Here one can withdraw and deposit.'@wibel, sean and brent woo@january 17, 2014
+106@elicited@@@1@crd@lwin thau le thau sa le sa te@@@@1@8@lwin drink and drink eat and eat RLS`Lwin drinks and eats.'@wibel, sean and brent woo@january 17, 2014
+107@elicited@@@1@adj@einci ahaun apya can te@@@@1@5@shirt old blue remain RLS`A blue old shirt remains.'@wibel, sean and brent woo@january 17, 2014
+108@elicited@@@1@adj@einci apya ahaun can te@@@@1@5@shirt blue old remain RLS`An old blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
+109@elicited@@@1@adj@kaun-te. einci apya can te@@@@1@5@be.good-ATTRIB shirt blue remain RLS`A good blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
+110@a:289@@@1@adj@di lan ka ce te@@@@1@5@this street SUBJ wide RLS`This street is wide.'@wibel, sean and brent woo@january 17, 2014
+111@a:289@@@1@adj@aya myin te@@@@1@3@height tall RLS'(She) is tall.'@wibel, sean and brent woo@january 17, 2014
+112@a:289@@@1@adj@thu ka nan te@@@@1@4@she SUBJ wanton RLS`She is wanton.'@wibel, sean and brent woo@january 17, 2014
+113@a:289@@@1@adj@di sapwe ka nein te@@@@1@5@this table SUBJ low RLS`This table is low.'@wibel, sean and brent woo@january 17, 2014
+114@a:289@@@1@adj@htamin na te@@@@1@3@rice well.cooked RLS`The rice is well cooked.'@wibel, sean and brent woo@january 17, 2014
+115@a:289@@@1@adj@yei nau te@@@@1@3@water turbid RLS`The water is turbid.'@wibel, sean and brent woo@january 17, 2014
+116@a:289@@@1@adj@thu ka pya te@@@@1@4@he SUBJ sever RLS`He is decisive.'@wibel, sean and brent woo@january 17, 2014
+117@elicited@@@1@adj@einci kaun-te. can te@@@@0@4@shirt be.good-ATTRIB remain RLS`A good shirt remains.'@wibel, sean and brent woo@january 17, 2014
+118@elicited@@@1@adj@apya einci can te@@@@0@4@blue shirt remain RLS`A blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
+119@elicited@@@1@adj@einci can apya te@@@@0@4@shirt remain blue RLS`A blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
+120@elicited@@@1@adj@einci can te apya@@@@0@4@shirt remain RLS blue`A blue shirt remains.'@wibel, sean and brent woo@january 17, 2014
+121@a:289@@@1@adj@ce di lan ka te@@@@0@5@wide this street SUBJ RLS`This street is wide.'@wibel, sean and brent woo@january 17, 2014
+122@a:289@@@1@adj@myin aya te@@@@0@3@tall height RLS'(She) is tall.'@wibel, sean and brent woo@january 17, 2014
+123@a:289@@@1@adj@nan thu ka te@@@@0@4@wanton she SUBJ RLS`She is wanton.'@wibel, sean and brent woo@january 17, 2014
+124@a:289@@@1@adj@nein di sapwe ka te@@@@0@5@low this table SUBJ RLS`This table is low.'@wibel, sean and brent woo@january 17, 2014
+125@a:289@@@1@adj@na htamin te@@@@0@3@well.cooked rice RLS`The rice is well cooked.'@wibel, sean and brent woo@january 17, 2014
+126@a:289@@@1@adj@nau yei te@@@@0@3@turbid water RLS`The water is turbid.'@wibel, sean and brent woo@january 17, 2014
+127@a:289@@@1@adj@pya thu ka te@@@@0@4@sever he SUBJ RLS`He is decisive.'@wibel, sean and brent woo@january 17, 2014
+128@b:135@@@1@adv@ceno coucousasa ce me@@@@1@4@I dilligently learn RLS`I will dilligently learn.'@wibel, sean and brent woo@january 17, 2014
+129@b:135@@@1@adv@ceno ce coucousasa  me@@@@0@4@I learn coucousasa RLS`I will dilligently learn.'@wibel, sean and brent woo@january 17, 2014
+130@b:135@@@1@adv@ceno ce me coucousasa@@@@0@4@I learn RLS coucousasa`I will dilligently learn.'@wibel, sean and brent woo@january 17, 2014
+131@b:135@@@1@adv@coucousasa ceno ce me@@@@0@4@dilligently I learn RLS`I will dilligently learn.'@wibel, sean and brent woo@january 17, 2014
+132@a:297@@@1@emb-d@muya la te htin te@@@@1@5@name come RLS think RLS`I think that Muya came.'@wibel, sean and brent woo@january 17, 2014
+133@b:290@@@1@emb-d@thei thwa hman ma thi hpu@@@@1@6@die go that NEG know RLS`(I) didn't know that (he) had died.'@wibel, sean and brent woo@january 17, 2014
+134@elicited@@@1@emb-d@thu thei thwa hman ceno ma thi hpu@@@@1@8@he die go that I NEG know RLS`I didn't know that he had died.'@wibel, sean and brent woo@january 17, 2014
+135@elicited@@@1@emb-d@ceno thu thei thwa hman ma thi hpu@@@@0@8@I he die go that NEG know RLS`I didn't know that he had died.'@wibel, sean and brent woo@january 17, 2014
+136@elicited@@@1@emb-d@thu thei thwa ma thi hpu@@@@0@6@he die go NEG know RLS`(I) didn't know he had died.'@wibel, sean and brent woo@january 17, 2014
+137@b:378@@@1@emb-q@ganeinya hsouhma ba thahcinmya palein@@@@1@5@tonight sing.thing what songs wonder`I wonder what songs (they) will sing tonight.'@wibel, sean and brent woo@january 17, 2014
+138@elicited@@@1@emb-q@be tu thichinso me le kyunaw thi te@@@@1@8@which pronoun sing RLS Q I know RLS`I know who will sing.'@wibel, sean and brent woo@january 17, 2014
+139@elicited@@@1@cop@di ngapyothi kaun te@@@@1@4@this banana be.good RLS`This banana is good.'@wibel, sean and brent woo@january 17, 2014
+140@elicited@@@1@cop@di ngapyothi pya te@@@@1@4@this banana blue RLS`This banana is blue.''@wibel, sean and brent woo@january 17, 2014
+141@elicited@@@1@cop@di ngapyothi kaun la@@@@1@4@this banana be.good Q`Is this banana good?'@wibel, sean and brent woo@january 17, 2014
+142@b:150@@@1@cop@di sitha hsayawun te@@@@1@4@this soldier doctor RLS`This soldier is a doctor.'@wibel, sean and brent woo@january 17, 2014
+143@elicited@@@1@cop@di sitha hsayawun la@@@@1@4@this soldier doctor Q`Is this soldier a doctor?'@wibel, sean and brent woo@january 17, 2014
+144@elicited@@@1@cop@khinbya kyaungsaya la@@@@1@3@you teacher Q`Are you a teacher?'@wibel, sean and brent woo@january 17, 2014
+145@a:250@@@1@cop@thuhka ka dayaita hpyi te@@@@1@5@name SUBJ director be RLS`Thuka is a director.'@wibel, sean and brent woo@january 17, 2014
+146@a:250@@@1@cop@thuhka ka dayaita@@@@1@3@name SUBJ director`Thuka is a director.'@wibel, sean and brent woo@january 17, 2014
+147@a:250@@@1@cop@thuhka ka dayaita ma hpyi hpu@@@@0@6@name SUBJ director NEG be RLS`Thuka is not a director.'@wibel, sean and brent woo@january 17, 2014
+148@a:250@@@1@cop@thuhka ka dayaita ma hou hpu@@@@0@6@name SUBJ director NEG true RLS`Thuka is not a director.'@wibel, sean and brent woo@january 17, 2014
+149@b:85@@@1@cop@cauntha-tei ka bamapyei-ka te@@@@1@4@student-PL SUBJ Burma-from RLS`The students were from Burma.'@wibel, sean and brent woo@january 17, 2014
+150@elicited@@@1@cop@cauntha-tei ka bamapyei-ka la@@@@1@4@student-PL SUBJ Burma-from Q`Were the students from Burma?'@wibel, sean and brent woo@january 17, 2014
+151@elicited@@@1@det@hmo can te@@@@1@3@mushroom remain RLS`(A/0) mushroom remains.'@wibel, sean and brent woo@january 17, 2014
+152@elicited@@@1@det@di hmo can te@@@@1@4@this mushroom remain RLS`This mushroom remains.'@wibel, sean and brent woo@january 17, 2014
+153@elicited@@@1@det@hou hmo can te@@@@1@4@that mushroom remain RLS`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
+154@elicited@@@1@det@hmo di can te@@@@0@4@mushroom this remain RLS`This mushroom remains.'@wibel, sean and brent woo@january 17, 2014
+155@elicited@@@1@det@hmo hou can te@@@@0@4@mushroom that remain RLS`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
+156@author@@@1@det@te hmo hou can@@@@0@4@mushroom RLS that remain`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
+157@author@@@1@det@te hmo hou can@@@@0@4@RLS mushroom that remain`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
+158@author@@@1@det@hmo hou te can@@@@0@4@mushroom that RLS remain`That mushroom remains.'@wibel, sean and brent woo@january 17, 2014
+159@author@@@1@det@lwin ei te@@@@1@3@lwin sleeps RLS`Lwin sleeps.'@wibel, sean and brent woo@january 17, 2014
+160@author@@@1@det@di lwin ei te@@@@0@4@this lwin sleeps RLS`This Lwin sleeps.'@wibel, sean and brent woo@january 17, 2014
+161@author@@@1@det@lwin di ei te@@@@0@4@lwin this sleeps RLS`This Lwin sleeps.'@wibel, sean and brent woo@january 17, 2014
+162@author@@@1@det@thu ei te@@@@1@3@he sleeps RLS`He sleeps.'@wibel, sean and brent woo@january 17, 2014
+163@author@@@1@det@di thu ei te@@@@0@4@this he sleeps RLS`This he sleeps.'@wibel, sean and brent woo@january 17, 2014
+164@author@@@1@det@di nga ei te@@@@0@4@this I sleeps RLS`This I sleeps.'@wibel, sean and brent woo@january 17, 2014
+165@author@@@1@det@di nin ei te@@@@0@4@this you sleeps RLS`This you sleeps.'@wibel, sean and brent woo@january 17, 2014
+166@author@@@1@det@di khinbya ei te@@@@0@4@this you sleeps RLS`This you sleeps.'@wibel, sean and brent woo@january 17, 2014
+167@author@@@1@det@di ceno ei te@@@@0@4@this I sleeps RLS`This I sleeps.'@wibel, sean and brent woo@january 17, 2014
+168@author@@@1@det@thu di ei te@@@@0@4@he this sleeps RLS`This he sleeps.'@wibel, sean and brent woo@january 17, 2014
