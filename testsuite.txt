@@ -1527,6 +1527,25 @@ muya la te htin te
 name come RLS think RLS
 `I think that Muya came.'
 
+# optional C
+Source: a:306
+Vetted: s
+Judgment: g
+Phenomena: emb-d
+thu naale te lou htin te
+thu naale te lou htin te
+she understand RLS C think RLS
+`I think that she understands.
+
+Source: a:306
+Vetted: s
+Judgment: g
+Phenomena: emb-d
+thu naale te htin te
+thu naale te htin te
+she understand RLS think RLS
+`I think that she understands.
+
 # emb-d
 # thu thei thwa hman / ceno ma thi hpu (preferred)
 # ceno [thu thei thwa hman] ma thi hpu (marked) 
@@ -1558,27 +1577,21 @@ ceno thu thei thwa hman ma thi hpu
 I he die go that NEG know RLS
 `I didn't know that he had died.'
 
-# bad - no C
-Source: elicited
-Vetted: t
-Judgment: u
-Phenomena: emb-d
-thu thei thwa ma thi hpu
-thu thei thwa ma thi hpu
-he die go NEG know RLS
-`(I) didn't know he had died.'
+#-------
+# emb-q
+#-------
 
 # *1sg anywhere
-# palein is categorized as sentence-final particle
-# emb-q
-Source: b:378
-Vetted: s
-Judgment: g
-Phenomena: emb-q
-ganeinya hsouhma ba thahcinmya palein
-ganeinya hsouhma ba thahcinmya palein
-tonight sing.thing what songs wonder
-`I wonder what songs (they) will sing tonight.'
+## palein is categorized as sentence-final particle
+## emb-q
+#Source: b:378
+#Vetted: s
+#Judgment: g
+#Phenomena: emb-q
+#ganeinya hsouhma ba thahcinmya palein
+#ganeinya hsouhma ba thahcinmya palein
+#tonight sing.thing what songs wonder
+#`I wonder what songs (they) will sing tonight.'
 
 # better example of embededd Q. I asked Lwin "how do you say 'I know who will sing'"
 # le is Q particle for wh-q
@@ -1590,6 +1603,33 @@ be tu thichinso me le kyunaw thi te
 be tu thichinso me le kyunaw thi te
 which pronoun sing RLS Q I know RLS
 `I know who will sing.'
+
+Source: a:307
+Vetted: s
+Judgment: g
+Phenomena: emb-q
+tinsou be thwa le
+tinsou be thwa le
+name WH go Q
+`Where did TinSoe go?'
+
+Source: a:307
+Vetted: s
+Judgment: g
+Phenomena: emb-q
+tinsou be thwa le mei te
+tinsou be thwa le mei te
+name WH go Q ask RLS
+`(She) asked where TinSoe went.'
+
+Source: a:307
+Vetted: s
+Judgment: g
+Phenomena: emb-q
+tinsou be thwa le mei la
+tinsou be thwa le mei la
+`Did (she) ask where TinSoe went?'
+
 
 #########################
 # Non-verbal predicates #
@@ -1625,6 +1665,9 @@ di ngapyothi kaun la
 di ngapyothi kaun la
 this banana be.good Q
 `Is this banana good?'
+
+# NP-NP
+#--------------------------------
 
 # NP
 Source: b:150
@@ -1675,15 +1718,15 @@ name SUBJ director
 `Thuka is a director.'
 
 # cannot negate it
+# BPWlab6 - contrary, this can be negated, but it carries a different meaning. "This is not possible."
 Source: a:250
 Vetted: s
-Judgment: u
+Judgment: g
 Phenomena: cop
 thuhka ka dayaita ma hpyi hpu
 thuhka ka dayaita ma hpyi hpu
 name SUBJ director NEG be RLS
-`Thuka is not a director.'
-
+`It is not possible that Thuka be a director.'
 
 # must instead use "be.true" verb
 Source: a:250
@@ -1694,6 +1737,37 @@ thuhka ka dayaita ma hou hpu
 thuhka ka dayaita ma hou hpu
 name SUBJ director NEG true RLS
 `Thuka is not a director.'
+
+# with modal auxiliaries like NAIN 'can' HCIN 'want' or aspectual THWA, hpyi takes on the meaning of "become" (a:250)
+
+Source: a:251
+Vetted: s
+Judgment: g
+Phenomena: cop
+thu thamata hpyi nain te
+thu thamata hpyi nain te
+she president be can RLS
+`She can become president.'
+
+Source: a:251
+Vetted: s
+Judgment: g
+Phenomena: cop
+thu wunci hpyi thwa te
+thu wunci hpyi thwa te
+she Minister be go RLS
+`She became a minster.'
+
+# hpyi means 'happen/occur' with a single argument. 
+Source: a:251
+Vetted: s
+Judgment: cop
+yan hpyi te
+yan hpyi te
+enmity happen RLS
+`(They) quarreled. OR A fight happened.'
+
+
 
 # PP
 Source: b:85
