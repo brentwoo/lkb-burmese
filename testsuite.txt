@@ -1762,6 +1762,7 @@ she Minister be go RLS
 Source: a:251
 Vetted: s
 Judgment: cop
+Phenonema: cop
 yan hpyi te
 yan hpyi te
 enmity happen RLS
@@ -1769,25 +1770,40 @@ enmity happen RLS
 
 
 
-# PP
-Source: b:85
+# NP-PP ---------------------------------------
+
+# PP 'locative verb' NEI ("stay") is optional with PP complements
+
+# based on b:176 "from Colombo"
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+di sitha yankoun kaa nei te
+di sitha yankoun kaa nei te
+this soldier Rangoon from be+located RLS
+`This soldier is from Rangoon.'
+
+# question without any verb
+Source: b:199
 Vetted: s
 Judgment: g
 Phenomena: cop
-cauntha-tei ka bamapyei-ka te 
-cauntha-tei ka bamapyei-ka te 
-student-PL SUBJ Burma-from RLS
-`The students were from Burma.'
+di sitha yankoun kaa la
+di sitha yankoun kaa la
+this soldier Rangoon from Q
+`Is this soldier from Rangoon?'
 
-# PP-Q
-Source: elicited
-Vetted: t
+# based on b:180 "Both Ko Aye are HlaHla are from Monya (no verb)"
+Source: author
+Vetted: f
 Judgment: g
 Phenomena: cop
-cauntha-tei ka bamapyei-ka la 
-cauntha-tei ka bamapyei-ka la 
-student-PL SUBJ Burma-from Q
-`Were the students from Burma?'
+di sitha yankoun kaa
+di sitha yankoun kaa
+this soldier Rangoon from
+`This soldier is from Rangoon.'
+
 
 
 #########################
@@ -1972,11 +1988,22 @@ he this sleeps RLS
 
 
 
+#####################
+# Modal auxiliaries #
+#####################
+
+# နိုင်
 
 
+#Source: author
+#Vetted: f
+#Jpdgment: g
+#Phenomena: m
+#nain
+#
 
-
-
+#
+#
 
 #####################################################################
 ######################################################################
