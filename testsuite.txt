@@ -1527,7 +1527,6 @@ muya la te htin te
 name come RLS think RLS
 `I think that Muya came.'
 
-# optional C
 Source: a:306
 Vetted: s
 Judgment: g
@@ -1536,6 +1535,15 @@ thu naale te lou htin te
 thu naale te lou htin te
 she understand RLS C think RLS
 `I think that she understands.
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: emb-d
+ceno nin ei te lou thi te
+ceno nin ei te lou thi te
+I you sleep RLS C know RLS
+`I know that you sleep.'
 
 Source: a:306
 Vetted: s
@@ -1593,42 +1601,72 @@ I he die go that NEG know RLS
 #tonight sing.thing what songs wonder
 #`I wonder what songs (they) will sing tonight.'
 
-# better example of embededd Q. I asked Lwin "how do you say 'I know who will sing'"
-# le is Q particle for wh-q
-Source: elicited
-Vetted: t
-Judgment: g
-Phenomena: emb-q
-be tu thichinso me le kyunaw thi te
-be tu thichinso me le kyunaw thi te
-which pronoun sing RLS Q I know RLS
-`I know who will sing.'
+## better example of embededd Q. I asked Lwin "how do you say 'I know who will sing'"
+## le is Q particle for wh-q
+#Source: elicited
+#Vetted: t
+#Judgment: g
+#Phenomena: emb-q
+#be tu thichinso me le kyunaw thi te
+#be tu thichinso me le kyunaw thi te
+#which pronoun sing RLS Q I know RLS
+#`I know who will sing.'
 
-Source: a:307
-Vetted: s
-Judgment: g
-Phenomena: emb-q
-tinsou be thwa le
-tinsou be thwa le
-name WH go Q
-`Where did TinSoe go?'
+#Source: a:307
+#Vetted: s
+#Judgment: g
+#Phenomena: emb-q
+#tinsou be thwa le
+#tinsou be thwa le
+#name WH go Q
+#`Where did TinSoe go?'
 
-Source: a:307
-Vetted: s
-Judgment: g
-Phenomena: emb-q
-tinsou be thwa le mei te
-tinsou be thwa le mei te
-name WH go Q ask RLS
-`(She) asked where TinSoe went.'
+#Source: a:307
+#Vetted: s
+#Judgment: g
+#Phenomena: emb-q
+#tinsou be thwa le mei te
+#tinsou be thwa le mei te
+#name WH go Q ask RLS
+#`(She) asked where TinSoe went.'
 
-Source: a:307
-Vetted: s
+#Source: a:307
+#Vetted: s
+#Judgment: g
+#Phenomena: emb-q
+#tinsou be thwa le mei la
+#tinsou be thwa le mei la
+#`Did (she) ask where TinSoe went?'
+
+# vetted: f!!! todo verify
+Source: author
+Vetted: f
 Judgment: g
 Phenomena: emb-q
-tinsou be thwa le mei la
-tinsou be thwa le mei la
-`Did (she) ask where TinSoe went?'
+ceno nin ei la mei te
+ceno nin ei la mei te
+I you sleep Q ask RLS
+`I ask if you sleep.'
+
+# vetted: f!!! todo verify
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: emb-q
+ceno nin ei lou mei te
+ceno nin ei lou mei te
+I you sleep C ask RLS
+`I ask that you sleep.'
+
+# vetted: f!!! todo verify
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: emb-d
+ceno nin ei la thi te
+ceno nin ei la thi te
+I you sleep Q know RLS
+`I know if you sleep.'
 
 
 #########################
@@ -1674,9 +1712,19 @@ Source: b:150
 Vetted: s
 Judgment: g
 Phenomena: cop
-di sitha hsayawun te
-di sitha hsayawun te
-this soldier doctor RLS
+di sitha hsayawun
+di sitha hsayawun
+this soldier doctor
+`This soldier is a doctor.'
+
+# NP
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+di sitha hsayawun hpyii te
+di sitha hsayawun hpyii te
+this soldier doctor be RLS
 `This soldier is a doctor.'
 
 # NP-Q
@@ -1702,8 +1750,8 @@ Source: a:250
 Vetted: s
 Judgment: g
 Phenomena: cop
-thuhka ka dayaita hpyi te
-thuhka ka dayaita hpyi te
+thuhka ka dayaita hpyii te
+thuhka ka dayaita hpyii te
 name SUBJ director be RLS
 `Thuka is a director.'
 
@@ -1761,8 +1809,8 @@ she Minister be go RLS
 # hpyi means 'happen/occur' with a single argument. 
 Source: a:251
 Vetted: s
-Judgment: cop
-Phenonema: cop
+Judgment: g 
+Phenomena: cop
 yan hpyi te
 yan hpyi te
 enmity happen RLS

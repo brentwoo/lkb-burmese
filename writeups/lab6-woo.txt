@@ -1,0 +1,339 @@
+LING 567 - Lab 6
+Brent Woo
+===================
+
+1. Statement of facts about language
+2. Illustrative IGT examples
+3. How implemented phenomena
+=====================================
+
+Matrix y-n questions
+--------------------
+
+Matrix y-n questions are formed by adding a sentence/clause-final particle 'la'. 
+This pair of sentences shows that:
+
+Judgment: g
+thu caun hci te
+he cat like RLS
+`He likes cats.'
+
+Source: b:330
+Vetted: s
+Judgment: g
+Phenomena: q
+thu caun hci te la
+thu caun hci te la
+he cat like RLS Q
+`Does he like cats?'
+
+And the Q particle can't precede the aux.
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: q
+thu caun hci la te
+thu caun hci la te
+he cat like Q RLS
+`Does he like cats?'
+
+Judgment: u
+la thu caun hci te
+Q he cat like RLS
+`Does he like cats?'
+
+The customization system took care of this, adding a sentence-final particle of this type constraining the clause's [SF ques]. 
+
+la := qpart-lex-item &
+  [ STEM < "la" > ].
+
+qpart-lex-item := complementizer-lex-item &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.SF ques,
+                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM form ] ].
+
+
+embedded declarative complement clauses
+---------------------------------------
+
+There are no major differences between main and subordinate clauses, other than the presence of a complementizer setting the subordinate apart.
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: emb-d
+ceno nin ei te lou thi te
+ceno nin ei te lou thi te
+I you sleep RLS C know RLS
+`I know that you sleep.'
+
+Verbs with declarative clausal complements like "know" inherit from this type, prop-clause-embed-verb-lex, there's a ques-clause-embed-verb-lex for the verbs with interrogative clause complements.
+
+thi := prop-clause-embed-verb-lex &
+  [ STEM < "thi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+
+prop-clause-embed-verb-lex := clause-embed-verb-lex &
+  [ ARG-ST < [ ], [ LOCAL.CONT.HOOK.INDEX.SF prop ] > ].
+
+clause-embed-verb-lex := clausal-second-arg-trans-lex-item & main-verb-lex &
+  [ SYNSEM.LOCAL.CAT.VAL [ COMPS < #comps > ],
+    ARG-ST < [ LOCAL.CAT.HEAD +np ],
+             #comps &
+             [ LOCAL [ CAT [ VAL [ SPR < >,				   
+                                 COMPS < >,
+				   SUBJ < >],
+                           HEAD comp &
+				 [ FORM finite ] ],
+		     CONT.HOOK.INDEX.SF prop-or-ques ] ] > ].
+
+The embedded clause can take a C 'lou
+
+lou := decl-comp-lex-item &
+  [ STEM < "lou" > ].
+
+which inherits from this type, constraining the clause's [SF prop]. complementizer-lex-item came with the matrix question customization. I think I just had to constrain the comp's SUBJ list to be empty because it was picking up VP's instead of just CP's.
+
+decl-comp-lex-item := complementizer-lex-item &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.SF prop ]].
+
+complementizer-lex-item := raise-sem-lex-item & basic-one-arg &
+  [ SYNSEM.LOCAL.CAT [ HEAD comp &
+                            [ MOD < > ],
+                       VAL [ SPR < >,
+                             SUBJ < >,
+                             COMPS < #comp > ] ],
+    ARG-ST < #comp &
+             [ LOCAL [ CAT [ MC +,
+                           HEAD verb,
+                           VAL [ SUBJ < >,
+                                 COMPS < > ] ],
+		       CONT.HOOK.INDEX.SF prop-or-ques ] ] > ].
+
+
+embedded interrogative complement clauses
+------------------------------------------
+
+It looks like embedded interrogative clauses have a similar structure, but use the question particle as the complementizer. The only examples I found were with wh-words, which take a different-looking question particle "le", but that's true of wh-questions in the main clause as well.
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: emb-q
+ceno nin ei la mei te
+ceno nin ei la mei te
+I you sleep Q ask RLS
+`I ask if you sleep.'
+
+The 'ask' type verbs inherit from ques-clause-embed-verb-lex, a subtype of the clause-embed-verb-lex type described above. (I had to check a dictionary for this word because I couldn't find any examples. But it's assumed it works this way...)
+
+mei := ques-clause-embed-verb-lex &
+  [ STEM < "mei" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
+
+ques-clause-embed-verb-lex := clause-embed-verb-lex &
+  [ ARG-ST < [ ], [ LOCAL.CONT.HOOK.INDEX.SF ques ] > ].
+
+The interrogative C is already encoded as the y/n question particle, so it worked out of the box with the example above. 
+
+The SF constraints on the two types of embedding verbs ensures that we don't let sentences like the following through, with mismatched SF features.
+
+Vetted: f
+Judgment: u
+ceno nin ei lou mei te
+I you sleep C ask RLS
+`I ask that you sleep.'
+
+Vetted: f
+Judgment: u
+ceno nin ei la thi te
+I you sleep Q know RLS
+`I know if you sleep.'
+
+
+non-verbal predicates NP
+------------------------
+
+Two strategies for NP predication: 1) copular verb that looks just like a normal transitive verb. 2) NPs as stand-alone predicates
+
+1) copular verb works like a normal tv verb that needs an aux. If it's negated it has a different meaning ("It is not possible that..."), but that's not syntactically restricted.
+
+# NP
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+di sitha hsayawun hpyii te
+di sitha hsayawun hpyii te
+this soldier doctor be RLS
+`This soldier is a doctor.'
+
+"hpyii", the copula, is added as just another tv-verb-lex with a special PRED value.
+
+hpyii := tv-verb-lex &
+  [ STEM < "hpyii" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].
+
+2) NPs as stand-alone predicate. A new non-branching non-headed rule was added to allow NPs to form VPs.
+
+# NP
+Source: b:150
+Vetted: s
+Judgment: g
+Phenomena: cop
+di sitha hsayawun
+di sitha hsayawun
+this soldier doctor
+`This soldier is a doctor.'
+
+np-predicate-rule := unary-phrase &
+  [ SYNSEM.LOCAL.CAT [ HEAD verb,
+		       VAL [ COMPS < >,
+			     SUBJ < [ LOCAL [ CONT.HOOK.INDEX #arg1,
+					      CAT [ HEAD noun,
+						  VAL.SPR < > ] ],
+				      OPT - ] > ] ],
+    C-CONT [ HOOK [ LTOP #ltop,
+		    INDEX #index,
+		    XARG #arg1 ],
+	     RELS <! arg12-ev-relation &
+		   [ PRED "_be_v_id_rel",
+		     LBL #ltop,
+		     ARG0 #index,
+		     ARG1 #arg1,
+		     ARG2 #arg2 ] !> ],
+    ARGS < [ SYNSEM.LOCAL [ CAT [ HEAD noun,
+				  VAL.SPR < > ],
+			    CONT.HOOK [ INDEX #arg2 ]]] > ].
+
+This rule takes NPs formed by the Bare-NP rule, not NOMs, so I removed the qeq and the SPR list of the daughter should be empty. I also put [OPT -] to make the SUBJ mandatory, because I think this was firing out of control without that (conspiring with optional argument rules, juxtaposition coordination, etc. to give dozens of unncessary trees), but I'm not sure that was the right approach.
+
+
+non-verbal predicates PP
+-------------------------
+
+A verb "NEI" (be+located) is used in sentences with a PP predicate:
+
+# based on b:176 "from Colombo"
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+di sitha yankoun kaa nei te
+di sitha yankoun kaa nei te
+this soldier Rangoon from be+located RLS
+`This soldier is from Rangoon.'
+
+A new locative-verb-lex type was added as a subtype of verb-lex-supertype, which provides the constraints for the locative verb. The supertype was going to share constraints with the other copula verb but then it made more sense to make the NP-NP copula a normal tv-verb like above, so I'll have to clean that up.
+
+nei := locative-verb-lex &
+  [ STEM < "nei" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be+located_v_rel" ].
+
+
+locative-verb-lex := verb-lex-supertype & trans-first-arg-raising-lex-item-1 &
+  [ ARG-ST < [ ], [ LOCAL.CAT [ VAL [ COMPS < > ],
+			   HEAD adp ] ] > ].
+
+verb-lex-supertype := verb-lex &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < #subj >,
+                             COMPS < #comps >,
+                             SPR < >,
+                             SPEC < > ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST < #subj &
+             [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                       CAT [ VAL [ SPR < >,
+                                   COMPS < > ],
+                             HEAD noun ] ] ],
+	     #comps > ].
+
+non-verbal predicates AP
+-------------------------
+
+Adjectives are simply stative verbs, so here they are just iv-verb-lex types with _a_ in the PRED value. The two types of adjectives, attributive and predicative, I'm assuming could be derived from one or the other to slim down the lexicon but here they are just listed as two different entries:
+"apya" ("blue") attribute, appears after the noun
+"pya" ("blue") predicate, iv-verb-lex
+
+# ADJ
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+di ngapyothi kaun te
+di ngapyothi kaun te
+this banana be.good RLS
+`This banana is good.'
+
+# ADJ
+Source: elicited
+Vetted: t
+Judgment: g
+Phenomena: cop
+di ngapyothi pya te
+di ngapyothi pya te
+this banana blue RLS
+`This banana is blue.''
+
+These adjectives were entered as iv-verb-lex types:
+
+pya := iv-verb-lex &
+  [ STEM < "pya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_blue_a_rel" ].
+
+
+4. Problems
+===========
+
+I don't think the NP-pred rule is sufficiently constrained, for example the following example parses although it really shouldn't:
+
+di ngapyothi apya te
+this banana blue.ATTRIB RLS
+`This blue banana.'
+
+because the NP-pred rule takes the NP [di ngapyothi apya] and makes it a VP, then that feeds the OPT-SUBJ rule that licenses it as a sentence. I thought having this constraint would fix that, and I think it cut down on a lot of the other spurious parses
+
+SYNSEM.LOCAL.CAT.VAL.SUBJ <[ OPT - ]>
+
+but how would you prevent it from feeding the optional subject rule?
+
+5. Grammar coverage
+===================
+
+
+Analyze | Coverage
+
+Aggregate	Total items	Positive 	Total	Overall Cover
+[10-15]		3		3		2	66.7
+[5-10]		99		67		24	35.8
+[0-5]		74		40		29	72.5
+Total 		176		110		55	50.0
+
+Analyze | Overgenerate
+
+Aggregate	Total items	Negative 	Total	Overall Cover
+[10-15]		3		0		0	0.0
+[5-10]		99		32		5	15.6
+[0-5]		74		35		3	8.8
+Total 		176		66		8	12.1
+
+Almost all of these are due to improper handling of negation. For example
+
+Judgment: u
+lwin di sushi ma sa te
+name this sushi NEG eat RLS
+`Lwin does not eat this sushi'
+
+Should not parse because TE should be its negative counterpart HPU. These few examples should be addressed in the next lab.
+
+Compare | Competence (between lab5 and lab6)
+		
+Aggregate	OLD				NEW
+		lex	analyz	in	out	lex	analyz	in	out
+[10-15]		1.12	28.67	100.0	100.0	0.66	1.00	66.7	100.0
+[5-10]		0.83	5.38	31.6	22.9	0.85	5.00	35.8	15.6
+[0-5]		0.96	1.68	47.4	3.1	0.97	2.09	72.5	8.8
+Total		0.88	5.37	39.8	13.4	0.88	3.40	50.0	12.1
+
+
+
