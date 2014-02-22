@@ -1,0 +1,167 @@
+LING 567 - Lab 7
+Brent Woo
+===================
+
+1. Statement of facts about language
+2. Illustrative IGT examples
+3. How implemented phenomena
+=====================================
+
+Glass sentence
+---------------
+
+(as always they generate at least 2/3+ trees due to the juxtaposition coordination and optional argument rules...)
+
+ceno phan sa nain te
+I glass eat can RLS
+`I can eat glass.'
+
+The second with overt arguments to test linkage (speaker noted no one would ever say this, it's a perfect example where all the arguments would be dropped but then I couldn't test linkages):
+
+thu ceno ma na hpu
+he I NEG hurt RLS
+`It (he) doesn't hurt me.'
+
+
+Can/modals and negation
+----------=-------------
+
+All aux verbs were revised to be arg-comp-auxes. I went back into the customization system got a new arg-comp-aux type:
+
+arg-comp-aux := aux-lex & basic-two-arg &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SPR < >,
+                             SPEC < >,
+                             COMPS < #comps . #vcomps >,
+                             SUBJ < #subj > ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST < #subj &
+             [ LOCAL [ CAT [ HEAD noun &
+                                  [ CASE #case ],
+                             VAL [ SUBJ < >,
+                                   SPR < >,
+                                   SPEC < >,
+                                   COMPS < > ] ],
+                       CONT.HOOK.INDEX #xarg ] ],
+             #comps &
+             [ LOCAL [ CONT.HOOK.XARG #xarg,
+		       CAT [ HEAD verb,
+			     VAL [ COMPS #vcomps,
+                                 SUBJ < [ LOCAL.CAT.HEAD.CASE #case ] > ] ] ] ] > ].
+
+which has two types that inherit from it. The no-pred types are the sentence-final-particles (SFP), which contribute no eps of their own. Here I put an agreement constraint saying that the SFP has to agree with the complement VP in polarity. I also added a constraint saying the COMP has to have a COMPS empty list, since SFP only pick up the highest VP possible, that already joined with the object argument if needed. ->  [ [ glass [ eat can ]] SFP ] 
+
+In sentences without objects (or dropped objects like "ma na hpu" (It doesn't hurt me == NEG hurt RLS)), the VP [ma na] has to go through the non-branching optional object rule before it can combine with the SFP "hpu", which I think is the desired behavior.
+
+arg-comp-aux-no-pred := arg-comp-aux & raise-sem-lex-item &
+  [ SYNSEM.LOCAL.CAT.HEAD.POL #polarity,
+    ARG-ST < [ ],
+             [ LIGHT -,
+	       LOCAL.CAT [ HEAD [ AUX +,
+				  POL #polarity ],
+			   VAL.COMPS < > ] ] > ].
+
+All the types for SFP inherit from this type, like this:
+
+rls-nonfut-aux-lex := arg-comp-aux-no-pred &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E [ MOOD rls,
+                                       TENSE nonfuture ],
+                   CAT [ VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM nonfinite,
+			 HEAD.POL + ] ] ].
+
+I specified POL here, since these SFP auxes (like "te") can only occur on a positive sentence.
+
+The auxes that do contribute eps are as follows. I believe I needed to specify LIGHT so that they would attach low, only to V and not VPs.
+
+arg-comp-aux-with-pred := arg-comp-aux & hcons-lex-item &
+    [ SYNSEM [ LOCAL.CONT.HCONS <! qeq &
+                                   [ HARG #harg,
+                                     LARG #larg ] !>,
+               LKEYS.KEYREL event-relation &
+                            [ ARG1 #harg ] ],
+      ARG-ST < [ ],
+               [ LIGHT +,
+		 LOCAL.CONT.HOOK.LTOP #larg ] > ].
+
+The neg particle is now treated as an argument composition aux lex with its own predication, neg_rel. 
+
+
+Negation
+--------
+
+There's a new head feature:
+
+head :+ [ ...
+	POL bool].
+
+And since the negation heads the phrase, we need a head-comp-phrase
+
+head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
+  [ SYNSEM.LOCAL.CAT.HEAD verb &
+			  [ AUX + ] ].
+
+Among the aux verbs that do contribute eps, only NEG is head-initial, so it inherits from this first type below. The modal auxes follow the verb, so they inherit from the second type below, INIT -.
+
+aux-head-aux-lex := arg-comp-aux-with-pred &
+    [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM nonfinite ].
+
+head-aux-aux-lex := arg-comp-aux-with-pred &
+    [ SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM nonfinite,
+			 HEAD.INIT - ]].
+
+The tightened restriction on negation so that it agrees with the SFP in polarity shaves off a lot of the overgeneration, such as the sentence I mentioned in the last lab writeup:
+
+Judgment: u
+lwin di sushi ma sa te
+name this sushi NEG eat RLS
+`Lwin does not eat this sushi'
+
+This now does not parse because 'te' is specified as POL +, and clashes with the negative 'ma' POL -.
+
+I don't think I need the neg-adv-lex type anymore, so I commented it out.
+
+
+4. Corpus sentence:
+===================
+
+Fairly unambitious sentence from corpus3-notes, I'm figuring out this weekend how to deal with the script-translit task.
+
+ Will there be war?”
+ “စစ်ဖြစ်လား”
+     
+     စစ်		war		si
+     ဖြစ်		happen	hpyi     
+     လား 	Q	la”
+     
+
+si hpyi la
+war happen Q
+`Will there be war?"
+
+
+
+5. Grammar coverage
+===================
+
+Analyze | Coverage
+
+Aggregate	Total items	Positive 	Total	Overall Cover
+[10-15]		3		3		2	66
+[5-10]		99		67		8	11
+[0-5]		74		40		11	27
+Total 		176		110		21	19
+
+Even though the glass sentences work, I have slid back a lot in coverage. I will have to go through and cleanup the behavior of the auxiliaries.
+
+Analyze | Overgenerate
+
+Aggregate	Total items	Negative 	Total	Overall Cover
+[10-15]		3		0		0	0.0
+[5-10]		99		32		4	12.5
+[0-5]		74		35		2	5.9
+Total 		176		66		8	9.1
+
+Overgeneration has been cut back, on precisely the examples with negation-disagreement, like above.
+
+
+
+

@@ -1,6 +1,6 @@
 I can eat glass. It doesn’t hurt me.
 
-ကျွန်ုပ် ဖန် စား နိုင်  တယ်
+ကျွန်နုပ် ဖန် စား နိုင်  တယ်
 kjanou’ hpan sa: nain te
 ʧənoʊʔ pʰà̃ sá nàĩ  tè
 I glass eat can RLS
@@ -8,7 +8,4 @@ I glass eat can RLS
 မ နာ ဘူး
 ma na hpu:
 ma nà bú
-
-မ ထိ ဘူး
-ma hti. hpu:
-ma tʰḭ bú
+NEG hurt RLS

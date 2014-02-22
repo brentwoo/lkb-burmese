@@ -1,0 +1,32 @@
+
+
+ <ab type="paragraph" n="71">
+   <p lang="eng" id="e_71" corresp="#b_71">
+     <seg id="e_71_1" corresp="#b_71_1">I can’t remember the name of the movie.</seg>
+   </p>
+   <p lang="bur" id="b_71" corresp="#e_71">
+     <seg id="b_71_1" corresp="#e_71_1">ဇာတ်ကားရဲ  ့နာမည်ကိုတော့ ဘဘမမှတ်မိတော့ဘူးကွဲ ့။</seg>
+   </p>
+ </ab>
+ 
+ ဇာတ်ကား zaka	movie
+ 
+ ရဲ 		je		of (?)
+ 
+့နာမ		nama.		name
+ 
+ ည်ကိုတော့ 
+ 
+ ဘဘမ	babama		NEG
+ 
+ မှတ် 	hma.		remember
+ 
+ မိ		mi			happen to
+ 
+ တော့	to.			emphasis/finality
+ 
+ ဘူး		hpu			NEG-RLS
+ 
+ ကွဲ 		kwe			differ/broken/separated...
+ 
+ ့။

@@ -1,0 +1,162 @@
+
+ <ab type="paragraph" n="25">
+   <p lang="eng" id="e_25" corresp="#b_25">
+     <seg id="e_25_1" corresp="#b_25_1">One day, I unexpectedly read a poem about maps.</seg>
+   </p>
+   <p lang="bur" id="b_25" corresp="#e_25">
+     <seg id="b_25_1" corresp="#e_25_1">တနေ့ကတော့ မြေပုံတွေအကြောင်းရေးထားတဲ့ ကဗျာတပုဒ်ကို အမှတ်မထင် ကျနော် ဖတ်ရပါတယ်။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="26">
+   <p lang="eng" id="e_26" corresp="#b_26">
+     <seg id="e_26_1" corresp="#b_26_1">While reading this poem, I recalled another poem I read a year ago.</seg>
+   </p>
+   <p lang="bur" id="b_26" corresp="#e_26">
+     <seg id="b_26_1" corresp="#e_26_1">ဒီကဗျာကိုဖတ်တော့ လွန်ခဲ့တဲ့ တနှစ်ကျော်က ဖတ်ခဲ့ဖူးတဲ့ နောက်ထပ်ကဗျာတပုဒ်ကိုပါ ပြန်ပြီးသတိရလိုက်ပါတယ်။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="27">
+   <p lang="eng" id="e_27" corresp="#b_27">
+     <seg id="e_27_1" corresp="#b_27_1">That poem was also about maps.</seg>
+   </p>
+   <p lang="bur" id="b_27" corresp="#e_27">
+     <seg id="b_27_1" corresp="#e_27_1">အဲဒီကဗျာကလည်း မြေပုံတွေအကြောင်းရေးထားတဲ့ ကဗျာပါပဲ။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="28">
+   <p lang="eng" id="e_28" corresp="#b_28">
+     <seg id="e_28_1" corresp="#b_28_1">Naturally crazy about maps, I was so excited to read these maps poems that I copied both of them with great care.</seg>
+   </p>
+   <p lang="bur" id="b_28" corresp="#e_28">
+     <seg id="b_28_1" corresp="#e_28_1">အလိုလိုမှ မြေပုံရူးသွပ်သူကျနော့်မှာ ကဗျာတွေထဲက မြေပုံတွေအကြောင်း ဖတ်ရတော့ စိတ်လှုပ်ရှားပြီး အဲဒီကဗျာနှစ်ပုဒ်စလုံးကို သေသေချာချာကူး မှတ်ထားလိုက်ပါတယ်။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="29">
+   <p lang="eng" id="e_29" corresp="#b_29">
+     <seg id="e_29_1" corresp="#b_29_1">I visualized the maps in these poems.</seg>
+   </p>
+   <p lang="bur" id="b_29" corresp="#e_29">
+     <seg id="b_29_1" corresp="#e_29_1">ကဗျာတွေထဲက မြေပုံတွေကို စိတ်ကူးနဲ့ ပုံဖော်ကြည့်ပါတယ်။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="30">
+   <p lang="eng" id="e_30" corresp="#b_30">
+     <seg id="e_30_1" corresp="#b_30_1">I read them numerous times, and pondered on them over and over.</seg>
+   </p>
+   <p lang="bur" id="b_30" corresp="#e_30">
+     <seg id="b_30_1" corresp="#e_30_1">အကြိမ်ကြိမ်ဖတ်ပြီး အထပ်ထပ် အခါခါ စဉ်းစားပါတယ်။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="31">
+   <p lang="eng" id="e_31" corresp="#b_31">
+     <seg id="e_31_1" corresp="#b_31_1">The maps I saw in these poems were like the maps that charted the directions to the gem mines regions which I was obsessed with since my young days.</seg>
+   </p>
+   <p lang="bur" id="b_31" corresp="#e_31">
+     <seg id="b_31_1" corresp="#e_31_1">ကျနော် တွေ့ထားတဲ့ ကဗျာတွေထဲက မြေပုံတွေဟာ ကျနော်ငယ်စဉ်ကတည်းက စွဲလမ်းခဲ့ရတဲ့ ရတနာမြေဒေသတွေကို ညွှန်ပြတဲ့ မြေပုံတွေလိုပဲ လမ်းပြမြေပုံတွေ ဖြစ်နေတာတွေ့ရပါတယ်။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="32">
+   <p lang="eng" id="e_32" corresp="#b_32">
+     <seg id="e_32_1" corresp="#b_32_1">They were maps that could lead people to either happiness or misery.</seg>
+   </p>
+   <p lang="bur" id="b_32" corresp="#e_32">
+     <seg id="b_32_1" corresp="#e_32_1">လူတွေကို သုခနဲ့ တွေ့စေမယ့် မြေပုံ၊ ဒါမှမဟုတ် ဒုက္ခနဲ့ တွေ့စေမယ့် လမ်းပြမြေပုံ ဒီသဘောပါပဲ။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="33">
+   <p lang="eng" id="e_33" corresp="#b_33">
+     <seg id="e_33_1" corresp="#b_33_1">I who had been familiar with maps the whole of my 50 years was possessed by some inspirational thoughts after seeing these poems.</seg>
+   </p>
+   <p lang="bur" id="b_33" corresp="#e_33">
+     <seg id="b_33_1" corresp="#e_33_1">တသက်လုံး နှစ် (၅၀) လောက် မြေပုံတွေနဲ့ ယဉ်ပါးလာခဲ့တဲ့ ကျနော်ဟာ ကဗျာထဲမှာတွေ့ရတဲ့ မြေပုံတွေကို တွေ့ကာမှပဲ အတွေးတချို့ ကွန့်မြူးလင်းလက်လာပါတယ်။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="34">
+   <p lang="eng" id="e_34" corresp="#b_34">
+     <seg id="e_34_1" corresp="#b_34_1">According to this map,</seg>
+   </p>
+   <p lang="bur" id="b_34" corresp="#e_34">
+     <seg id="b_34_1" corresp="#e_34_1">ဒီမြေပုံအတိုင်းဆိုရင်</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="35">
+   <p lang="eng" id="e_35" corresp="#b_35">
+     <seg id="e_35_1" corresp="#b_35_1">“Will there be war?”</seg>
+   </p>
+   <p lang="bur" id="b_35" corresp="#e_35">
+     <seg id="b_35_1" corresp="#e_35_1">“စစ်ဖြစ်တော့မှာလား”</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="36">
+   <p lang="eng" id="e_36" corresp="#b_36">
+     <seg id="e_36_1" corresp="#b_36_1">“With which country?”</seg>
+   </p>
+   <p lang="bur" id="b_36" corresp="#e_36">
+     <seg id="b_36_1" corresp="#e_36_1">“ဘယ်နိုင်ငံနဲ့လဲ”</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="37">
+   <p lang="eng" id="e_37" corresp="#b_37">
+     <seg id="e_37_1" corresp="#b_37_1">Our humorous lot is the same.</seg>
+   </p>
+   <p lang="bur" id="b_37" corresp="#e_37">
+     <seg id="b_37_1" corresp="#e_37_1">ငါတို့ရဲ့ဟာသကလည်း ထို့အတူ</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="38">
+   <p lang="eng" id="e_38" corresp="#b_38">
+     <seg id="e_38_1" corresp="#b_38_1">With what?</seg>
+   </p>
+   <p lang="bur" id="b_38" corresp="#e_38">
+     <seg id="b_38_1" corresp="#e_38_1">ဘယ်အရာနဲ့လဲ။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="39">
+   <p lang="eng" id="e_39" corresp="#b_39">
+     <seg id="e_39_1" corresp="#b_39_1">According to this map,</seg>
+   </p>
+   <p lang="bur" id="b_39" corresp="#e_39">
+     <seg id="b_39_1" corresp="#e_39_1">ဒီမြေပုံအတိုင်းဆိုရင်</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="40">
+   <p lang="eng" id="e_40" corresp="#b_40">
+     <seg id="e_40_1" corresp="#b_40_1">This was the poem called “Map” written by a Myanmar poet “Sai Win Myint”.</seg>
+   </p>
+   <p lang="bur" id="b_40" corresp="#e_40">
+     <seg id="b_40_1" corresp="#e_40_1">ဒါကတော့ မြန်မာကဗျာဆရာလေး “ စိုင်း၀င်းမြင့်”ရဲ့ ကဗျာထဲက “မြေပုံ” ပါပဲ။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="41">
+   <p lang="eng" id="e_41" corresp="#b_41">
+     <seg id="e_41_1" corresp="#b_41_1">His message was clear.</seg>
+   </p>
+   <p lang="bur" id="b_41" corresp="#e_41">
+     <seg id="b_41_1" corresp="#e_41_1">သူကတော့ ရှင်းပါတယ်။</seg>
+   </p>
+ </ab>
+
+ <ab type="paragraph" n="42">
+   <p lang="eng" id="e_42" corresp="#b_42">
+     <seg id="e_42_1" corresp="#b_42_1">The “road” map in his poem was the map that guided people to the path of misery.</seg>
+   </p>
+   <p lang="bur" id="b_42" corresp="#e_42">
+     <seg id="b_42_1" corresp="#e_42_1">သူ ့ ကဗျာထဲမှာ ပါတဲ့ “လမ်းပြ” မြေပုံဟာ လူတွေကို “ဒုက္ခ” တွေဆီ လမ်းညွှန်တဲ့ မြေပုံဖြစ်ပါသတဲ့။</seg>
+   </p>
+ </ab>

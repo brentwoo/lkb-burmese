@@ -24,4 +24,5 @@
 ((:path . "lab4") (:content . "Test suite created in lab 4"))
 ((:path . "lab5") (:content . "Test suite created in lab 5"))
 ((:path . "corpus1") (:content . "corpus1 - new job"))
-((:path . "lab6") (:content . "Test suite created in lab 6")))
+((:path . "lab6") (:content . "Test suite created in lab 6"))
+((:path . "lab7") (:content . "Test suite created in lab 7"))) 
