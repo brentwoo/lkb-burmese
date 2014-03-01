@@ -1,0 +1,179 @@
+Language: Burmese
+Language code: mya
+Lines: orth translit-seg gloss translat
+Author: Brent Woo
+Date: Feb 28, 2014
+Source a: elicited
+
+
+#################################
+# Machine-Translation sentences #
+#################################
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ka ei te
+khwei ka ei te
+dog SUB sleep RLS
+`Dogs sleep.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ka ga kou lai te
+khwei ka ga kou lai te
+dog SUB car OBJ chase RLS
+`Dogs chase cars.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+ceno ka nin kou lai te
+ceno ka nin kou lai te
+I SUB you OBJ chase RLS
+`I chase you.
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+di khwei ka ei te
+di khwei ka ei te
+this dog SUB sleep RLS
+`These dogs sleep.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ka sa te
+khwei ka sa te
+dog SUB eat RLS
+`Dogs eat.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+ceno ka hpan kou sa nain te
+ceno ka hpan kou sa nain te
+I SUB glass OBJ eat can RLS
+`I can eat glass.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+thu ka ceno kou ma na hpu
+thu ka ceno kou ma na hpu
+he SUB me OBJ NEG hurt RLS
+`It doesnt hurt me.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ka ga kou lai te
+khwei ka ga kou lai te
+dog SUB car OBJ chase RLS
+`It doesnt hurt me.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+ceno ka nin ka khwei ka ga kou lai te lou thi te lou htin te
+ceno ka nin ka khwei ka ga kou lai te lou thi te lou htin te
+I SUB you SUB dog SUB car OBJ chase RLS C know RLS C think RLS 
+'I think that you know that dogs chase cars.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+caun khwei ka ga kou lai te
+caun khwei ka ga kou lai te
+cat dog SUB car OBJ chase RLS
+`Cats and dogs chase cars.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ka ga kou lai caun ka khwei kou lai te
+khwei ka ga kou lai caun ka khwei kou lai te
+dog SUB car OBJ chase car SUB dog OBJ chase RLS
+`Dogs chase cars and cats chase dogs.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+caun ka khwei kou lai ei te
+caun ka khwei kou lai ei te
+cat SUB dog OBJ chase sleep RLS
+`Cats chase dogs and sleep.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+caun ka khwei kou lai la
+caun ka khwei kou lai la
+cat SUB dog OBJ chase Q
+`Do cats chase dogs?
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ahsa ka sa te
+khwei ahsa ka sa te
+dog hungry SUB eat RLS
+`Hungry dogs eat.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ka khountamin sa te
+khwei ka khountamin sa te
+dog SUB quickly eat RLS
+`Dogs eac quickly.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ka hsa te
+khwei ka hsa te
+dog SUB hunger RLS
+`The dogs are hungry.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei ka panjan hma nei te
+khwei ka panjan hma nei te
+dog SUB park in be+located RLS
+`The dogs are in the mark.'
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+khwei caun
+khwei caun
+dog cat
+`Dogs are cats.'
+
+
+
+
+
+

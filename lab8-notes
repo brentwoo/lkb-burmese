@@ -1,0 +1,201 @@
+Lab 8
+Brent Woo
+==========
+
+
+Corpus sentence
+===============
+
+အကြိမ်ကြိမ်ဖတ်ပြီး အထပ်ထပ် အခါခါ စဉ်းစားပါတယ်။
+akjeinkjein hpa pji ahtahta akhakha sinza pa te
+frequently read AUX again repeatedly consider POLITE RLS 
+`I read them numerous times, and pondered on them over and over.'
+
+I omitted the optional POLITE particle to avoid needless proliferation of honorific generation alternatives, but in retrospect I suppose VPM could cull those variants.
+
+so my actual test string was
+
+akjeinkjein hpa pji ahtahta akhakha sinza te
+frequently read AUX again repeatedly consider RLS 
+`I read them numerous times, and pondered on them over and over.'
+
+Consulted the oracle customization system for a VP-coordination rule:
+
+(burmese.tdl)
+
+vp5-top-coord-rule := basic-vp-top-coord-rule & apoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "5" ].
+
+vp5-bottom-coord-rule := unary-bottom-coord-rule & vp-bottom-coord-phrase &
+  [ SYNSEM.LOCAL [ COORD-STRAT "5",
+                   COORD-REL.PRED "_and_coord_rel" ] ].
+
+(rules.tdl)
+
+vp5-top-coord := vp5-top-coord-rule.
+
+vp5-bottom-coord := vp5-bottom-coord-rule.
+
+Added all words in the lexicon, including the reduplicative adverbs as single lex items:
+
+ahtahta := adverb-lex &
+  [ STEM < "ahtahta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_again_adv_rel" ].
+
+
+VPM
+===
+
+I believe the only changes I had to make in semi.vpm were regularizing PERNUM according to the ENG grammar:
+
+PNG.PER : PERS
+  1st <> first
+  2nd <> second
+  3rd <> third
+  * <> !
+
+PNG.NUM : NUM
+  singular <> sg
+  sg <> *
+  sg << pl
+  plural <> pl
+  * <> !
+
+I intended to neutralize the 'generic plural' from the English sentences into singular, because while Burmese does have sg pl distinction with a suffix, the pl is not used for generic sentences like these ones.
+
+
+Changes and test sentence for MT
+================================
+
+I included a tsdb profile with all the test MT sentences in Burmese for reference, it's called "mmt sentences".
+
+I tested translating
+
+eng: dogs sleep
+
+mya: khwei ei te
+dog sleep RLS
+
+Which works. But ENG->MYA usually generates alternatives with optional case markers (ka = SUBJ, kou = OBJ).
+
+The other MT sentences that successfully translate are:
+
+Dogs sleep.
+Dogs chase cars.
+*I chase you. [these and the others with pronouns I didn't fix pron_rel in ENG, but I imagine that they work; the tsdb profile can verify that the sentences parse and generate MYA-internally]
+These dogs sleep.
+Dogs eat.
+*I can eat glass.
+*It doesnt hurt me.
+The dogs chase cars.
+*I think that you know that dogs chase cars.
+*I ask whether you know that dogs chase cars. 
+Cats and dogs chase cars.
+*Dogs chase cars and cats chase dogs. [no S coord yet]
+Cats chase dogs and sleep.
+Do cats chase dogs?
+Hungry dogs eat.
+*Dogs eat quickly. [no MYA pred quickly yet]
+The dogs are hungry.
+The dogs are in the park.
+The dogs are the cats.
+
+
+Fixes, some of which were related to MT task
+============================================
+
+to rule out sentences like
+
+Judgment: u
+di ngapyothi apya te
+this banana blue.ATTRIB RLS
+`This blue banana.'
+
+from parsing, added an #opt tag to have AUX copy the OPT value of its complement VP's SUBJ.
+
+arg-comp-aux := aux-lex & basic-two-arg &
+  [ SYNSEM [ LOCAL [ CAT.VAL [ ...
+                             COMPS < #comps ..... >,
+                             SUBJ < #subj > ] ... ] ],
+    ARG-ST < #subj &
+             [ OPT #opt...],
+             #comps &
+             [ LOCAL [ CAT [ VAL [ SUBJ < [ OPT #opt ... ] > ] ] ] ] > ].
+
+---------
+
+Fixing case-marked noun phrases, like
+
+ceno ka hpan kou ma sa hpu
+I SUB glass OBJ NEG eat RLS
+`I don't eat glass.'
+
+The arg-comp auxes, like "ma" (NEG) were not letting case-marked noun phrases through, which look like PPs. So generalized the type to take SUBJs that are adp- or noun-headed, +np:
+
+arg-comp-aux := aux-lex & basic-two-arg &
+  [ SYNSEM [ LOCAL [ CAT.VAL [ ...
+                             SUBJ < #subj > ]... ],
+    ARG-ST < #subj &
+             [ ...
+               LOCAL [ CAT [ HEAD +np ...
+
+Also removed ARG-ST < [] , [LIGHT - ... ] > restriction because these auxes appeared to conflict with HC-LIGHT on some verbs. But come to think of it now I'm not sure why some verbs are not LIGHT. I think that was a leftover problem.
+
+arg-comp-aux-no-pred := arg-comp-aux & raise-sem-lex-item &
+  [ SYNSEM.LOCAL.CAT.HEAD.POL #polarity,
+    ARG-ST < [ ],
+             [ 
+	       LOCAL.CAT
+
+--------------
+I discovered that on generation/translation I would get sentence final particles and other auxes in the middle of the sentence! So it would generate sentences like the second:
+
+ceno ei te
+I sleep RLS
+
+* ceno te ei
+I RLS sleep
+`I sleep.'
+
+Fixed INIT values on various types to properly conflict and rule out. So for example, the sentence final particles should only appear sentence-finally... and not strangely in the middle of the sentence.
+
+head-comp-phrase := ...
+  [ SYNSEM.LOCAL.CAT.HEAD [ INIT + ]
+
+arg-comp-aux-no-pred := ...
+  [ SYNSEM.LOCAL.CAT.HEAD.INIT - ]
+
+----------------
+
+Split arg-comp-aux-no-pred into two subtypes, one for SFP and one for others. The purpose of this was a sort of flag, only after a SFP attaches then the sentence is finite and licenses an S, to prevent generating inadvertent premature sentences with, say, negation (another no-pred aux), but not a SFP.
+
+sentence-final-particle := arg-comp-aux-no-pred &
+  [ SYNSEM.LOCAL.CAT.HEAD.FORM finite ].
+
+non-sentence-final-particle := arg-comp-aux-no-pred &
+  [ SYNSEM.LOCAL.CAT.HEAD.FORM nonfinite ].
+
+
+
+TSDB Coverage
+=============
+
+Analyze | Coverage
+
+	Total	Positive	Distinct Anyzes	Total Results	Overall Coverage
+Total	176	110		5.21		61		55.5
+
+Analyze | Overgeneration
+
+	Total	Negative	Distinct	Total Results	Overall
+Total	176	66		7.08		12		18.2
+
+Compare | Competence, between lab8 and lab7
+
+	GOLD				NEW
+	lex	analyz	in	out	lex	analyz	in	out
+total	0.88	3.04	19.1	9.1	0.86	5.52	55.5	18.2
+
+Massive increase in coverage, likely due to fixing auxes and SFP for real. Also a small amount of overgeneration, which may be due to allowing VP-coordination? There are still 11 sentences wellformed/unanalyzed, several of these are ADJ-as-predicate sentences that just don't have lexical entries, one is an imperative, and one is the locative PP-as-predicate without a copula verb.
+
+Just a note, this was by far the most satisfying lab so far, to see everything come together. The ENG->MYA translation was a great motivation to fix overgeneration.
