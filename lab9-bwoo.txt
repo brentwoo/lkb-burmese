@@ -1,0 +1,266 @@
+LAB 9 
+Brent Woo
+==========
+
+=====
+Fixes
+=====
+
+I needed to stop generating declarative sentences for "do cats chase dogs?", like
+
+caun ka khwei kou lai te
+cat SUBJ dog OBJ chase RLS
+`Cats chase dogs.'
+
+target:
+caun ka khwei kou lai la
+
+te was previously prop-or-ques, so generated for "do cats chase dogs". Stopped this by requiring it SF to be prop:
+
+
+rls-nonfut-aux-lex := sentence-final-particle &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX [ E [ MOOD rls,
+                                       TENSE nonfuture ],
+				     SF prop ],
+
+----
+
+Adverbs are now _a_rel
+
+khountamin := adverb-lex &
+  [ STEM < "khountamin" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
+
+----
+
+Adverbs shouldn't attach to S or V: added the following VAL constraints, so: 
+
+khwei ka khountamin sa te
+dog SUBJ quickly eat RLS
+`Dogs eat quickly.'
+
+* khountamin khwei ka sa te
+* khwei ka sa khountamin te
+
+adverb-lex := basic-adverb-lex & intersective-mod-lex &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD verb & 
+							 [ FORM finite ],
+					            VAL [ COMPS < >,
+							  SUBJ cons ]
+
+----
+
+the locative-verb "nei" was letting negative SFP through, because it was unspecified for polarity [POL bool], so I made locative-verbs by default POL +. Only the one verb inherits from this type:
+
+* khwei ka panjan hma nei hpu
+dog park in be RLS.neg
+
+target: 
+khwei ka panjan hma nei te
+
+locative-verb-lex := verb-lex-supertype & trans-first-arg-raising-lex-item-1 &
+  [ SYNSEM.LOCAL.CAT.HEAD.POL +,
+
+----
+
+Also, the locative-verb "nei" wasn't quite playing right with SFP, in fact sentences without SFP would parse
+
+khwei panjan hma nei te
+dog park in be RLS
+
+* khwei panjan hma nei
+dog park in be
+
+
+adding this constraint knocked that out:
+
+  [ SYNSEM.LOCAL.CAT.HEAD [ 
+			    FORM nonfinite ],
+
+----
+
+Also, the locative-verb was ALSO letting in ACC-case (object) PP's as subjects, so it would generate
+
+khwei ka panjan hma nei te
+dog SUB park in be RLS
+
+* khwei kou panjan hma nei te
+dog OBJ park in be RLS
+
+even properly linking up the "OBJ" argument with the ARG1 of be+located. adding 
+
+[ LOCAL.CAT.HEAD.CASE sub ] to the first thing on its ARG-ST list fixed that.
+
+
+-----
+
+Constraining VP-coord. 
+
+"cats chase dogs and sleep" generated a huge number of realizations. 
+
+VP-T needs to copy up FORM from its daughters, otherwise sentences like the following would generate without an SFP, because the coordinated VP-T was form bool.
+
+* caun ka khwei kou lai ei
+cat SUBJ dog OBJ chase sleep
+
+moreover, needed to have both daughters identify in form, otherwise one conjunct might have a SFP and the other wouldn't
+
+* caun ka khwei kou lai te ei
+cat SUBJ dog OBJ chase RLS sleep
+
+To fix this, also needed to add in the VP-B rule to copy its lone daughter's FORM. So these rules ended up looking like this:
+
+vp5-top-coord-rule := basic-vp-top-coord-rule & apoly-top-coord-rule &
+  [ SYNSEM.LOCAL [ CAT.HEAD.FORM #form,
+		   COORD-STRAT "5"],
+    LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.FORM #form,
+    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.FORM #form ].
+
+vp5-bottom-coord-rule := unary-bottom-coord-rule & vp-bottom-coord-phrase &
+  [ SYNSEM.LOCAL [ CAT.HEAD.FORM #form,
+		   COORD-STRAT "5",
+                   COORD-REL.PRED "_and_coord_rel" ],
+     NONCONJ-DTR.SYNSEM.LOCAL.CAT.HEAD.FORM #form ].
+
+
+and we get the correct generation:
+
+caun ka khwei kou lai te ei te
+cat SUBJ dog OBJ chase RLS sleep RLS
+`Cats chase dogs and sleep.'
+
+------
+
+As pointed out, these rules undesirably neutralize all instances of plural. So I removed them, instead I made the cmnn-lex type unspecified for NUM and left the expected singular <> sg / plural <>pl rules
+
+PNG.NUM : NUM
+...
+sg <> *
+sg << pl
+
+
+Also, my semi.vpm wasn't quite formatted correctly, just needed to add the PNG's... :
+
+PNG.NUM : PNG.NUM
+PNG.PER : PNG.PER
+PNG.FML : PNG.FML
+
+This stopped "I chase you" from generating all 64 combinations of all pronouns in my grammar...
+
+----
+
+Following Alec's Uyghur system I put in a formality feature for the 2nd person pronouns.
+
+pron2-noun-lex := pron-noun-lex & no-spr-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 2nd ].
+
+pron2F-noun-lex := pron2-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.FML formal ].
+
+pron2I-noun-lex := pron2-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.FML informal ].
+
+nin := pron2I-noun-lex & ...
+
+khinbya := pron2F-noun-lex & ...
+
+png :+ [ PER person,
+    NUM number,
+    FML formality ].
+
+;;; Formality
+
+formality := *top*.
+formal := formality.
+informal := formality.
+
+
+-----
+
+On rephrasing "I think that you know that dogs chase cars", thankfully it worked but it generated about 1200 results. To start cutting down on these...
+
+
+My clause-embed-verb-lex type needs to restrict its SUBJ case to be sub, otherwise sentences with a [CASE obj] PP would go through.
+
+[ ARG-ST < [ LOCAL.CAT.HEAD +np & [ CASE sub ] ], ...
+
+"lou" the complementizer was found at the very end of sentences, pretending to be a MC complementizer like the question particle (e.g., "That the dog sleeps." would generate). I had the complementizer be an [MC -] lex item, and made it so that the comp-head-phrase copies up the MC value of its head daughter: 
+
+decl-comp-lex-item := complementizer-lex-item &
+  [ SYNSEM.LOCAL [ CAT.MC -,
+
+comp-head-phrase := basic-head-1st-comp-phrase & head-final &
+  [ SYNSEM.LOCAL.CAT [ HEAD.INIT -,
+		       MC #mc ],
+    HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
+
+My clause-embedding verbs needed to be nonfinite, to rule out sentences without SFP:
+
+clause-embed-verb-lex := ....
+ [ SYNSEM.LOCAL.CAT [ HEAD.FORM nonfinite,
+...
+
+========
+Coverage
+========
+
+This is the coverage I have
++ = rephrases into mya, expected alternate realizations
+++ = rephrases, but certainly too many alternate realizations
+X = does not rephrase
+
++ Dogs sleep.
++ Dogs chase cars.
++ I chase you.
++ These dogs sleep.
++ Dogs eat.
+X I can eat glass.
+X It doesnt hurt me.
++ The dogs chase cars.
+++ I think that you know that dogs chase cars.
+++ I ask whether you know that dogs chase cars.
++ Cats and dogs chase cars.
+X Dogs chase cars and cats chase dogs.
++ Cats chase dogs and sleep.
++ Do cats chase dogs?
++ Hungry dogs eat.
++ Dogs eat quickly.
++ The dogs are hungry.
++ The dogs are in the park.
+++ The dogs are the cats.
+
+
++ hunen liip
++ hün-en driuwe wein-en
++ ik driuwe di
++ dijir hün-en sliip
++ hün-en iit
+X ik ken glees iit
+X hat dö-t mi siir ek
++ di hün-en driuwe wein-en
+++ ik achtsje dat dü weet-st dat hün-en driuwe wein-en
+++ ik fraag di weder dü weet-st dat hün-en driuwe wein-en
++ kat-en en hün-en driuwe wein-en
+X hün-en driuwe wein-en en kat-en driuwe wein-en
++ kat-en driuwe hün-en en sliip
++ driuwe kat-en hün-en
++ hol hün-en iit
++ hün-en iit hurd
++ di hün-en wiis hol
++ di hün-en wiis ön guart (INVALID PRED if rephrase wrong tree)
+++ di hün-en wiis di kat-en
+
+Every sentence generates a few sentences because of:
+- SUB / OBJ drop
+- SUB / OBJ case markers are optional (ka = SUB, kou = OBJ)
+- 2nd-person pronoun is ambiguous (nin = informal, khinbya = informal
+As far as I could tell the ones marked with '+' I have verified to all contain only sentences accounted for by the above optionality parameters.
+
+The glass sentences do not parse because of a stack overflow. The S-coordination sentence does not parse because I did not add S-coordination. I did not make any changes to the transfer grammar.
+
+The long, embedded sentences all have multiple realizations with all combinations of pro-drop firing. I was able to locate the "full sentence" in Burmese with no dropped arguments and all case-endings, and I'm assuming that all the rest are all permutations of dropping case endings and such, but I could not verify this.
+
+
+
+
+
